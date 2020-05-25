@@ -1,0 +1,21 @@
+Id,Booking date,Start time,End time,Space,Client,Bookings Value (Ex. VAT),Category,Status,Payment status,Booking Ref
+4350516,22/05/2020,08:30,17:00,Examination room 62,Fay Maxwell (East Lancashire Hospitals NHS Trust),80.75,,confirmed,Billed,#417398
+4373936,22/05/2020,08:30,17:00,Counselling room 19,Leigh Stewart (Lancashire Care NHS Foundation Trust),80.75,,confirmed,Fully paid,#422129
+4356279,22/05/2020,08:30,17:00,Consulting room 74,Stephen  Duerden (Lancashire Teaching Hospitals NHS Foundation Trust),80.75,,confirmed,Billed,#418703
+4342038,22/05/2020,08:30,17:00,Counselling room 57,Leigh Stewart (Lancashire Care NHS Foundation Trust),80.75,,confirmed,Fully paid,#415611
+4359967,22/05/2020,08:30,12:30,Examination room 66C,Leigh Stewart (Lancashire Care NHS Foundation Trust),38.0,,confirmed,Fully paid,#419686
+4329031,22/05/2020,08:30,12:30,Examination room 66,Leigh Stewart (Lancashire Care NHS Foundation Trust),38.0,,confirmed,Billed,#413790
+4364265,22/05/2020,13:00,17:00,Examination room 66,Leigh Stewart (Lancashire Care NHS Foundation Trust),38.0,,confirmed,Fully paid,#420563
+4364394,22/05/2020,13:00,17:00,Examination room 67,Leigh Stewart (Lancashire Care NHS Foundation Trust),38.0,,confirmed,Fully paid,#420569
+4360056,26/05/2020,08:30,12:30,Examination room 66,Leigh Stewart (Lancashire Care NHS Foundation Trust),38.0,,confirmed,Fully paid,#419695
+4356444,26/05/2020,08:30,17:00,Examination room 66C,Stephen  Duerden (Lancashire Teaching Hospitals NHS Foundation Trust),80.75,,confirmed,Billed,#418736
+4359994,26/05/2020,08:30,12:30,Examination room 66A,Leigh Stewart (Lancashire Care NHS Foundation Trust),38.0,,confirmed,Fully paid,#419688
+4356476,26/05/2020,08:30,17:00,Consulting room 74,Stephen  Duerden (Lancashire Teaching Hospitals NHS Foundation Trust),80.75,,confirmed,Billed,#418739
+4364315,26/05/2020,08:30,12:30,Examination room 67,Leigh Stewart (Lancashire Care NHS Foundation Trust),38.0,,confirmed,Fully paid,#420566
+4350517,26/05/2020,08:30,17:00,Examination room 62,Fay Maxwell (East Lancashire Hospitals NHS Trust),80.75,,confirmed,Billed,#417398
+4359874,26/05/2020,08:30,17:00,Counselling room 57,Leigh Stewart (Lancashire Care NHS Foundation Trust),80.75,,confirmed,Fully paid,#419676
+4320448,26/05/2020,09:00,12:30,Counselling room 19,Catherine Allen (Virgin Care Services Ltd North West),33.25,,confirmed,Billed,#412188
+4365186,26/05/2020,12:30,17:00,Counselling room 19,Leigh Stewart (Lancashire Care NHS Foundation Trust),42.75,,confirmed,Fully paid,#420881
+4320552,26/05/2020,13:00,17:00,Examination room 66,Catherine Allen (Virgin Care Services Ltd North West),38.0,,confirmed,Billed,#412190
+4320605,26/05/2020,13:00,17:00,Examination room 67,Catherine Allen (Virgin Care Services Ltd North West),38.0,,confirmed,Billed,#412191
+4360973,26/05/2020,13:00,17:00,Examination room 66A,Carole Roberts (Blackpool Teaching Hospitals NHS FT),38.0,,confirmed,Billed,#419991
