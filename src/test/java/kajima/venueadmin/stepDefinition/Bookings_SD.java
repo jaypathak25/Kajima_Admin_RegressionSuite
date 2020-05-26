@@ -134,13 +134,13 @@ public class Bookings_SD extends TestBase {
 //==========================Scenario: Cancel unbilled and billed bookings - verify refund option is not displayed===============
 
 	@Then("^User cancel the unbilled booking and verify that the refund is not displayed$")
-	public void user_cancel_the_unbilled_booking_and_verify_that_the_refund_is_not_displayed()  {
-
+	public void user_cancel_the_unbilled_booking_and_verify_that_the_refund_is_not_displayed() throws InterruptedException  {
+		bookings_page.cancel_billed_WP_Single_Booking();
 	}
 
 	@Then("^User cancel the billed booking and verify that the refund is not displayed$")
-	public void user_cancel_the_billed_booking_and_verify_that_the_refund_is_not_displayed() {
-
+	public void user_cancel_the_billed_booking_and_verify_that_the_refund_is_not_displayed() throws InterruptedException {
+		bookings_page.cancel_unBilled_WP_Single_Booking();
 	}
 	
 //========================Scenario: Cancel fully paid bookings - verify refund option when cancel booking from Calender,Clients tab.================
@@ -173,7 +173,7 @@ public class Bookings_SD extends TestBase {
 
 	@Then("^User cancel the booking with Tentative status and verify that no generate CN and Refund option displays$")
 	public void user_cancel_the_booking_with_Tentative_status_and_verify_that_no_generate_CN_and_Refund_option_displays() {
-
+		bookings_page.cancel_tentative_Booking();
 	}
 
 	

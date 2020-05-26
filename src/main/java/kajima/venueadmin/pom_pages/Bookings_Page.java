@@ -79,7 +79,7 @@ public class Bookings_Page extends TestBase {
 	@FindBy(xpath = "//a[text()='Venues']")
 	WebElement venue_dd;
 	
-	@FindBy(xpath = "//a[text()='Soho Health Centre']")
+	@FindBy(xpath = "//a[text()='Blaydon Primary Care Centre']")
 	WebElement venue_name;
 	
 	@FindBy(xpath="//table[@id='bookings_table']/tbody/tr/td[11]")
@@ -132,23 +132,32 @@ public class Bookings_Page extends TestBase {
 	@FindBy(xpath="//input[@id='credit_note_reason']")
 	WebElement canReason_txt;
 	
-	@FindBy(xpath="//input[@value='Cancel these Bookings']")
+	@FindBy(xpath="//input[@value='Cancel this Booking']")
 	WebElement canBooking_btn;
 	
-	@FindBy(xpath="//a[text()='Cancel']//parent::td//preceding-sibling::td/a[contains(text(),'Billed')]")
+	@FindBy(xpath="//input[@value='Cancel these Bookings']")
+	WebElement canMultipleBooking_btn;
+	
+	@FindBy(xpath="//a[contains(text(),'Fully paid')]//parent::td//following-sibling::td/a[text()='Cancel']")
+	WebElement canForFullyPaidBooking_link;
+	
+	@FindBy(xpath="//a[contains(text(),'Billed')]//parent::td//following-sibling::td/a[text()='Cancel']")
 	WebElement canForbilledBooking_link;
 	
-	@FindBy(xpath="//a[text()='Cancel']//parent::td//preceding-sibling::td[contains(text(),'Unbilled')]")
+	@FindBy(xpath="//td[contains(.,'Unbilled')]//following-sibling::td//a[text()='Cancel']")
 	WebElement canForUnbilledBooking_link;
+	
+	@FindBy(xpath="//a[text()='Cancel']")
+	WebElement redCancel_btn;
 	
 	@FindBy(xpath="//a[text()='Cancel']")
 	WebElement canBookings_link;
 	
 	@FindBy(id = "user_email")
-	WebElement login_user_name;
+	WebElement login_user_nameM;
 	
 	@FindBy(id = "user_password")
-	WebElement login_user_password;
+	WebElement login_user_passwordM;
 	
 	@FindBy(name = "commit")
 	WebElement login_btn;
@@ -156,7 +165,11 @@ public class Bookings_Page extends TestBase {
 	@FindBy(xpath="//a[@class='main' and text()='Organisations']")
 	WebElement masterOrgTab;
 	
+	@FindBy(xpath="//a[text()='View Client']")
+	WebElement viewClient_btn;
 	
+	@FindBy(xpath = "//div[@class='alert-box success hide-on-print']")
+	WebElement success_Msg;
 
 	
 //================================Initialise web elements created in this class========================================
@@ -326,6 +339,7 @@ public class Bookings_Page extends TestBase {
 		back_Btn.click();
 	}
 	
+	//Incomplete method ..need to work more on it 
 	public void edit_fullyPaidBooking() throws InterruptedException, AWTException {
 		selectVenue();
 		bookings_tab.click();
@@ -372,53 +386,84 @@ public class Bookings_Page extends TestBase {
 		
 	}
 	
-	public void cancel_fullyPaid_WP_Single_Booking() {
+	public void cancel_fullyPaid_WP_Single_Booking() throws InterruptedException {
+		selectVenue();
+		bookings_tab.click();
+		Thread.sleep(1000);
 		Select slct1 = new Select(payStatus_dd);
 		slct1.selectByVisibleText("Fully Paid");
 		if(bookingRows.size()!=0) {
-			slctBooking_chkBox.click();
-			cancelSelctd_Btn.click();
+			Thread.sleep(1000);
+			bookingRef_link.click();
+			Thread.sleep(1000);
+			canForFullyPaidBooking_link.click();
 			canEmail_chkBox.click();
 			canReason_txt.sendKeys("AUTOMATECAN");
 			raiseCN_chkBox.click();
 			raiseCNEmail_chkBox.click();
 			refundPay_chkBox.click();
 			refundEmail_chkBox.click();
-			cancelSelctd_Btn.click();
+			Assert.assertTrue(raiseCN_chkBox.isDisplayed());
+			Assert.assertTrue(raiseCNEmail_chkBox.isDisplayed());
+			Assert.assertTrue(refundPay_chkBox.isDisplayed());
+			Assert.assertTrue(refundEmail_chkBox.isDisplayed());
 			canBooking_btn.click();
+			
 		}
 			else {
 				System.out.println("No booking available to cancel with Fully paid status");
 			}
 	}
 	
-	public void cancel_billed_WP_Single_Booking() {
+	public void cancel_billed_WP_Single_Booking() throws InterruptedException {
+		selectVenue();
+		bookings_tab.click();
+		Thread.sleep(1000);
 		Select slct1 = new Select(payStatus_dd);
 		slct1.selectByVisibleText("Billed");
 		if(bookingRows.size()!=0) {
+			Thread.sleep(1000);
 			bookingRef_link.click();
+			Thread.sleep(1000);
 			canForbilledBooking_link.click();
 			canEmail_chkBox.click();
 			canReason_txt.sendKeys("AUTOMATECAN");
 			raiseCN_chkBox.click();
 			raiseCNEmail_chkBox.click();
+			Assert.assertTrue(raiseCN_chkBox.isDisplayed());
+			Assert.assertTrue(raiseCNEmail_chkBox.isDisplayed());
+			Assert.assertTrue(refundPay_chkBox==null);
+			Assert.assertTrue(refundEmail_chkBox==null);
 			canBooking_btn.click();
+			String str = driver.findElement(By.xpath("//h5[contains(text(),'Credit Note')]")).getText();
+			System.out.println(str);
+			viewClient_btn.click();
+			Thread.sleep(1000);
+			WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,str)]"));
+			Assert.assertTrue(cnNumber.isDisplayed());
+			
 		}
 			else {
 				System.out.println("No booking available to cancel with Billed status");
 			}
 	}
 	
-	public void cancel_unBilled_WP_Single_Booking() {
+	public void cancel_unBilled_WP_Single_Booking() throws InterruptedException {
+		bookings_tab.click();
+		Thread.sleep(1000);
+		Select slct = new Select(status_dd);
+		slct.selectByVisibleText("Confirmed");
 		Select slct1 = new Select(payStatus_dd);
 		slct1.selectByVisibleText("Unbilled");
 		if(bookingRows.size()!=0) {
 			bookingRef_link.click();
 			canForUnbilledBooking_link.click();
 			canEmail_chkBox.click();
-			canReason_txt.sendKeys("AUTOMATECAN");
-			raiseCN_chkBox.click();
-			raiseCNEmail_chkBox.click();
+			canReason_txt.sendKeys("AUTOMATECAN-unbilled");
+			Assert.assertTrue(raiseCN_chkBox==null);
+			Assert.assertTrue(raiseCNEmail_chkBox==null);
+			Assert.assertTrue(refundPay_chkBox==null);
+			Assert.assertTrue(refundEmail_chkBox==null);
 			canBooking_btn.click();
 		}
 			else {
@@ -427,19 +472,29 @@ public class Bookings_Page extends TestBase {
 	}
 	
 	public void cancel_tentative_Booking() {
+		selectVenue();
+		bookings_tab.click();
 		Select slct1 = new Select(status_dd);
 		slct1.selectByVisibleText("Tentative");
 		if(bookingRows.size()!=0) {
 			bookingRef_link.click();
-			canBookings_link.click();
+			redCancel_btn.click();
 			canEmail_chkBox.click();
 			canReason_txt.sendKeys("AUTOMATECAN");
+			Assert.assertTrue(raiseCN_chkBox==null);
+			Assert.assertTrue(raiseCNEmail_chkBox==null);
+			Assert.assertTrue(refundPay_chkBox==null);
+			Assert.assertTrue(refundEmail_chkBox==null);
 			canBooking_btn.click();
+			String msg = success_Msg.getText();
+			SoftAssert softAssert = new SoftAssert();
+			softAssert.assertTrue(msg.contains("Booking cancelled."));
+			softAssert.assertAll();
 		}
 			else {
 				System.out.println("No booking available to cancel with Tentative status");
 			}
-	}
+	  }
 	
 
 		public void switchToOrgdmin() {
@@ -447,8 +502,8 @@ public class Bookings_Page extends TestBase {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://admin.preproduction.ospace.co.uk/users/sign_in");
-		login_user_name.sendKeys("nhsmva@example.com");
-		login_user_password.sendKeys("nhsmva456#");
+		login_user_nameM.sendKeys("nhsmva@example.com");
+		login_user_passwordM.sendKeys("nhsmva456#");
 		login_btn.click();
 		verify_clickBookingsTab();
 		
@@ -497,8 +552,8 @@ public class Bookings_Page extends TestBase {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://admin.preproduction.ospace.co.uk/users/sign_in");
-		login_user_name.sendKeys("mastertest@example.com");
-		login_user_password.sendKeys("master456#");
+		login_user_nameM.sendKeys("mastertest@example.com");
+		login_user_passwordM.sendKeys("master456#");
 		login_btn.click();
 		masterOrgTab.click();
 		driver.findElement(By.xpath("//td[contains(text(),'NHSPS')]//following-sibling::td/a[text()='Edit']")).click();
@@ -514,8 +569,8 @@ public class Bookings_Page extends TestBase {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://admin.preproduction.ospace.co.uk/users/sign_in");
-		login_user_name.sendKeys("mastertest@example.com");
-		login_user_password.sendKeys("master456#");
+		login_user_nameM.sendKeys("mastertest@example.com");
+		login_user_passwordM.sendKeys("master456#");
 		login_btn.click();
 		masterOrgTab.click();
 		driver.findElement(By.xpath("//td[contains(text(),'NHSPS')]//following-sibling::td/a[text()='Edit']")).click();
@@ -531,8 +586,7 @@ public class Bookings_Page extends TestBase {
 		verify_refundOpnNotDisplays();
 		enable_refundOpn();
 		switchToOrgdmin();
-		verify_refundOpnDisplays();
-		
+		verify_refundOpnDisplays();	
 	}
 	
 	
