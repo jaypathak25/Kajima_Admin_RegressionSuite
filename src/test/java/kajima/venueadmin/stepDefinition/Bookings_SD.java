@@ -45,7 +45,6 @@ public class Bookings_SD extends TestBase {
 	@Then("^User changes the number of enteries and verify results$")
 	public void user_changes_the_number_of_enteries_and_verify_results() throws InterruptedException {
 		bookings_page.verify_noOfEnteries();
-
 	}
 
 	@Then("^User enters room name OR clients name in the search bar and verify the result$")
@@ -82,53 +81,48 @@ public class Bookings_SD extends TestBase {
 
 	@Then("^User filter the booking by FULLY PAID payment status and edit the booking$")
 	public void user_filter_the_booking_by_FULLY_PAID_payment_status_and_edit_the_booking() throws InterruptedException, AWTException {
-	//	bookings_page.edit_fullyPaidBooking();
+		bookings_page.edit_fullyPaidBooking();
 	}
 
 	@Then("^User filter the booking by BILLED payment status and edit the booking$")
-	public void user_filter_the_booking_by_BILLED_payment_status_and_edit_the_booking() {
-
+	public void user_filter_the_booking_by_BILLED_payment_status_and_edit_the_booking() throws InterruptedException, AWTException {
+		bookings_page.edit_billedBooking();
 	}
 
 	@Then("^User filter the booking by UNBILLED payment status and edit the booking$")
-	public void user_filter_the_booking_by_UNBILLED_payment_status_and_edit_the_booking() {
-
+	public void user_filter_the_booking_by_UNBILLED_payment_status_and_edit_the_booking() throws InterruptedException, AWTException {
+		bookings_page.edit_unBilledBooking();
 	}
 	
 //=======================Scenario: Cancel single WP fully paid bookings - verify refund option and refund generated==============================
 
 	@Then("^User cancel the single WP fully paid booking and verify the refund and check refund in the clients tab$")
-	public void user_cancel_the_single_WP_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab() {
-
-	}
-
-	@Then("^user verify that the refund raised allocated to the relevant CN for the booking$")
-	public void user_verify_that_the_refund_raised_allocated_to_the_relevant_CN_for_the_booking() {
-
+	public void user_cancel_the_single_WP_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab() throws InterruptedException {
+		bookings_page.cancel_fullyPaid_WP_Single_Booking();
 	}
 	
 //=======================Scenario: Cancel single manual fully paid bookings - verify refund option and refund generated=================
 
 	@Then("^User cancel the single manual fully paid booking and verify the refund and check refund in the clients tab$")
-	public void user_cancel_the_single_manual_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab() {
-
-	}
-
-	@Then("^user verify that refund raised allocated to the relevant CN for the booking$")
-	public void user_verify_that_refund_raised_allocated_to_the_relevant_CN_for_the_booking() {
-
+	public void user_cancel_the_single_manual_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab() throws InterruptedException {
+		bookings_page.verify_manualPayBookingsCancellation();
 	}
 	
-//=========================Scenario: Cancel multiple WP fully paid bookings - verify refund option and refund generated===============
+//====================Scenario: Cancel multiple bookings - verify refund option and refund generated if relevant============
 
-	@Then("^User cancel the multiple WP fully paid booking and verify the refund and check refund in the clients tab$")
-	public void user_cancel_the_multiple_WP_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab(){
-
+	@Then("^User cancel the multiple fully paid booking and verify the refund and check refund in the clients tab$")
+	public void user_cancel_the_multiple_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab() throws InterruptedException{
+		bookings_page.cancel_fullyPaid_multiple_Booking();
 	}
-
-	@Then("^user verify that the refund raised aloocated to relevant CN for the booking$")
-	public void user_verify_that_the_refund_raised_allocated_to_relevant_CN_for_the_booking()  {
-
+	
+	@Then("^User cancel the multiple billed booking and verify the refund and check refund in the clients tab$")
+	public void user_cancel_the_multiple_billed_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab() throws InterruptedException{
+		bookings_page.cancel_billed_multiple_Booking();
+	}
+	
+	@Then("^User cancel the multiple Unbilled booking and verify the refund and check refund in the clients tab$")
+	public void user_cancel_the_multiple_Unbilled_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab() throws InterruptedException{
+		bookings_page.cancel_unBilled_multiple_Booking();
 	}
 
 //==========================Scenario: Cancel unbilled and billed bookings - verify refund option is not displayed===============
@@ -143,29 +137,36 @@ public class Bookings_SD extends TestBase {
 		bookings_page.cancel_unBilled_WP_Single_Booking();
 	}
 	
+//====================Scenario: Cancel multiple mixed bookings -  select check box for different payment status bookings and cancel================
+
+	@Then("^User Select check box for mutiple different payment status bookings and cancel to verify CN and Refunds if applicable$")
+	public void User_Select_check_box_for_multiple_different_payment_status_bookings_and_cancel_to_verify_CN_and_Refunds_if_applicable() throws InterruptedException {
+		bookings_page.verify_cancel_MixedMultiple_Bpookings();
+	}
+
 //========================Scenario: Cancel fully paid bookings - verify refund option when cancel booking from Calender,Clients tab.================
 
 	@Then("^User cancel the fully paid booking from the calender tab and verify that the refund is displayed as expected$")
-	public void user_cancel_the_fully_paid_booking_from_the_calender_tab_and_verify_that_the_refund_is_displayed_as_expected() {
-
+	public void user_cancel_the_fully_paid_booking_from_the_calender_tab_and_verify_that_the_refund_is_displayed_as_expected() throws InterruptedException {
+		bookings_page.cancel_bookingFromCalender();
 	}
 
 	@Then("^User cancel the fully paid booking from the Clients tab and verify that the refund is displayed as expected$")
-	public void user_cancel_the_fully_paid_booking_from_the_Clients_tab_and_verify_that_the_refund_is_displayed_as_expected() {
-
+	public void user_cancel_the_fully_paid_booking_from_the_Clients_tab_and_verify_that_the_refund_is_displayed_as_expected() throws InterruptedException {
+		//bookings_page.cancel_bookingFromClientScreen();
 	}
 	
 //=======================Scenario: Cancel fully paid bookings for NON BILLABLE client - verify refund option is not displayed========================
 
 	@Then("^User cancel the fully paid booking for non billable client to verify that the refund option is NOT displayed$")
 	public void user_cancel_the_fully_paid_booking_for_non_billable_client_to_verify_that_the_refund_option_is_NOT_displayed() {
-
+		bookings_page.cancel_nonBillableClients_booking();
 	}
 	
 //========================Scenario: Enable-Disable refund feature from master admin and verify the disabled refund option from MVAs==================================
 
 	@Then("^User disable the refund feature from the master admin and ensure no refund option displays when master admin cancels booking$")
-	public void user_disable_the_refund_feature_from_the_master_admin_and_ensure_no_refund_option_displays_when_master_admin_cancels_booking() {
+	public void user_disable_the_refund_feature_from_the_master_admin_and_ensure_no_refund_option_displays_when_master_admin_cancels_booking() throws InterruptedException {
 		bookings_page.verifyRefundFunc();
 	}
 	
@@ -179,19 +180,20 @@ public class Bookings_SD extends TestBase {
 	
 //========================Scenario: Raise a booking via new booking button===========================================================================
 	
-	@Then("^User selects a new Booking button and raise a single with clinical rooms and ensure that venue admin not restricted by CCG rules$")
-	public void user_selects_a_new_Booking_button_and_raise_a_single_with_clinical_rooms_and_ensure_that_venue_admin_not_restricted_by_CCG_rules() {
-
-	}
-
-	@Then("^User selects a new Booking button and raise a single with Non clinical rooms and ensure that venue admin not restricted by CCG rules$")
-	public void user_selects_a_new_Booking_button_and_raise_a_single_with_Non_clinical_rooms_and_ensure_that_venue_admin_not_restricted_by_CCG_rules()  {
-
-	}
 
 	@Then("^User selects a new Booking button and raise daily recurring booking$")
-	public void user_selects_a_new_Booking_button_and_raise_daily_recurring_booking() {
-
+	public void user_selects_a_new_Booking_button_and_raise_daily_recurring_booking() throws InterruptedException {
+		bookings_page.verify_createNewDailyBooking();
+	}
+	
+	@Then("^User selects a new Booking button and raise weekly recurring booking$")
+	public void user_selects_a_new_Booking_button_and_raise_weekly_recurring_booking() throws InterruptedException {
+		bookings_page.verify_createNewWeeklyBooking();
+	}
+	
+	@Then("^User selects a new Booking button and raise monthly recurring booking$")
+	public void user_selects_a_new_Booking_button_and_raise_monthly_recurring_booking() throws InterruptedException {
+		bookings_page.verify_createNewMonthlyBooking();
 	}
 
 }

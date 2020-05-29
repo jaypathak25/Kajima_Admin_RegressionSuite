@@ -75,10 +75,10 @@ formatter.scenario({
     },
     {
       "line": 14,
-      "value": "##\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d11 scenarios for Venue admin\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d##"
+      "value": "##\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d12 scenarios for Venue admin\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d##"
     }
   ],
-  "line": 18,
+  "line": 17,
   "name": "Search and filter - verify booking results with different search/filter Criteria, summary view and exports",
   "description": "",
   "id": "bookings-tab-scenarios;search-and-filter---verify-booking-results-with-different-search/filter-criteria,-summary-view-and-exports",
@@ -86,48 +86,48 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 17,
+      "line": 16,
       "name": "@VenueAdmin"
     }
   ]
 });
 formatter.step({
-  "line": 19,
+  "line": 18,
   "name": "User changes the number of enteries and verify results",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 20,
+  "line": 19,
   "name": "User enters room name OR clients name in the search bar and verify the result",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 21,
+  "line": 20,
   "name": "User verify booking results by selecting different STATUS options",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 22,
+  "line": 21,
   "name": "User verify booking results by selecting different PAYMENT STATUS options",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 23,
+  "line": 22,
   "name": "User verify booking results by selecting different date range",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 24,
+  "line": 23,
   "name": "User verify the summary option and view the booking",
   "keyword": "And "
 });
 formatter.step({
-  "line": 25,
+  "line": 24,
   "name": "User select Export excel button and verify that excel generated successfully",
   "keyword": "And "
 });
 formatter.step({
-  "line": 26,
+  "line": 25,
   "name": "user quit the browser",
   "keyword": "And "
 });
@@ -169,6 +169,1051 @@ formatter.result({
 });
 formatter.match({
   "location": "Bookings_SD.user_select_Export_excel_button_and_verify_that_excel_generated_successfully()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CommonSteps_SD.user_quit_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "line": 7,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 8,
+  "name": "User opens browser and enters the admin URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "enter credentials and Login",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user navigates to the homepage",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "User clicks the Bookings tab",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.enter_credentials_and_Login()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_navigates_to_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 28,
+  "name": "Enable-Disable refund feature from master admin and verify the disabled refund option from MVAs",
+  "description": "",
+  "id": "bookings-tab-scenarios;enable-disable-refund-feature-from-master-admin-and-verify-the-disabled-refund-option-from-mvas",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 27,
+      "name": "@VenueAdmin"
+    }
+  ]
+});
+formatter.step({
+  "line": 29,
+  "name": "User disable the refund feature from the master admin and ensure no refund option displays when master admin cancels booking",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 30,
+  "name": "user quit the browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Bookings_SD.user_disable_the_refund_feature_from_the_master_admin_and_ensure_no_refund_option_displays_when_master_admin_cancels_booking()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CommonSteps_SD.user_quit_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "line": 7,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 8,
+  "name": "User opens browser and enters the admin URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "enter credentials and Login",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user navigates to the homepage",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "User clicks the Bookings tab",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.enter_credentials_and_Login()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_navigates_to_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 33,
+  "name": "Raise a booking via new booking button",
+  "description": "",
+  "id": "bookings-tab-scenarios;raise-a-booking-via-new-booking-button",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 32,
+      "name": "@VenueAdmin"
+    }
+  ]
+});
+formatter.step({
+  "line": 34,
+  "name": "User selects a new Booking button and raise daily recurring booking",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 35,
+  "name": "User selects a new Booking button and raise weekly recurring booking",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 36,
+  "name": "User selects a new Booking button and raise monthly recurring booking",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 37,
+  "name": "user quit the browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Bookings_SD.user_selects_a_new_Booking_button_and_raise_daily_recurring_booking()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_selects_a_new_Booking_button_and_raise_weekly_recurring_booking()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_selects_a_new_Booking_button_and_raise_monthly_recurring_booking()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CommonSteps_SD.user_quit_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "line": 7,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 8,
+  "name": "User opens browser and enters the admin URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "enter credentials and Login",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user navigates to the homepage",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "User clicks the Bookings tab",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.enter_credentials_and_Login()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_navigates_to_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 40,
+  "name": "Edit bookings - Filter booking by payment status and Edit",
+  "description": "",
+  "id": "bookings-tab-scenarios;edit-bookings---filter-booking-by-payment-status-and-edit",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 39,
+      "name": "@VenueAdmin"
+    }
+  ]
+});
+formatter.step({
+  "line": 41,
+  "name": "User filter the booking by FULLY PAID payment status and edit the booking",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 42,
+  "name": "User filter the booking by BILLED payment status and edit the booking",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 43,
+  "name": "User filter the booking by UNBILLED payment status and edit the booking",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 44,
+  "name": "user quit the browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Bookings_SD.user_filter_the_booking_by_FULLY_PAID_payment_status_and_edit_the_booking()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_filter_the_booking_by_BILLED_payment_status_and_edit_the_booking()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_filter_the_booking_by_UNBILLED_payment_status_and_edit_the_booking()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CommonSteps_SD.user_quit_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "line": 7,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 8,
+  "name": "User opens browser and enters the admin URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "enter credentials and Login",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user navigates to the homepage",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "User clicks the Bookings tab",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.enter_credentials_and_Login()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_navigates_to_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 47,
+  "name": "Cancel single WP fully paid bookings - verify refund option and refund generated",
+  "description": "",
+  "id": "bookings-tab-scenarios;cancel-single-wp-fully-paid-bookings---verify-refund-option-and-refund-generated",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 46,
+      "name": "@VenueAdmin"
+    }
+  ]
+});
+formatter.step({
+  "line": 48,
+  "name": "User cancel the single WP fully paid booking and verify the refund and check refund in the clients tab",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 49,
+  "name": "user quit the browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Bookings_SD.user_cancel_the_single_WP_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CommonSteps_SD.user_quit_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "line": 7,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 8,
+  "name": "User opens browser and enters the admin URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "enter credentials and Login",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user navigates to the homepage",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "User clicks the Bookings tab",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.enter_credentials_and_Login()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_navigates_to_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 52,
+  "name": "Cancel tentative booking and verify the result",
+  "description": "",
+  "id": "bookings-tab-scenarios;cancel-tentative-booking-and-verify-the-result",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 51,
+      "name": "@VenueAdmin"
+    }
+  ]
+});
+formatter.step({
+  "line": 53,
+  "name": "User cancel the booking with Tentative status and verify that no generate CN and Refund option displays",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 54,
+  "name": "user quit the browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Bookings_SD.user_cancel_the_booking_with_Tentative_status_and_verify_that_no_generate_CN_and_Refund_option_displays()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CommonSteps_SD.user_quit_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "line": 7,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 8,
+  "name": "User opens browser and enters the admin URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "enter credentials and Login",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user navigates to the homepage",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "User clicks the Bookings tab",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.enter_credentials_and_Login()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_navigates_to_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 57,
+  "name": "Cancel unbilled and billed bookings - verify refund option is not displayed",
+  "description": "",
+  "id": "bookings-tab-scenarios;cancel-unbilled-and-billed-bookings---verify-refund-option-is-not-displayed",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 56,
+      "name": "@VenueAdmin"
+    }
+  ]
+});
+formatter.step({
+  "line": 58,
+  "name": "User cancel the unbilled booking and verify that the refund is not displayed",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 59,
+  "name": "User cancel the billed booking and verify that the refund is not displayed",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 60,
+  "name": "user quit the browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Bookings_SD.user_cancel_the_unbilled_booking_and_verify_that_the_refund_is_not_displayed()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_cancel_the_billed_booking_and_verify_that_the_refund_is_not_displayed()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CommonSteps_SD.user_quit_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "line": 7,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 8,
+  "name": "User opens browser and enters the admin URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "enter credentials and Login",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user navigates to the homepage",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "User clicks the Bookings tab",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.enter_credentials_and_Login()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_navigates_to_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 63,
+  "name": "Cancel multiple bookings - verify refund option and refund generated if relevant",
+  "description": "",
+  "id": "bookings-tab-scenarios;cancel-multiple-bookings---verify-refund-option-and-refund-generated-if-relevant",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 62,
+      "name": "@VenueAdmin"
+    }
+  ]
+});
+formatter.step({
+  "line": 64,
+  "name": "User cancel the multiple fully paid booking and verify the refund and check refund in the clients tab",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 65,
+  "name": "User cancel the multiple billed booking and verify the refund and check refund in the clients tab",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 66,
+  "name": "User cancel the multiple Unbilled booking and verify the refund and check refund in the clients tab",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 67,
+  "name": "user quit the browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Bookings_SD.user_cancel_the_multiple_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_cancel_the_multiple_billed_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_cancel_the_multiple_Unbilled_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CommonSteps_SD.user_quit_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "line": 7,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 8,
+  "name": "User opens browser and enters the admin URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "enter credentials and Login",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user navigates to the homepage",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "User clicks the Bookings tab",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.enter_credentials_and_Login()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_navigates_to_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 70,
+  "name": "Cancel multiple mixed bookings -  select check box for different payment status bookings and cancel",
+  "description": "",
+  "id": "bookings-tab-scenarios;cancel-multiple-mixed-bookings----select-check-box-for-different-payment-status-bookings-and-cancel",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 69,
+      "name": "@VenueAdmin"
+    }
+  ]
+});
+formatter.step({
+  "line": 71,
+  "name": "User Select check box for mutiple different payment status bookings and cancel to verify CN and Refunds if applicable",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 72,
+  "name": "user quit the browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Bookings_SD.User_Select_check_box_for_multiple_different_payment_status_bookings_and_cancel_to_verify_CN_and_Refunds_if_applicable()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CommonSteps_SD.user_quit_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "line": 7,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 8,
+  "name": "User opens browser and enters the admin URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "enter credentials and Login",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user navigates to the homepage",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "User clicks the Bookings tab",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.enter_credentials_and_Login()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_navigates_to_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 75,
+  "name": "Cancel fully paid bookings for NON BILLABLE client - verify refund option is not displayed",
+  "description": "",
+  "id": "bookings-tab-scenarios;cancel-fully-paid-bookings-for-non-billable-client---verify-refund-option-is-not-displayed",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 74,
+      "name": "@VenueAdmin"
+    }
+  ]
+});
+formatter.step({
+  "line": 76,
+  "name": "User cancel the fully paid booking for non billable client to verify that the refund option is NOT displayed",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 77,
+  "name": "user quit the browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Bookings_SD.user_cancel_the_fully_paid_booking_for_non_billable_client_to_verify_that_the_refund_option_is_NOT_displayed()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CommonSteps_SD.user_quit_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "line": 7,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 8,
+  "name": "User opens browser and enters the admin URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "enter credentials and Login",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user navigates to the homepage",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "User clicks the Bookings tab",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.enter_credentials_and_Login()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_navigates_to_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 80,
+  "name": "Cancel fully paid bookings - verify refund option when cancel booking from Calender,Clients tab.",
+  "description": "",
+  "id": "bookings-tab-scenarios;cancel-fully-paid-bookings---verify-refund-option-when-cancel-booking-from-calender,clients-tab.",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 79,
+      "name": "@VenueAdmin"
+    }
+  ]
+});
+formatter.step({
+  "line": 81,
+  "name": "User cancel the fully paid booking from the calender tab and verify that the refund is displayed as expected",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 82,
+  "name": "User cancel the fully paid booking from the Clients tab and verify that the refund is displayed as expected",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 83,
+  "name": "user quit the browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Bookings_SD.user_cancel_the_fully_paid_booking_from_the_calender_tab_and_verify_that_the_refund_is_displayed_as_expected()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_cancel_the_fully_paid_booking_from_the_Clients_tab_and_verify_that_the_refund_is_displayed_as_expected()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CommonSteps_SD.user_quit_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "line": 7,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 8,
+  "name": "User opens browser and enters the admin URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "enter credentials and Login",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "user navigates to the homepage",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "User clicks the Bookings tab",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.enter_credentials_and_Login()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_navigates_to_the_homepage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "line": 86,
+  "name": "Cancel single manual fully paid bookings - verify refund option and refund generated",
+  "description": "",
+  "id": "bookings-tab-scenarios;cancel-single-manual-fully-paid-bookings---verify-refund-option-and-refund-generated",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 85,
+      "name": "@VenueAdmin"
+    }
+  ]
+});
+formatter.step({
+  "line": 87,
+  "name": "User cancel the single manual fully paid booking and verify the refund and check refund in the clients tab",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 88,
+  "name": "user quit the browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Bookings_SD.user_cancel_the_single_manual_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab()"
 });
 formatter.result({
   "status": "skipped"

@@ -1,21 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17724" started-at="2020-05-22T10:31:37Z" finished-at="2020-05-22T10:31:55Z">
+  <suite name="Default suite" duration-ms="661" started-at="2020-05-29T11:28:25Z" finished-at="2020-05-29T11:28:26Z">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:kajima.venueadmin.runner.TestRunner@55d56113]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="17724" started-at="2020-05-22T10:31:37Z" finished-at="2020-05-22T10:31:55Z">
-      <class name="kajima.venueadmin.pom_pages.Download_Cap">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:kajima.venueadmin.pom_pages.Download_Cap@6321e813]" name="setUp" is-config="true" duration-ms="6201" started-at="2020-05-22T10:31:37Z" finished-at="2020-05-22T10:31:44Z">
+    <test name="Default test" duration-ms="661" started-at="2020-05-29T11:28:25Z" finished-at="2020-05-29T11:28:26Z">
+      <class name="kajima.venueadmin.runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:kajima.venueadmin.runner.TestRunner@55d56113]" name="setUpClass" is-config="true" duration-ms="329" started-at="2020-05-29T11:28:25Z" finished-at="2020-05-29T11:28:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="downloadFileTest()[pri:0, instance:kajima.venueadmin.pom_pages.Download_Cap@6321e813]" name="downloadFileTest" duration-ms="11470" started-at="2020-05-22T10:31:44Z" finished-at="2020-05-22T10:31:55Z">
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:kajima.venueadmin.runner.TestRunner@55d56113]" name="feature" duration-ms="92" started-at="2020-05-29T11:28:25Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-29T11:28:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bookings tab scenarios]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- downloadFileTest -->
-      </class> <!-- kajima.venueadmin.pom_pages.Download_Cap -->
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:kajima.venueadmin.runner.TestRunner@55d56113]" name="feature" duration-ms="72" started-at="2020-05-29T11:28:25Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-29T11:28:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Clients tab scenarios]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:kajima.venueadmin.runner.TestRunner@55d56113]" name="feature" duration-ms="17" started-at="2020-05-29T11:28:25Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-29T11:28:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invoice tab scenarios]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:kajima.venueadmin.runner.TestRunner@55d56113]" name="feature" duration-ms="12" started-at="2020-05-29T11:28:25Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-29T11:28:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Clients tab scenarios]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:kajima.venueadmin.runner.TestRunner@55d56113]" name="feature" duration-ms="11" started-at="2020-05-29T11:28:26Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-29T11:28:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Reminder tab scenarios]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:kajima.venueadmin.runner.TestRunner@55d56113]" name="tearDownClass" is-config="true" duration-ms="12" started-at="2020-05-29T11:28:26Z" finished-at="2020-05-29T11:28:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- kajima.venueadmin.runner.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
