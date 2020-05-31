@@ -83,7 +83,7 @@ public class Bookings_Page extends TestBase {
 	@FindBy(xpath = "//a[text()='Venues']")
 	WebElement venue_dd;
 	
-	@FindBy(xpath = "//a[text()='Blaydon Primary Care Centre']")
+	@FindBy(xpath = "//a[text()='Johnson Community Hospital']")
 	WebElement venue_name;
 	
 	@FindBy(xpath="//table[@id='bookings_table']/tbody/tr/td[11]")
@@ -330,7 +330,7 @@ public class Bookings_Page extends TestBase {
 		Thread.sleep(1000);
 		int noOfbookings2 = bookingRows.size();
 		System.out.println("No of bookings with no filter are " + noOfbookings2);
-		search_Bar.sendKeys("catherine");
+		search_Bar.sendKeys("april");
 		search_Bar.sendKeys(Keys.ENTER);
 		Thread.sleep(1000);
 		int noOfbookings3 = bookingRows.size();
@@ -413,7 +413,7 @@ public class Bookings_Page extends TestBase {
 		bookings_tab.click();
 		Select slct = new Select(viewType_dd);
 		slct.selectByVisibleText("Summary");
-		search_Bar.sendKeys("AUTOTESTING");
+		search_Bar.sendKeys("april");
 		
 		System.out.println("No of rows after searching by client name on BOOKING SUMMARY screen are " + bookingRows.size());
 		
@@ -432,7 +432,7 @@ public class Bookings_Page extends TestBase {
 		
 		Select slct = new Select(viewType_dd);
 		slct.selectByVisibleText("Summary");
-		search_Bar.sendKeys("AUTOTESTING");
+		search_Bar.sendKeys("april");
 
 		bookingSummaryView_Link.click();
 		Thread.sleep(500);
@@ -461,7 +461,7 @@ public class Bookings_Page extends TestBase {
 				driver.switchTo().alert().accept();
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//a[@class='selector' and @href='#']")).click();
-				driver.findElement(By.xpath("//li[contains(.,'Group room L1-113')]")).click();
+				driver.findElement(By.xpath("//li[contains(.,'Group room OPT 010')]")).click();
 				save_Btn.click();
 				Thread.sleep(5000);
 				if(driver.findElement(By.xpath("//div[@id='error_messages']")).isDisplayed()) {
@@ -490,12 +490,13 @@ public class Bookings_Page extends TestBase {
 			for(int i=1;i<=edit_Link.size();i++) {
 				String roomNameBeforeEdit = driver.findElement(By.xpath("//table[@id='bookings_table']/tbody/tr["+i+"]/td[6]")).getText();
 				System.out.println("Before Edit Room name was " + roomNameBeforeEdit);
+				Thread.sleep(2000);
 				edit_Link.get(i).click();
 				Thread.sleep(2000);
 				driver.switchTo().alert().accept();
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//a[@class='selector' and @href='#']")).click();
-				driver.findElement(By.xpath("//li[contains(.,'Group room L1-113')]")).click();
+				driver.findElement(By.xpath("//li[contains(.,'Meeting room ADM 104')]")).click();
 				save_Btn.click();
 				Thread.sleep(5000);
 				if(driver.findElement(By.xpath("//div[@id='error_messages']")).isDisplayed()) {
@@ -585,7 +586,8 @@ public class Bookings_Page extends TestBase {
 			}
 			viewClient_btn.click();
 			Thread.sleep(1000);
-			WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,str)]"));
+			WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,'"+str+"')]"));
+		//	WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,str)]"));
 			System.out.println("to double check cnNumber " + cnNumber);
 			Assert.assertTrue(isDisplayed(cnNumber));
 			try {
@@ -626,7 +628,8 @@ public class Bookings_Page extends TestBase {
 			System.out.println(str);
 			viewClient_btn.click();
 			Thread.sleep(1000);
-			WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,str)]"));
+			WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,'"+str+"')]"));
+		//	WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,str)]"));
 			Assert.assertTrue(isDisplayed(cnNumber));	
 		}
 		else {
@@ -810,7 +813,8 @@ public class Bookings_Page extends TestBase {
 			}
 			viewClient_btn.click();
 			Thread.sleep(1000);
-			WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,str)]"));
+			WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,'"+str+"')]"));
+		//	WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,str)]"));
 			System.out.println("to double check cnNumber " + cnNumber);
 			Assert.assertTrue(isDisplayed(cnNumber));
 			try {
@@ -860,7 +864,8 @@ public class Bookings_Page extends TestBase {
 			System.out.println(str);
 			viewClient_btn.click();
 			Thread.sleep(1000);
-			WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,str)]"));
+			WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,'"+str+"')]"));
+		//	WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,str)]"));
 			Assert.assertTrue(cnNumber.isDisplayed());		
 		}
 			else {
@@ -1019,7 +1024,7 @@ public class Bookings_Page extends TestBase {
 			}
 			viewClient_btn.click();
 			Thread.sleep(1000);
-			WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,"+str+")]"));
+			WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,'"+str+"')]"));
 			System.out.println("to double check cnNumber " + cnNumber);
 			Assert.assertTrue(isDisplayed(cnNumber));
 			try {
@@ -1052,6 +1057,7 @@ public class Bookings_Page extends TestBase {
 			canReason_txt.sendKeys("Cancel booking from calender");
 			raiseCN_chkBox.click();
 			raiseCNEmail_chkBox.click();
+			Thread.sleep(2000);
 			refundPay_chkBox.click();
 			refundEmail_chkBox.click();
 			Assert.assertTrue(raiseCN_chkBox.isDisplayed());
@@ -1178,7 +1184,7 @@ public class Bookings_Page extends TestBase {
 		slct1.selectByVisibleText("april release (apriltest)");
 		Thread.sleep(1000);
 		Select slct3 =  new Select(selectSpace_dd);
-		slct3.selectByVisibleText("Treatment room L1-036");
+		slct3.selectByVisibleText("Treatment room OPD 055");
 
 		startDate.sendKeys(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 		startTime.sendKeys("10:00");
@@ -1247,7 +1253,7 @@ public class Bookings_Page extends TestBase {
 		slct1.selectByVisibleText("april release (apriltest)");
 		Thread.sleep(1000);
 		Select slct3 =  new Select(selectSpace_dd);
-		slct3.selectByVisibleText("Treatment room L1-036");
+		slct3.selectByVisibleText("Treatment room OPD 055");
 
 		startDate.sendKeys(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 		startTime.sendKeys("11:00");
@@ -1316,11 +1322,11 @@ public class Bookings_Page extends TestBase {
 		slct1.selectByVisibleText("april release (apriltest)");
 		Thread.sleep(1000);
 		Select slct3 =  new Select(selectSpace_dd);
-		slct3.selectByVisibleText("Treatment room L1-036");
+		slct3.selectByVisibleText("Treatment room OPD 055");
 
 		startDate.sendKeys(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
-		startTime.sendKeys("11:00");
-		endTime.sendKeys("12:00");
+		startTime.sendKeys("12:00");
+		endTime.sendKeys("13:00");
 		
 		driver.findElement(By.id("booking_deposit_attributes_amount")).click();
 		Thread.sleep(2000);
