@@ -361,5 +361,26 @@ public class Clients_SD extends TestBase {
 	public void User_adds_a_new_refund_and_verify_the_result() throws InterruptedException{
 		client_page.verify_createRefund();
 	}
+	
+//================================Scenario: Create New BAU user - client User==============
+	
+	@Then("^User selects New client user button, enter mandatory fields, create user and verify$")
+	public void User_selects_New_client_user_button_enter_mandatory_fields_create_user_and_verify() throws InterruptedException{
+		client_page.verify_createNewUserBAU();
+	}
+	
+//================================Scenario: Edit a BAU User - update details==============
+		
+	@Then("^User selects 'Edit Users' link , update the details and verify the edited user$")
+	public void User_selects_Edit_Users_link_update_the_details_and_verify_the_edited_user() throws InterruptedException{
+		client_page.verify_editNewUserBAU();
+	}
+		
+//================================Scenario: Unlink a client User==============
+		
+	@Then("^User unlink the user and verify the details$")
+	public void User_unlink_the_user_and_verify_the_details() throws InterruptedException{
+		client_page.verify_unLinkNUserBAU();
+	}
 		
 }

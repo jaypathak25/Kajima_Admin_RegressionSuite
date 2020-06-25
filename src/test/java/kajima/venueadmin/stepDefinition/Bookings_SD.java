@@ -195,5 +195,63 @@ public class Bookings_SD extends TestBase {
 	public void user_selects_a_new_Booking_button_and_raise_monthly_recurring_booking() throws InterruptedException {
 		bookings_page.verify_createNewMonthlyBooking();
 	}
+	
+	//=========================================ONLY BAU SCENARIOS========================================================================================================
+	//================================Scenario: Cancel multiple mixed bookings - BAU - select check box for different payment status bookings and cancel=================
+	
+	@Then("^User Select check box for multiple different payment status bookings and cancel to verify CN if applicable$")
+	public void User_Select_check_box_for_multiple_different_payment_status_bookings_and_cancel_to_verify_CN_if_applicable() throws InterruptedException {
+		bookings_page.verify_cancel_BAUMixedMultiple_Bookings();
+	}
+	
+
+	//================================Scenario: Cancel fully paid bookings – BAU- verify cancel booking from Calender,Clients tab.======================================
+	
+	@Then("^User cancel the fully paid booking from the calender tab and verify that the CN is raised as expected$")
+	public void User_cancel_the_fully_paid_booking_from_the_calender_tab_and_verify_that_the_CN_is_raised_as_expected() throws InterruptedException {
+		bookings_page.cancel_BAUbookingFromCalender();
+	}
+	
+	@Then("^User cancel the fully paid booking from the Clients tab and verify that the CN is raised as expected$")
+	public void User_cancel_the_fully_paid_booking_from_the_Clients_tab_and_verify_that_the_CN_is_raised_as_expected() throws InterruptedException {
+		bookings_page.cancel_BAUbookingFromClientScreen();
+	}
+	
+	//================================Scenario: Cancel single WP fully paid bookings - BAU - verify CN raised successfully======================================
+	
+	@Then("^User cancel the single WP fully paid booking and verify the CN raised in the clients tab$")
+	public void User_cancel_the_single_WP_fully_paid_booking_and_verify_the_CN_raised_in_the_clients_tab() throws InterruptedException {
+		bookings_page.cancel_BAUfullyPaid_WP_Single_Booking();
+	}
+	
+	//==============================Scenario: Cancel multiple bookings - BAU verify details on cancel booking popup and CN raised if relevant======================================
+	
+	@Then("^User cancel the multiple fully paid booking and verify the CN and check CN raised in the clients tab$")
+	public void User_cancel_the_multiple_fully_paid_booking_and_verify_the_CN_and_check_CN_raised_in_the_clients_tab() throws InterruptedException {
+		bookings_page.cancel_BAUfullyPaid_multiple_Booking();
+	}
+	
+	@Then("^User cancel the multiple billed booking and verify the CN and check CN raised in the clients tab$")
+	public void User_cancel_the_multiple_billed_booking_and_verify_the_CN_and_check_CN_raised_in_the_clients_tab() throws InterruptedException {
+		bookings_page.cancel_BAUbilled_multiple_Booking();
+	}
+	
+	@Then("^User cancel the multiple Unbilled booking and verify that no CN is raised$")
+	public void User_cancel_the_multiple_Unbilled_booking_and_verify_that_no_CN_is_raised() throws InterruptedException {
+		bookings_page.cancel_BAUunBilled_multiple_Booking();
+	}
+
+	
+	//====================================Scenario: Raise a booking via new booking button - BAU=============================================
+
+	@Then("^User clicks a new Booking button and raise daily recurring booking$")
+	public void user_clicks_a_new_Booking_button_and_raise_daily_recurring_booking() throws InterruptedException {
+		bookings_page.verify_BAUcreateNewDailyBooking();
+	}
+
+	@Then("^User clicks a new Booking button and raise weekly recurring booking$")
+	public void user_clicks_a_new_Booking_button_and_raise_weekly_recurring_booking() throws InterruptedException {
+		bookings_page.verify_BAUcreateNewWeeklyBooking();
+	}
 
 }

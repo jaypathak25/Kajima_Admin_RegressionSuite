@@ -118,10 +118,11 @@ public class Payments_Page extends TestBase {
 			System.out.println("Number of Refund payments after filtering by dates are " + noOfRefundPay3);
 			
 			String str1= "//table[@id='unreconciled_payments_table']/tbody/tr[";
-			String str2= "]/td[6]";
+			String str2= "]/td[8]";
 			for(int i=1;i<=noOfRefundPay3;i++) {
 				String str3= str1+i+str2;
 				WebElement viewLink = driver.findElement(By.xpath(str3));
+				Thread.sleep(1000);
 				viewLink.click();
 				Thread.sleep(1000);
 				close_Link.click();
@@ -202,8 +203,14 @@ public class Payments_Page extends TestBase {
 						}else {
 							view_Link.click();
 							Thread.sleep(500);
+							try {
+								driver.findElement(By.xpath("//a[text()='Refresh status']")).click();
+								System.out.println("Refresh status button available - You are on BAU site");
+							}catch(NoSuchElementException e) {
+								System.out.println("Refresh status button NOT available - You are on NHS site");
 							close_Link.click();
 							j++;
+							}
 						}
 					}			
 				}

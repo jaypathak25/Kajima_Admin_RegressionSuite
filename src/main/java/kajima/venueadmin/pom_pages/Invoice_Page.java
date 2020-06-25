@@ -170,6 +170,10 @@ public class Invoice_Page extends TestBase{
 			Thread.sleep(1000);
 			int noOfInvoicesAP = listOfInvoicesAP.size();
 			System.out.println("NUMBER OF INVOICES AWAITING PAYMENTS ARE : " + noOfInvoicesAP);
+			if(noOfInvoicesAP==0) {
+				System.out.println("No Invoice in AP status available to perform this action");
+				
+			}else {
 				String InvoiceNum = invoiceNumEle.getText();
 			//	invoiceSearch_field.sendKeys(InvoiceNum);
 				invoiceView_Link.click();
@@ -204,8 +208,8 @@ public class Invoice_Page extends TestBase{
 					}	else {
 						System.out.println("Invoice which was awaiting payment NOT voided successfully ");
 					}		
-			  }		
-				
+			    }		
+			}
 		}
 		
 //==================================================================================================================//	
@@ -213,6 +217,9 @@ public class Invoice_Page extends TestBase{
 		public void delete_draftInvoice() throws InterruptedException {
 			int noOfDraftinvoices1 = listOfDraftInvoices.size();
 			System.out.println("NUMBER OF DRAFT INVOICES ARE : " + noOfDraftinvoices1);
+			if(noOfDraftinvoices1==0) {
+				System.out.println("No Draft Invoices is available to perform this action");		
+			}else {
 			delete_Link.click();
 			Thread.sleep(1000);
 			driver.switchTo().alert().dismiss();
@@ -232,6 +239,7 @@ public class Invoice_Page extends TestBase{
 				System.out.println("Draft invoice is successfully deleted");
 			}else {
 				System.out.println("Draft invoice is NOT deleted");
+				}
 			}
 	   }
 		
@@ -240,6 +248,12 @@ public class Invoice_Page extends TestBase{
 		
 		
 		public void verify_InvoiceMarkAsSent() throws InterruptedException {	
+			int noOfDraftinvoices1 = listOfDraftInvoices.size();
+			System.out.println("NUMBER OF DRAFT INVOICES ARE : " + noOfDraftinvoices1);
+	
+			if(noOfDraftinvoices1==0) {
+				System.out.println("No Draft Invoices is available to perform this action");		
+			}else {
 			genInvoice_Btn.click();
 			fromDate_field.clear();
 			fromDate_field.sendKeys("10/06/2020");
@@ -251,7 +265,7 @@ public class Invoice_Page extends TestBase{
 			Thread.sleep(1000);
 			generate_Btn.click();
 			
-			int noOfDraftinvoices1 = listOfDraftInvoices.size();
+		//	int noOfDraftinvoices1 = listOfDraftInvoices.size();
 			System.out.println("NUMBER OF DRAFT INVOICES ARE : " + noOfDraftinvoices1);
 			
 			view_Link.click();
@@ -289,6 +303,7 @@ public class Invoice_Page extends TestBase{
 						System.out.println("Invoice is NOT marked as sent Successfully ");
 					}
 			   }
+			}
 		}
 		
 //==================================================================================================================//	
@@ -322,6 +337,12 @@ public class Invoice_Page extends TestBase{
 //==================================================================================================================//	
 		
 		public void verify_emailSelectedInvoice() throws InterruptedException{	
+			int noOfDraftinvoices1 = listOfDraftInvoices.size();
+			System.out.println("NUMBER OF DRAFT INVOICES ARE : " + noOfDraftinvoices1);
+	
+			if(noOfDraftinvoices1==0) {
+				System.out.println("No Draft Invoices is available to perform this action");		
+			}else {
 			draftInvoiceSrn_chkBox.click();
 			emailSelctdInvoice_Btn.click();
 			String msg = success_Msg.getText();
@@ -359,13 +380,19 @@ public class Invoice_Page extends TestBase{
 							System.out.println("Invoice is NOT sent Successfully by email ");
 						}
 				   }
+			 }
 		}
 		
 //==================================================================================================================//	
 		
 		public void verify_emailAllInvoice() throws InterruptedException{	
-		
+			
 			int noOfDraftinvoices1 = listOfDraftInvoices.size();
+			System.out.println("NUMBER OF DRAFT INVOICES ARE : " + noOfDraftinvoices1);
+	
+			if(noOfDraftinvoices1==0) {
+				System.out.println("No Draft Invoices is available to perform this action");		
+			}else {
 			System.out.println("NUMBER OF DRAFT INVOICES BEFORE EMAIL ALL ARE : " + noOfDraftinvoices1);
 			
 			emailallInvoice_Btn.click();
@@ -379,6 +406,7 @@ public class Invoice_Page extends TestBase{
 			SoftAssert softAssert = new SoftAssert();
 			softAssert.assertTrue(msg.contains("All invoices billed and emails will be sent to clients."));
 		//	softAssert.assertAll();
+			
 			
 			Thread.sleep(9000);
 			
@@ -401,5 +429,9 @@ public class Invoice_Page extends TestBase{
 			
 			invoiceSearch_field.sendKeys(masterString);
 			Thread.sleep(2000);
-		}
+			 }
+	   }
 }
+		
+		
+		

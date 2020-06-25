@@ -28,7 +28,7 @@ public class Invoice_SD extends TestBase {
 	@When("^User navigate to homepage$")
 	public void user_navigate_to_homepage(){
 		login_page.verifyLogin();
-		invoice_page.selectVenue();
+	//	invoice_page.selectVenue();
 	}
 	
 	@Then("^User clicks the Invoice tab$")
@@ -76,7 +76,7 @@ public class Invoice_SD extends TestBase {
 
 	@Then("^User navigate to draft invoice, click Email all invoices and verify the result$")
 	public void user_navigate_to_draft_invoice_click_Email_all_invoices_and_verify_the_result() throws InterruptedException{
-		//invoice_page.verify_emailAllInvoice();
+		invoice_page.verify_emailAllInvoice();
 	}
 
 }

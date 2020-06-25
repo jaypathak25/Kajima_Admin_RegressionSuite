@@ -83,7 +83,7 @@ public class Bookings_Page extends TestBase {
 	@FindBy(xpath = "//a[text()='Venues']")
 	WebElement venue_dd;
 	
-	@FindBy(xpath = "//a[text()='Johnson Community Hospital']")
+	@FindBy(xpath = "//a[text()='BookingsGuru @ Haverstock School']")
 	WebElement venue_name;
 	
 	@FindBy(xpath="//table[@id='bookings_table']/tbody/tr/td[11]")
@@ -142,7 +142,7 @@ public class Bookings_Page extends TestBase {
 	@FindBy(xpath="//input[@id='credit_note_reason']")
 	WebElement canReason_txt;
 	
-	@FindBy(xpath="//input[@value='Cancel this Booking']")
+	@FindBy(xpath="//input[@value='Cancel this Booking' and @type='submit']")
 	WebElement canBooking_btn;
 	
 	@FindBy(xpath="//input[@value='Cancel these Bookings']")
@@ -461,7 +461,11 @@ public class Bookings_Page extends TestBase {
 				driver.switchTo().alert().accept();
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//a[@class='selector' and @href='#']")).click();
-				driver.findElement(By.xpath("//li[contains(.,'Group room OPT 010')]")).click();
+			try {
+				driver.findElement(By.xpath("//li[contains(.,'Group room')]")).click();
+			}catch (Exception e){
+				driver.findElement(By.xpath("//li[contains(.,'Classroom')]")).click();
+			}
 				save_Btn.click();
 				Thread.sleep(5000);
 				if(driver.findElement(By.xpath("//div[@id='error_messages']")).isDisplayed()) {
@@ -496,7 +500,11 @@ public class Bookings_Page extends TestBase {
 				driver.switchTo().alert().accept();
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//a[@class='selector' and @href='#']")).click();
-				driver.findElement(By.xpath("//li[contains(.,'Meeting room ADM 104')]")).click();
+				try {
+					driver.findElement(By.xpath("//li[contains(.,'Meeting room')]")).click();
+				}catch (Exception e){
+					driver.findElement(By.xpath("//li[contains(.,'Classroom')]")).click();
+				}
 				save_Btn.click();
 				Thread.sleep(5000);
 				if(driver.findElement(By.xpath("//div[@id='error_messages']")).isDisplayed()) {
@@ -960,7 +968,7 @@ public class Bookings_Page extends TestBase {
 			System.out.println("Raise refund Email option is not available");
 		}
 		canMultipleBooking_btn.click();
-		String msg = driver.findElement(By.xpath("//*[@id='flash_success']")).getText();
+		String msg = driver.findElement(By.xpath("//*[@class='alert-box  hide-on-print' and @id='flash_success']")).getText();
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertTrue(msg.contains("Bookings cancelled and credit notes raised."));
 		softAssert.assertAll();	
@@ -1050,7 +1058,10 @@ public class Bookings_Page extends TestBase {
 		selectVenue();
 		calTab_txt.click();
 		if(fullyPaidBookingOnCalScrn.size()!=0) {
-			fullyPaidBookingOnCalScrn.get(1).click();
+
+			// Scroll to div's most right:
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft = arguments[0].offsetWidth", fullyPaidBookingOnCalScrn);
+			fullyPaidBookingOnCalScrn.get(0).click();
 			redCancel_btn.click();
 			driver.findElement(By.xpath("//a[text()='this occurrence']")).click();
 			canEmail_chkBox.click();
@@ -1086,9 +1097,11 @@ public class Bookings_Page extends TestBase {
 			    System.out.println("No refund generated");
 			}	
 		}else {
+			Thread.sleep(5000);
 			driver.findElement(By.xpath("//a[@class='blue glyph general' and text()='u']")).click();
 			if(fullyPaidBookingOnCalScrn.size()!=0) {
-				fullyPaidBookingOnCalScrn.get(1).click();
+				((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft = arguments[0].offsetWidth", fullyPaidBookingOnCalScrn);
+				fullyPaidBookingOnCalScrn.get(0).click();
 				redCancel_btn.click();
 				driver.findElement(By.xpath("//a[text()='this occurrence']")).click();
 				canEmail_chkBox.click();
@@ -1122,9 +1135,12 @@ public class Bookings_Page extends TestBase {
 				}catch(NoSuchElementException e) {
 				    System.out.println("No refund generated");
 				}	
+			}else {
+				System.out.println("No Bookings found with Fully paid status");
+				}
 			}
 		}
-	}
+	
 	
 	
 //=======================================================================================================================
@@ -1133,7 +1149,7 @@ public class Bookings_Page extends TestBase {
 	public void verify_manualPayBookingsCancellation() throws InterruptedException {
 		selectVenue();
 		driver.findElement(By.xpath("//a[text() = 'Clients']")).click();
-		driver.findElement(By.xpath("//input[contains(@aria-controls,'clients_table')]")).sendKeys("apriltest");
+		driver.findElement(By.xpath("//input[contains(@aria-controls,'clients_table')]")).sendKeys("seltesters");
 		driver.findElement(By.xpath("//a[text()='View']")).click();
 		if(bookingsRowsOnClient.size()!=0) {
 	
@@ -1380,6 +1396,465 @@ public class Bookings_Page extends TestBase {
 				System.out.println("No booking is available on this time date");
 			}	
 	   }
+	
+//==========================================BAU methods ================================================================
+	
+	public void verify_cancel_BAUMixedMultiple_Bookings() throws InterruptedException {
+
+		bookings_tab.click();
+		Select slct1 = new Select(noOfEnteries_dd);
+		slct1.selectByVisibleText("all entries");
+		Thread.sleep(1000);
+		try {
+			billedBooking_chkBox.click();
+		}catch(NoSuchElementException e) {
+		    System.out.println("Booking with billed status is not available");
+		}
+		try {
+			unBilledBooking_chkBox.click();
+		}catch(NoSuchElementException e) {
+			System.out.println("Booking with unbilled status is not available");
+		}
+		try {
+			partPaidBooking_chkBox.click();
+		}catch(NoSuchElementException e) {
+			System.out.println("Booking with part paid status is not available");
+		}
+		try {
+			fullyPaidBooking_chkBox.click();
+		}catch(NoSuchElementException e) {
+			System.out.println("Booking with fully paid status is not available");
+		}
+
+		Thread.sleep(1000);
+		cancelSelctd_mainBtn.click();
+		canEmail_chkBox.click();
+		canReason_txt.sendKeys("AUTOMATECAN");
+		try {
+			raiseCN_chkBox.click();
+		}catch(NoSuchElementException e) {
+			System.out.println("Raise CN option is not available");
+		}
+		try {
+			raiseCNEmail_chkBox.click();
+		}catch(NoSuchElementException e) {
+			System.out.println("Raise CN Email option is not available");
+		}
+		
+		canMultipleBooking_btn.click();
+		String msg = driver.findElement(By.xpath("//*[@class='alert-box  hide-on-print' and @id='flash_success']")).getText();
+		SoftAssert softAssert = new SoftAssert();
+		softAssert.assertTrue(msg.contains("Booking cancelled and credit note raised"));
+		softAssert.assertAll();	
+	}
+	
+
+//=======================================================================================================================
+
+public void cancel_BAUbookingFromClientScreen() throws InterruptedException {
+	//selectVenue();
+	driver.findElement(By.xpath("//a[text() = 'Clients']")).click();
+	driver.findElement(By.xpath("//input[contains(@aria-controls,'clients_table')]")).sendKeys("auto");
+	Thread.sleep(2000);
+	driver.findElement(By.xpath("//a[text()='View']")).click();
+	int noOfBook = bookingsRowsOnClient.size();
+	if(bookingsRowsOnClient.size()!=0) {
+	for(int i=1;i<=noOfBook;i++) {
+	driver.findElement(By.xpath("//table[@id='admin_client_bookings_table']/tbody/tr["+i+"]/td[text()='Confirmed']")).click();
+	try {
+		if(canForFullyPaidBooking_link.isDisplayed()) {
+		canForFullyPaidBooking_link.click();
+		canEmail_chkBox.click();
+		canReason_txt.sendKeys("Cancel booking from Client's screen");
+		raiseCN_chkBox.click();
+		raiseCNEmail_chkBox.click();
+		refundPay_chkBox.click();
+		refundEmail_chkBox.click();
+		Assert.assertTrue(raiseCN_chkBox.isDisplayed());
+		Assert.assertTrue(raiseCNEmail_chkBox.isDisplayed());
+	//	assertTrue(!isElementPresent(refundPay_chkBox));
+	//	assertTrue(!isElementPresent(refundEmail_chkBox));
+		Thread.sleep(5000);
+		canBooking_btn.click();
+		Thread.sleep(2000);
+		String str = driver.findElement(By.xpath("//h5[contains(text(),'Credit Note')]")).getText();
+		System.out.println(str);
+	
+		viewClient_btn.click();
+		Thread.sleep(1000);
+		WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,'"+str+"')]"));
+		System.out.println("to double check cnNumber " + cnNumber);
+		Assert.assertTrue(isDisplayed(cnNumber));
+
+		break;
+		}
+	}catch(NoSuchElementException e) { 
+			driver.findElement(By.xpath("//a[text()='Back']")).click();
+			Thread.sleep(2000);
+		  }
+		}
+	}else {
+		System.out.println("This client doesnt have any booking");
+	}
 }
 
 //=======================================================================================================================
+
+public void cancel_BAUbookingFromCalender() throws InterruptedException {
+//	selectVenue();
+	calTab_txt.click();
+	if(fullyPaidBookingOnCalScrn.size()!=0) {
+
+		// Scroll to div's most right:
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft = arguments[0].offsetWidth", fullyPaidBookingOnCalScrn);
+		fullyPaidBookingOnCalScrn.get(0).click();
+		redCancel_btn.click();
+		driver.findElement(By.xpath("//a[text()='this occurrence']")).click();
+		canEmail_chkBox.click();
+		canReason_txt.sendKeys("Cancel booking from calender");
+		raiseCN_chkBox.click();
+		raiseCNEmail_chkBox.click();
+		Thread.sleep(2000);
+	//	refundPay_chkBox.click();
+	//	refundEmail_chkBox.click();
+		Assert.assertTrue(raiseCN_chkBox.isDisplayed());
+		Assert.assertTrue(raiseCNEmail_chkBox.isDisplayed());
+		assertTrue(!isElementPresent(refundPay_chkBox));
+		assertTrue(!isElementPresent(refundEmail_chkBox));
+		canBooking_btn.click();
+		String str = driver.findElement(By.xpath("//h5[contains(text(),'Credit Note')]")).getText();
+		System.out.println(str);
+		viewClient_btn.click();
+		Thread.sleep(1000);
+		WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,'"+str+"')]"));
+		System.out.println("to double check cnNumber " + cnNumber.getText());
+		String strB = cnNumber.getText();
+		Assert.assertEquals(str, strB);
+	}else {
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//a[@class='blue glyph general' and text()='u']")).click();
+		if(fullyPaidBookingOnCalScrn.size()!=0) {
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollLeft = arguments[0].offsetWidth", fullyPaidBookingOnCalScrn);
+			fullyPaidBookingOnCalScrn.get(0).click();
+			redCancel_btn.click();
+			driver.findElement(By.xpath("//a[text()='this occurrence']")).click();
+			canEmail_chkBox.click();
+			canReason_txt.sendKeys("Cancel booking from calender");
+			raiseCN_chkBox.click();
+			raiseCNEmail_chkBox.click();
+		//	refundPay_chkBox.click();
+		//	refundEmail_chkBox.click();
+			Assert.assertTrue(raiseCN_chkBox.isDisplayed());
+			Assert.assertTrue(raiseCNEmail_chkBox.isDisplayed());
+			assertTrue(!isElementPresent(refundPay_chkBox));
+			assertTrue(!isElementPresent(refundEmail_chkBox));
+			canBooking_btn.click();
+			String str = driver.findElement(By.xpath("//h5[contains(text(),'Credit Note')]")).getText();
+			System.out.println(str);	
+			viewClient_btn.click();
+			Thread.sleep(1000);
+			WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,'"+str+"')]"));
+			System.out.println("to double check cnNumber " + cnNumber.getText());
+			String strB = cnNumber.getText();
+			Assert.assertEquals(str, strB);
+		}else {
+			System.out.println("No Bookings found with Fully paid status");
+			}
+		}
+	}
+
+//===========================================================================================================================
+
+public void cancel_BAUfullyPaid_WP_Single_Booking() throws InterruptedException {
+	selectVenue();
+	bookings_tab.click();
+	Thread.sleep(1000);
+	Select slct1 = new Select(payStatus_dd);
+	slct1.selectByVisibleText("Fully paid");
+	if(bookingRows.size()!=0) {
+		Thread.sleep(1000);
+		bookingRef_link.click();
+		Thread.sleep(1000);
+		canForFullyPaidBooking_link.click();
+		canEmail_chkBox.click();
+		canReason_txt.sendKeys("AUTOMATECAN");
+		raiseCN_chkBox.click();
+		raiseCNEmail_chkBox.click();
+	//	refundPay_chkBox.click();
+	//	refundEmail_chkBox.click();
+		Assert.assertTrue(raiseCN_chkBox.isDisplayed());
+		Assert.assertTrue(raiseCNEmail_chkBox.isDisplayed());
+		assertTrue(!isElementPresent(refundPay_chkBox));
+		assertTrue(!isElementPresent(refundEmail_chkBox));
+		canBooking_btn.click();
+		String str = driver.findElement(By.xpath("//h5[contains(text(),'Credit Note')]")).getText();
+		System.out.println(str);
+		viewClient_btn.click();
+		Thread.sleep(1000);
+		WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,'"+str+"')]"));
+	//	WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,str)]"));
+		System.out.println("to double check cnNumber " + cnNumber);
+		Assert.assertTrue(isDisplayed(cnNumber));
+	}
+		else {
+			System.out.println("No booking available to cancel with Fully paid status");
+		}
+	}
+
+//===================================================================================================================
+
+public void cancel_BAUfullyPaid_multiple_Booking() throws InterruptedException {
+	selectVenue();
+	bookings_tab.click();
+	Thread.sleep(1000);
+	Select slct1 = new Select(payStatus_dd);
+	slct1.selectByVisibleText("Fully paid");
+	if(bookingRows.size()!=0) {
+		Thread.sleep(1000);
+		slctBooking_chkBox.click();
+		Thread.sleep(1000);
+		cancelSelctd_mainBtn.click();
+		canEmail_chkBox.click();
+		canReason_txt.sendKeys("AUTOMATECAN");
+		raiseCN_chkBox.click();
+		raiseCNEmail_chkBox.click();
+	//	refundPay_chkBox.click();
+	//	refundEmail_chkBox.click();
+		Assert.assertTrue(raiseCN_chkBox.isDisplayed());
+		Assert.assertTrue(raiseCNEmail_chkBox.isDisplayed());
+		assertTrue(!isElementPresent(refundPay_chkBox));
+		assertTrue(!isElementPresent(refundEmail_chkBox));
+		Thread.sleep(2000);
+		canMultipleBooking_btn.click();
+		Thread.sleep(2000);
+		String str = driver.findElement(By.xpath("//h5[contains(text(),'Credit Note')]")).getText();
+		System.out.println(str);
+
+		viewClient_btn.click();
+		Thread.sleep(1000);
+		WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,'"+str+"')]"));
+	//	WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,str)]"));
+		System.out.println("to double check cnNumber " + cnNumber);
+		Assert.assertTrue(isDisplayed(cnNumber));
+	}
+		else {
+			System.out.println("No booking available to cancel with Fully paid status");
+		}
+}
+
+//=========================================================================================
+
+public void cancel_BAUbilled_multiple_Booking() throws InterruptedException {
+	//selectVenue();
+	bookings_tab.click();
+	Thread.sleep(1000);
+	Select slct1 = new Select(payStatus_dd);
+	slct1.selectByVisibleText("Billed");
+	if(bookingRows.size()!=0) {
+		Thread.sleep(1000);
+		slctBooking_chkBox.click();
+		Thread.sleep(1000);
+		cancelSelctd_mainBtn.click();
+		canEmail_chkBox.click();
+		canReason_txt.sendKeys("AUTOMATECAN");
+		raiseCN_chkBox.click();
+		raiseCNEmail_chkBox.click();
+		Assert.assertTrue(raiseCN_chkBox.isDisplayed());
+		Assert.assertTrue(raiseCNEmail_chkBox.isDisplayed());
+		assertTrue(!isElementPresent(refundPay_chkBox));
+		assertTrue(!isElementPresent(refundEmail_chkBox));
+		canMultipleBooking_btn.click();
+		String str = driver.findElement(By.xpath("//h5[contains(text(),'Credit Note')]")).getText();
+		System.out.println(str);
+		viewClient_btn.click();
+		Thread.sleep(1000);
+		WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,'"+str+"')]"));
+	//	WebElement cnNumber = driver.findElement(By.xpath("//a[contains(.,str)]"));
+		Assert.assertTrue(cnNumber.isDisplayed());		
+	}
+		else {
+			System.out.println("No booking available to cancel with Billed status");
+	}
+}
+
+//=======================================================================================================================
+
+public void cancel_BAUunBilled_multiple_Booking() throws InterruptedException {
+	bookings_tab.click();
+	Thread.sleep(1000);
+	Select slct = new Select(status_dd);
+	slct.selectByVisibleText("Confirmed");
+	Select slct1 = new Select(payStatus_dd);
+	slct1.selectByVisibleText("Unbilled");
+	if(bookingRows.size()!=0) {
+		slctBooking_chkBox.click();
+		Thread.sleep(1000);
+		cancelSelctd_mainBtn.click();
+		canEmail_chkBox.click();
+		canReason_txt.sendKeys("AUTOMATECAN-unbilled");
+		assertTrue(!isElementPresent(raiseCN_chkBox));
+		assertTrue(!isElementPresent(raiseCNEmail_chkBox));
+		assertTrue(!isElementPresent(refundPay_chkBox));
+		assertTrue(!isElementPresent(refundEmail_chkBox));
+
+		canMultipleBooking_btn.click();
+	}
+		else {
+			System.out.println("No booking available to cancel with Billed status");
+		}
+}
+
+//=========================================================================================================
+
+public void verify_BAUcreateNewDailyBooking() throws InterruptedException {
+	selectVenue();
+	bookings_tab.click();
+	newBooking_btn.click();
+	Select slct1 =  new Select(selectClient_dd);
+	try {
+	slct1.selectByVisibleText("AUTOTESTING TEST (AUTO)");
+	}catch(Exception e) {
+		driver.findElement(By.xpath("//a[contains(@href,'clients') and @class='main']")).click();
+		driver.findElement(By.xpath("//a[text()='New Client']")).click();
+		driver.findElement(By.id("client_name")).sendKeys("AUTO");
+		driver.findElement(By.id("client_contact_first_name")).sendKeys("AUTOTESTING");
+		driver.findElement(By.id("client_contact_last_name")).sendKeys("TEST");
+		driver.findElement(By.xpath("//input[@value='Create Client']")).click();
+		bookings_tab.click();
+		newBooking_btn.click();
+		slct1.selectByVisibleText("AUTOTESTING TEST (AUTO)");
+	}
+	Thread.sleep(1000);
+	Select slct3 =  new Select(selectSpace_dd);
+	slct3.selectByVisibleText("Library");
+
+
+	startDate.sendKeys(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+	startTime.sendKeys("10:00");
+	endTime.sendKeys("11:00");
+	
+	driver.findElement(By.id("booking_deposit_attributes_amount")).click();
+	Thread.sleep(2000);
+	driver.findElement(By.xpath("//Select[@id='recurrance_type']//following-sibling::div/a[@class='selector']")).click();
+	driver.findElement(By.xpath("//li[@class='selected']//following-sibling::li[contains(.,'Daily')]")).click();	
+	driver.findElement(By.xpath("//Select[@id='recurrence_option']//following-sibling::div/a[@class='selector']")).click();
+	driver.findElement(By.xpath("//select[@id='recurrence_option']//following-sibling::div//ul/li[contains(.,'5')]")).click();
+	driver.findElement(By.xpath("//Select[@id='recurrance_for_n_ocurrances']//following-sibling::div/a[@class='selector']")).click();
+	driver.findElement(By.xpath("//select[@id='recurrance_for_n_ocurrances']//following-sibling::div//ul/li[contains(.,'2')]")).click();
+	
+	checkAvail_btn.click();
+	
+	System.out.println("No of bookings Rows " + bookingItems_row.size());
+	for(int i=1;i<=bookingItems_row.size();i++) {
+		try {
+			  WebElement element1=driver.findElement(By.xpath("//tbody/tr["+i+"][contains(@class,'red')]/td/input[@type='checkbox']"));
+			  JavascriptExecutor executor = (JavascriptExecutor) driver;
+			  executor.executeScript("arguments[0].click();", element1);
+			  System.out.println("Check 1");
+		
+
+		} catch (NoSuchElementException e) {}	
+	}
+		
+		Thread.sleep(5000);
+		driver.findElement(By.id("cancel_selected_items")).click();
+		
+		System.out.println("Booking items are " + bookingItems_row.size());
+		if(bookingItems_row.size()!=0) {
+			Thread.sleep(10000);
+			saveBooking_Btn.click();
+			Thread.sleep(5000);
+			driver.findElement(By.xpath("//a[@id='btn-save-booking-with-provisional' and text()='Yes']")).click();
+			Thread.sleep(5000);
+			driver.findElement(By.xpath("//div[@class='booking status-provisional payment-unbilled']//h2[contains(.,'AUTO')]")).click();
+			Thread.sleep(5000);
+			driver.findElement(By.xpath("//a[@class='green buttonBourbon' and text()='Confirm']")).click();
+			Thread.sleep(5000);
+			driver.findElement(By.xpath("//a[text()='this occurrence']")).click();
+			Thread.sleep(2000);
+		try {	
+			driver.findElement(By.xpath("//a[@class='green buttonBourbon' and text()='Yes']")).click();
+			String msg = success_Msg.getText();
+			SoftAssert softAssert = new SoftAssert();
+			softAssert.assertTrue(msg.contains("Confirmation email sent to client. "));
+			softAssert.assertAll();
+		}catch (NoSuchElementException e)
+		{
+		}				
+		}else {
+			System.out.println("No booking is available on this time date");
+		}	
+   }
+
+//=======================================================================================================================
+
+public void verify_BAUcreateNewWeeklyBooking() throws InterruptedException {
+	selectVenue();
+	bookings_tab.click();
+	newBooking_btn.click();
+	Select slct1 =  new Select(selectClient_dd);
+	slct1.selectByVisibleText("AUTOTESTING TEST (AUTO)");
+	Thread.sleep(1000);
+	Select slct3 =  new Select(selectSpace_dd);
+	slct3.selectByVisibleText("Library");
+
+	startDate.sendKeys(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+	startTime.sendKeys("11:00");
+	endTime.sendKeys("12:00");
+	
+	driver.findElement(By.id("booking_deposit_attributes_amount")).click();
+	Thread.sleep(2000);
+	driver.findElement(By.xpath("//Select[@id='recurrance_type']//following-sibling::div/a[@class='selector']")).click();
+	driver.findElement(By.xpath("//li[@class='selected']//following-sibling::li[contains(.,'Weekly')]")).click();	
+	driver.findElement(By.xpath("//Select[@id='recurrence_option']//following-sibling::div/a[@class='selector']")).click();
+	driver.findElement(By.xpath("//select[@id='recurrence_option']//following-sibling::div//ul/li[contains(.,'5')]")).click();
+	driver.findElement(By.xpath("//Select[@id='recurrance_for_n_ocurrances']//following-sibling::div/a[@class='selector']")).click();
+	driver.findElement(By.xpath("//select[@id='recurrance_for_n_ocurrances']//following-sibling::div//ul/li[contains(.,'2')]")).click();
+	
+	checkAvail_btn.click();
+	
+	System.out.println("No of bookings Rows " + bookingItems_row.size());
+	for(int i=1;i<=bookingItems_row.size();i++) {
+		try {
+			  WebElement element1=driver.findElement(By.xpath("//tbody/tr["+i+"][contains(@class,'red')]/td/input[@type='checkbox']"));
+			  JavascriptExecutor executor = (JavascriptExecutor) driver;
+			  executor.executeScript("arguments[0].click();", element1);
+			  System.out.println("Check 1");
+			
+
+		} catch (NoSuchElementException e) {}	
+	}  
+		
+		Thread.sleep(5000);
+		driver.findElement(By.id("cancel_selected_items")).click();	
+		System.out.println("Booking items are " + bookingItems_row.size());
+		if(bookingItems_row.size()!=0) {
+			Thread.sleep(10000);
+			saveBooking_Btn.click();
+			Thread.sleep(10000);
+			driver.findElement(By.xpath("//a[@id='btn-save-booking-with-provisional' and text()='Yes']")).click();
+			Thread.sleep(5000);
+			driver.findElement(By.xpath("//div[@class='booking status-provisional payment-unbilled']//h2[contains(.,'AUTO')]")).click();
+			Thread.sleep(5000);
+			driver.findElement(By.xpath("//a[@class='green buttonBourbon' and text()='Confirm']")).click();
+			Thread.sleep(5000);
+			driver.findElement(By.xpath("//a[text()='this occurrence']")).click();
+			Thread.sleep(2000);
+			try {	
+				driver.findElement(By.xpath("//a[@class='green buttonBourbon' and text()='Yes']")).click();
+				String msg = success_Msg.getText();
+				SoftAssert softAssert = new SoftAssert();
+				softAssert.assertTrue(msg.contains("Confirmation email sent to client. "));
+				softAssert.assertAll();
+			
+			}catch (NoSuchElementException e)
+			{
+			}		
+		}else {
+			System.out.println("No booking is available on this time date");
+		}	
+   }
+
+
+}
+

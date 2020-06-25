@@ -34,7 +34,7 @@ public class Clients_Page extends TestBase {
 	@FindBy(xpath = "//input[contains(@aria-controls,'clients_table')]")
 	WebElement search_box;
 	
-	@FindBy(xpath = "//a[contains(.,'View')]")
+	@FindBy(xpath = "//a[text()='View']")
 	WebElement view_link;
 	
 	@FindBy(xpath = "//a[text() = 'New Client User']")
@@ -150,7 +150,7 @@ public class Clients_Page extends TestBase {
 	@FindBy(xpath="//a[contains(@title,'Includes bookings')]")
 	List<WebElement> invoice_Links;
 	
-	@FindBy(xpath ="//a[contains(text(),'Credit Note C')]")
+	@FindBy(xpath ="//a[contains(text(),'Credit Note ')]")
 	List<WebElement> creditNote_Links;
 	
 	@FindBy(xpath = "//a[@data-remote='true' and contains(.,'Refund #')]")
@@ -523,6 +523,19 @@ public class Clients_Page extends TestBase {
 		user_lname.sendKeys(lname1);
 		user_email.sendKeys(fname1 +"@test.com");
 		booking_chkbx.click();
+	//	billing_chkbx.click();	
+	}
+	
+//==================================================================================================//
+	
+	public void edit_mandatoryfields() {
+		Faker faker = new Faker();
+		String fname1 = faker.name().firstName();
+		user_fname.clear();
+		user_fname.sendKeys(fname1);
+		user_email.clear();
+		user_email.sendKeys(fname1 +"@test.com");
+		//booking_chkbx.click();
 		billing_chkbx.click();	
 	}
 	
@@ -963,6 +976,7 @@ public class Clients_Page extends TestBase {
 	   int noOfCNLinks = creditNote_Links.size();
 	   System.out.println("No Of CN Links displays in Account activity are " + noOfCNLinks); 
 	 
+	//   String CNID = creditNote_Links.get(noOfCNLinks-1).getText();
 	   String CNID = creditNote_Links.get(noOfCNLinks-1).getText();
 	   System.out.println("New CN raised with ID " + CNID);
 	  
@@ -1088,5 +1102,32 @@ public class Clients_Page extends TestBase {
 	   softAssert.assertTrue(msg.contains("Client was successfully updated."));
 	   softAssert.assertAll();	
 	   }
+   
+   //====================================BAU methods ========================
+   
+   public void verify_createNewUserBAU() {
+	   click_newClientBtn();
+	   enter_mandatoryfields();
+	   create_newBAUUser();
+	   verify_newUserCreated();   
+   }
+   
+   public void verify_editNewUserBAU() throws InterruptedException {
+	   Thread.sleep(2000);
+	   driver.findElement(By.xpath("//a[text()='Edit User']")).click();
+	   Thread.sleep(2000);
+	   edit_mandatoryfields();
+	   create_newBAUUser();
+	   verify_newUserupdated();      
+   }
+   
+   public void verify_unLinkNUserBAU() throws InterruptedException {
+	   driver.findElement(By.xpath("//a[text()='Unlink User']")).click();
+	   Thread.sleep(2000);
+	   click_Cancel();
+	   driver.findElement(By.xpath("//a[text()='Unlink User']")).click();
+	   click_Ok();
+	   verify_userUnlink();      
+   }
 
 }

@@ -12,7 +12,8 @@ Background:
 		
 ##=====================================3 reminder scenarios====================================================
     
-@VenueAdmin
+
+  	@VenueAdmin
 Scenario: View - Reminder and edit a reminder
     Then User selects the action link and update the date, save and verify the change
   	And user quit the browser
@@ -22,7 +23,10 @@ Scenario: View - Reminder and action a reminder
     Then User selects the action link, select check box, enter action statement and save and verify the change
   	And user quit the browser
   	
+  	
+  	
 @VenueAdmin
 Scenario: View- Reminder and cancel it
     Then User selects the cancel link and verify the result 
   	And user quit the browser
+  	

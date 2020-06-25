@@ -1,8 +1,12 @@
 package kajima.venueadmin.pom_pages;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -14,6 +18,9 @@ public class Reminder_Page extends TestBase {
 	
 	@FindBy(xpath = "//a[contains(@href,'reminders')]")
 	WebElement reminder_tab;
+	
+	@FindBy(xpath = "//a[contains(@href,'clients')]")
+	WebElement Client_tab;
 	
 	@FindBy(xpath="//h3[text()='Reminders']")
 	WebElement reminderTab_title;
@@ -58,27 +65,58 @@ public class Reminder_Page extends TestBase {
 		softAssert.assertAll();
 	}
 	
+	public void createDataForReminder() throws InterruptedException {
+		Client_tab.click();
+		driver.findElement(By.xpath("//a[text()='View']")).click();
+		try {
+			driver.findElement(By.xpath("//a[text()='Create a Reminder']")).click();
+			driver.findElement(By.xpath("//input[@id='reminder_remind_at']")).sendKeys(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+			driver.findElement(By.xpath("//input[@id='reminder_notes']")).sendKeys("AUTONOTES");
+			driver.findElement(By.xpath("//a[text()='Save']")).click();
+		}catch(NoSuchElementException e) {
+			System.out.println("Reminder is already available");	
+		}	
+	}
+	
 //==================================================================================================================//	
 	
-	public void verify_EditReminder() {
-		String date= "17/05/2020";
+	public void verify_EditReminder() throws InterruptedException {
 		List<WebElement> rows = driver.findElements(By.xpath("//table[@id='reminders_table']/tbody/tr/td[7]/a"));
 		int rownum = rows.size();
 		System.out.println("NUMBER OF reminders with pending actions on screen are : " + rownum);
+		try {
+		Thread.sleep(2000);
 		action_Link.click();
+		Thread.sleep(2000);
 		remindDate_Field.clear();
-		remindDate_Field.sendKeys(date);
+		remindDate_Field.sendKeys(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 		save_Btn.click();
 		String title = reminderTab_title.getText();
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertTrue(title.contains("Reminders"));
 		softAssert.assertAll();
+		}catch(NoSuchElementException e) {
+			createDataForReminder();
+			Thread.sleep(5000);
+			verify_clickReminderTab();
+			action_Link.click();
+			remindDate_Field.clear();
+			remindDate_Field.sendKeys(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+			save_Btn.click();
+			String title = reminderTab_title.getText();
+			SoftAssert softAssert = new SoftAssert();
+			softAssert.assertTrue(title.contains("Reminders"));
+			softAssert.assertAll();
+		}
 	}
 	
 //==================================================================================================================//	
 	
-	public void verify_actionReminder() {
+	public void verify_actionReminder() throws InterruptedException {
+		try {
+		Thread.sleep(2000);
 		action_Link.click();
+		Thread.sleep(2000);
 		actioned_chkBox.click();
 		action_txtField.sendKeys("Automated action");
 		save_Btn.click();
@@ -86,7 +124,22 @@ public class Reminder_Page extends TestBase {
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertTrue(title.contains("Reminders"));
 		softAssert.assertAll();	
+		}catch(NoSuchElementException e) {
+			createDataForReminder();
+			Thread.sleep(5000);
+			verify_clickReminderTab();
+			action_Link.click();
+			actioned_chkBox.click();
+			action_txtField.sendKeys("Automated action");
+			save_Btn.click();
+			String title = reminderTab_title.getText();
+			SoftAssert softAssert = new SoftAssert();
+			softAssert.assertTrue(title.contains("Reminders"));
+			softAssert.assertAll();	
+			
+		}
 	}
+		
 	
 //==================================================================================================================//	
 	

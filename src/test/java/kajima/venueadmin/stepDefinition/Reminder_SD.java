@@ -39,14 +39,14 @@ public class Reminder_SD extends TestBase{
 //================================Scenario: View - Reminder and edit a reminder=====================================
 
 		@Then("^User selects the action link and update the date, save and verify the change$")
-		public void user_selects_the_action_link_and_update_the_date_save_and_verify_the_change() {
+		public void user_selects_the_action_link_and_update_the_date_save_and_verify_the_change() throws InterruptedException {
 			reminder_page.verify_EditReminder();
 		}
 		
 //================================Scenario: View - Reminder and action a reminder=====================================
 
 		@Then("^User selects the action link, select check box, enter action statement and save and verify the change$")
-		public void user_selects_the_action_link_select_check_box_enter_action_statement_and_save_and_verify_the_change() {
+		public void user_selects_the_action_link_select_check_box_enter_action_statement_and_save_and_verify_the_change() throws InterruptedException {
 			reminder_page.verify_actionReminder();
 		}
 		

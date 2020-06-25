@@ -22,10 +22,8 @@ public class Download_Cap {
 	
 	Login_Page login_page;
 	
-
 	
 	public Download_Cap() {
-		
 		login_page= new Login_Page();
 	}
 	
@@ -39,7 +37,6 @@ public class Download_Cap {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Desktop\\Automation\\Jarfiles\\chromedriver.exe");
 		ChromeOptions options =  new ChromeOptions();
 
-		
 		Map<String, Object> prefs = new HashMap<String, Object>();
 		prefs.put("profile.default_content_settings.popups", 0);
 		prefs.put("download.default_directory", folder.getAbsolutePath());
