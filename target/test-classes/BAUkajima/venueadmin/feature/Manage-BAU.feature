@@ -29,12 +29,6 @@ Then User Deleted the new booking Categories and verify
 And user quit the browser
 
 @VenueAdmin
-Scenario: Manage tab -  Venue management - verify Space Categories – should not have the option to add/edit or delete – Org admin only for NHS
-Then User verify the space catagory to ensure that this section is read only section and user is not allowed to add, edit or delete space catagory
-Then user login to Org admin and able to add , edit or delete space catagory
-And user quit the browser
-
-@VenueAdmin
 Scenario: Manage tab -  Venue management - verify Bookable spaces – Add and edit (Details, price, client bookings, custom fields, calendar categories, Tags, Photos, space business hours), and delete. 
 Then Adding a new bookable space – assign to new category
 Then Deleting a bookable space
@@ -85,6 +79,13 @@ Then User selects Edit venue , navigate to all the subtabs and verify
 Then User navigate to basic info subtab,updating info and check this saves correctly
 Then User navigate to Billing subtab – check that invoice/credit note prefixes can be updated, check this saves correctly and is applied to invoices – change back to original info
 Then User navigate to Emails subtab and Updating a venue email template
+And user quit the browser
+
+@VenueAdmin
+Scenario: BAU Manage tab -  Venue management - verify calender Categories – add, edit (name, description, limit client bookings to slots), delete
+Then User added the new calender Category  and verify
+Then User Edited the calender Categories like name, description, limit client bookings to slots and verify
+Then User Deleted the calender Category and verify
 And user quit the browser
 
 

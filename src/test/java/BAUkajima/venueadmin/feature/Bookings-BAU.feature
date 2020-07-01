@@ -13,14 +13,7 @@ Background:
     
 ##============================================================================================================================##
 ##==============================================7 scenarios for BAU Venue admin=============================================================================##    
-
-@VenueAdmin 	
-Scenario: Raise a booking via new booking button  - BAU 
-    Then User clicks a new Booking button and raise daily recurring booking
-    Then User clicks a new Booking button and raise weekly recurring booking
-  	And user quit the browser    
-
-
+   
 
 @VenueAdmin  	
 Scenario: Cancel single WP fully paid bookings - BAU - verify CN raised successfully 
@@ -66,7 +59,11 @@ Scenario: Edit bookings - Filter booking by payment status and Edit
   	And user quit the browser	
 
   	
-
+@VenueAdmin 	
+Scenario: Raise a booking via new booking button  - BAU 
+    Then User clicks a new Booking button and raise daily recurring booking
+    Then User clicks a new Booking button and raise weekly recurring booking
+  	And user quit the browser 
 
 
 

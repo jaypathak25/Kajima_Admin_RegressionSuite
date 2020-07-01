@@ -11,7 +11,7 @@ Background:
     Then User clicks the Bookings tab 
     
 ##============================================================================================================================##
-##==============================================12 scenarios for Venue admin=============================================================================##    
+##==============================================13 scenarios for Venue admin=============================================================================##    
 
 @VenueAdmin 	
 Scenario: Enable-Disable refund feature from master admin and verify the disabled refund option from MVAs
