@@ -2,9 +2,14 @@ package kajima.venueadmin.pom_pages;
 
 import static org.testng.Assert.assertTrue;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -64,7 +69,6 @@ public class Manage_Page extends TestBase {
 	
 	@FindBy(xpath="//a[contains(@href,'booking_types') and contains(text(),'Edit')]")
 	WebElement editBookingType_link;
-	
 	
 	@FindBy(xpath="//a[contains(@href,'booking_types') and text()='Delete']")
 	WebElement deleteBookingType_link;
@@ -162,7 +166,41 @@ public class Manage_Page extends TestBase {
 	@FindBy(xpath="//div[contains(@id,'flash') and contains(@class,'alert-box')]")
 	WebElement success_msg;
 	
+	@FindBy(xpath="//a[text()='New Space']")
+	WebElement newSpace_btn;
 	
+	@FindBy(xpath="//input[@id='space_name']")
+	WebElement spaceName_txt;
+	
+	@FindBy(xpath="//div[@id='category-list']//div//label[@for='space_category_ids_909']//span")
+	WebElement newSpaceCatagory_chkBox;
+	
+	@FindBy(xpath="//a[contains(@href,'newautospace') and text()='Edit']")
+	WebElement editNewSpace_msg;
+	
+	@FindBy(xpath="//a[contains(@href,'newautospaceupdated') and text()='Delete']")
+	WebElement deleteNewSpace_msg;
+	
+	@FindBy(xpath="//a[text()='Edit Website']")
+	WebElement editWebSite_btn;
+	
+	@FindBy(xpath="//a[text()='Edit Venue']")
+	WebElement editVenue_btn;
+	
+	@FindBy(xpath="//dl[@class='tabs']//dd/a")
+	List<WebElement> websiteNVenueSubTabs;
+	
+	@FindBy(xpath="//input[@id='venue_name']")
+	WebElement venueName_txt;
+	
+	@FindBy(xpath="//div[@id='venue-name']//a")
+	WebElement venueNameTitle_txt;
+	
+	@FindBy(xpath="//input[@id='venue_statement_number_prefix']")
+	WebElement invoiceNumPrefix_txt;
+	
+	@FindBy(xpath="//input[@id='venue_credit_note_number_prefix']")
+	WebElement CNNumPrefix_txt;
 	
 //================================Initialise web elements created in this class========================================
 	
@@ -304,11 +342,13 @@ public class Manage_Page extends TestBase {
 			Thread.sleep(1000);
 		}
 		
-		public void verify_addNewHolidays() {
+		public void verify_addNewHolidays() throws InterruptedException {
 			addHoliday_btn.click();
 			holidayDesc_txt.sendKeys("AutomationHolidays");
 			holidayStartDate_txt.sendKeys("25/07/2020");
 			holidayEndDate_txt.sendKeys("26/07/2020");
+			holidayEndDate_txt.sendKeys(Keys.TAB);
+			Thread.sleep(2000);
 			blueSave_btn.click();
 			String descTxt = driver.findElement(By.xpath("//div[@id='holiday-list']//tbody/tr/td[contains(.,'AutomationHolidays')]")).getText();
 			SoftAssert softAssert = new SoftAssert();
@@ -317,9 +357,14 @@ public class Manage_Page extends TestBase {
 		}
 		
 		public void verify_editHolidays() throws InterruptedException {
-			editHolidays_link.click();
+			Thread.sleep(2000);
+			Actions action = new Actions(driver);
+			action.moveToElement(editHolidays_link).click().perform();
+		//	editHolidays_link.click();
+			Thread.sleep(2000);
 			holidayDesc_txt.clear();
 			holidayDesc_txt.sendKeys("AutomationHolidaysUpdated");
+			Thread.sleep(2000);
 			blueSave_btn.click();
 			String updatedDescTxt = driver.findElement(By.xpath("//div[@id='holiday-list']//tbody/tr/td[contains(.,'AutomationHolidaysUpdated')]")).getText();
 			SoftAssert softAssert = new SoftAssert();
@@ -328,6 +373,7 @@ public class Manage_Page extends TestBase {
 		}
 		
 		public void verify_deleteHolidays() throws InterruptedException {
+			Thread.sleep(2000);
 			deleteHolidays_link.click();
 			Thread.sleep(1000);
 			driver.switchTo().alert().dismiss();
@@ -338,11 +384,13 @@ public class Manage_Page extends TestBase {
 			Thread.sleep(1000);
 		}
 		
-		public void verify_addNewClosures() {
+		public void verify_addNewClosures() throws InterruptedException {
 			addClosure_btn.click();
 			closureReason_txt.sendKeys("AutomationClosure");
 			closureStartDate_txt.sendKeys("25/07/2020");
 			closureEndDate_txt.sendKeys("26/07/2020");
+			closureEndDate_txt.sendKeys(Keys.TAB);
+			Thread.sleep(2000);
 			blueSave_btn.click();
 			String descTxt = driver.findElement(By.xpath("//div[@id='closure-list']//tbody/tr/td[contains(.,'AutomationClosure')]")).getText();
 			SoftAssert softAssert = new SoftAssert();
@@ -351,9 +399,14 @@ public class Manage_Page extends TestBase {
 		}
 		
 		public void verify_editClosures() throws InterruptedException {
-			editClosure_link.click();
+			Thread.sleep(2000);
+			Actions action = new Actions(driver);
+			action.moveToElement(editClosure_link).click().perform();
+		//	editClosure_link.click();
+			Thread.sleep(2000);
 			closureReason_txt.clear();
 			closureReason_txt.sendKeys("AutomationClosureUpdated");
+			Thread.sleep(2000);
 			blueSave_btn.click();
 			String updatedDescTxt = driver.findElement(By.xpath("//div[@id='closure-list']//tbody/tr/td[contains(.,'AutomationClosureUpdated')]")).getText();
 			SoftAssert softAssert = new SoftAssert();
@@ -362,6 +415,7 @@ public class Manage_Page extends TestBase {
 		}
 		
 		public void verify_deleteClosures() throws InterruptedException {
+			Thread.sleep(3000);
 			deleteClosure_link.click();
 			Thread.sleep(1000);
 			driver.switchTo().alert().dismiss();
@@ -387,15 +441,23 @@ public class Manage_Page extends TestBase {
 		}
 		
 		public void verify_addClientFlag() throws InterruptedException {
-			addClientFag_btn.click();
+			Thread.sleep(1000);
+			Actions action = new Actions(driver);
+			action.moveToElement(addClientFag_btn).click().perform();
+		//	addClientFag_btn.click();
 			clientFlagReason_txt.sendKeys("AutoFlag");
+			Thread.sleep(1000);
 			blueSave_btn.click();
-			
+			Thread.sleep(4000);
 			client_page.clicktab();
 			client_page.search_box.sendKeys("auto");
 			client_page.view_link.click();
 			client_page.editClient_btn.click();
-			driver.findElement(By.xpath("//a[@class='selector']")).click();
+			 JavascriptExecutor js = (JavascriptExecutor) driver;
+			 js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+			 Thread.sleep(5000);
+			driver.findElement(By.xpath("//select[@id='client_client_flag_id']//following-sibling::div//a[@class='selector']")).click();
+			Thread.sleep(2000);
 			driver.findElement(By.xpath("//li[contains(.,'AutoFlag')]")).click();
 			client_page.updateClient_btn.click();
 			String title = success_msg.getText();
@@ -406,15 +468,22 @@ public class Manage_Page extends TestBase {
 		}
 		
 		public void verify_deleteClientFlag() throws InterruptedException {
+			Thread.sleep(3000);
 			client_page.editClient_btn.click();
-			driver.findElement(By.xpath("//a[@class='selector']")).click();
-			driver.findElement(By.xpath("//li[@class='selected']")).click();
+			 JavascriptExecutor js = (JavascriptExecutor) driver;
+			 js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+			 Thread.sleep(5000);
+			driver.findElement(By.xpath("//select[@id='client_client_flag_id']//following-sibling::div//a[@class='selector']")).click();
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//select[@id='client_client_flag_id']//following-sibling::div//ul//li")).click();
+			Thread.sleep(1000);
 			client_page.updateClient_btn.click();
 			String title = success_msg.getText();
 			SoftAssert softAssert = new SoftAssert();
 			softAssert.assertTrue(title.contains("Client was successfully updated."));
 			softAssert.assertAll();	
-			Assert.assertFalse(driver.findElement(By.xpath("//img[contains(@src,'flag_red') and @alt='Flag red']")).isDisplayed());
+		//	assertTrue(!isElementPresent(driver.findElement(By.xpath("//img[contains(@src,'flag_red') and @alt='Flag red']"))));
+		//	Assert.assertFalse(driver.findElement(By.xpath("//img[contains(@src,'flag_red') and @alt='Flag red']")).isEnabled());
 			
 			manage_tab.click();
 			deleteClientFlag_link.click();
@@ -427,6 +496,12 @@ public class Manage_Page extends TestBase {
 			Thread.sleep(1000);
 		}
 		
+		private boolean isElementPresent(WebElement findElement) {
+			// TODO Auto-generated method stub
+			return false;
+		}
+
+
 		public void verify_addNewBookingSlot() {
 			newBookingSlot_btn.click();
 			bookingSlotName_txt.sendKeys("AutomationSlot");
@@ -461,8 +536,263 @@ public class Manage_Page extends TestBase {
 			driver.switchTo().alert().accept();
 			Thread.sleep(1000);
 		}
-
 		
+		
+		
+		public void verify_addingNewBookableSpace() {
+			newSpace_btn.click();
+			spaceName_txt.sendKeys("NewAutoSpace");
+			newSpaceCatagory_chkBox.click();
+			blueSave_btn.click();
+			String title = success_msg.getText();
+			SoftAssert softAssert = new SoftAssert();
+			softAssert.assertTrue(title.contains("Successfully created space."));
+			softAssert.assertAll();	
+		}
+		
+		public void verify_editNewBookableSpace() throws InterruptedException {
+			editNewSpace_msg.click();
+			Thread.sleep(1000);
+			spaceName_txt.clear();
+			spaceName_txt.sendKeys("NewAutoSpaceUpdated");
+			blueSave_btn.click();
+			String title = success_msg.getText();
+			SoftAssert softAssert = new SoftAssert();
+			softAssert.assertTrue(title.contains("Successfully updated space."));
+			softAssert.assertAll();	
+		}
+		
+		public void verify_deleteNewBookableSpace() throws InterruptedException {
+			deleteNewSpace_msg.click();
+			Thread.sleep(1000);
+			driver.switchTo().alert().dismiss();
+			Thread.sleep(1000);
+			deleteNewSpace_msg.click();
+			Thread.sleep(1000);
+			driver.switchTo().alert().accept();
+			Thread.sleep(1000);
+			String title = success_msg.getText();
+			SoftAssert softAssert = new SoftAssert();
+			softAssert.assertTrue(title.contains("Successfully destroyed space."));
+			softAssert.assertAll();		
+		}
+		
+		public void verify_websiteSubtabs() throws InterruptedException {
+			editWebSite_btn.click();
+			int noOfSubTabs  = websiteNVenueSubTabs.size();
+			System.out.println("Number of website subtabs are " + noOfSubTabs);
+			for(int i=1;i<=noOfSubTabs;i++) {
+				Thread.sleep(1000);
+				driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).click();
+				String subTabName =  driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).getText();
+				System.out.println("Website Sub tab name is : "+ subTabName);
+				Assert.assertTrue(noOfSubTabs==9);
+			}
+		}
+		
+		public void verify_BAUwebsiteSubtabs() throws InterruptedException {
+			editWebSite_btn.click();
+			int noOfSubTabs  = websiteNVenueSubTabs.size();
+			System.out.println("Number of website subtabs are " + noOfSubTabs);
+			for(int i=1;i<=noOfSubTabs;i++) {
+				Thread.sleep(1000);
+				driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).click();
+				String subTabName =  driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).getText();
+				System.out.println("Website Sub tab name is : "+ subTabName);
+				Assert.assertTrue(noOfSubTabs==4);
+			}
+		}
+		
+		public void verify_venueSubtabs() throws InterruptedException {
+			editVenue_btn.click();
+			int noOfVenueSubTabs  = websiteNVenueSubTabs.size();
+			System.out.println("Number of Venue subtabs are " + noOfVenueSubTabs);
+			for(int i=1;i<=noOfVenueSubTabs;i++) {
+				Thread.sleep(1000);
+				driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).click();
+				String subTabName =  driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).getText();
+				System.out.println("Venue Sub tab name is : "+ subTabName);
+				Assert.assertTrue(noOfVenueSubTabs==6);
+			}
+		}
+		
+		public void verify_editVenueBasicDetails() {
+			String venuetitlebefore = venueNameTitle_txt.getText();
+			System.out.println("Venue name title after update "+ venuetitlebefore);
+			
+			driver.findElement(By.xpath("//a[text()='Basic Information']")).click();
+			venueName_txt.clear();
+			venueName_txt.sendKeys("Chorley Health Centre Updated");
+			driver.findElement(By.xpath("//input[@value='Save']")).click();
+			String title = success_msg.getText();
+			SoftAssert softAssert = new SoftAssert();
+			softAssert.assertTrue(title.contains("Successfully updated venue."));
+			softAssert.assertAll();	
+			
+			String venuetitleafter = venueNameTitle_txt.getText();
+			System.out.println("Venue name title after update "+ venuetitleafter);
+			
+			Assert.assertFalse(venuetitleafter.equalsIgnoreCase(venuetitlebefore));
+			
+			String venuetitlebefore2 = venueNameTitle_txt.getText();
+			System.out.println("Venue name title after update "+ venuetitlebefore2);
+			
+			
+			driver.findElement(By.xpath("//a[text()='Basic Information']")).click();
+			venueName_txt.clear();
+			venueName_txt.sendKeys("Chorley Health Centre");
+			driver.findElement(By.xpath("//input[@value='Save']")).click();
+			String title2 = success_msg.getText();
+			SoftAssert softAssert2 = new SoftAssert();
+			softAssert2.assertTrue(title2.contains("Successfully updated venue."));
+			softAssert2.assertAll();	
+			
+			String venuetitleafter2 = venueNameTitle_txt.getText();
+			System.out.println("Venue name title after update "+ venuetitleafter2);
+			
+			Assert.assertFalse(venuetitleafter2.equalsIgnoreCase(venuetitlebefore2));
+		}
+		
+		public void verify_updateInvoiceNCNPrefix() throws InterruptedException {
+			driver.findElement(By.xpath("//a[text()='Billing']")).click();
+			invoiceNumPrefix_txt.clear();
+			invoiceNumPrefix_txt.sendKeys("AUTOICHO");
+			CNNumPrefix_txt.clear();
+			CNNumPrefix_txt.sendKeys("AUTOCCHO");
+			driver.findElement(By.xpath("//input[@value='Save']")).click();
+			String title2 = success_msg.getText();
+			SoftAssert softAssert2 = new SoftAssert();
+			softAssert2.assertTrue(title2.contains("Successfully updated venue."));
+			softAssert2.assertAll();
+			Thread.sleep(3000);
+			client_page.clicktab();
+			client_page.search_box.clear();
+			client_page.search_box.sendKeys("auto");
+			client_page.view_link.click();
+			String invoiceTxt = driver.findElement(By.xpath("//a[contains(@title,'Includes bookings')]")).getText();
+			System.out.println("after first update invoice name "+ invoiceTxt);
+			String CNtxt = driver.findElement(By.xpath("//a[contains(text(),'Credit Note ')]")).getText();
+			System.out.println("after first update CN name "+ CNtxt);
+			Assert.assertTrue(invoiceTxt.contains("AUTO"));
+			Assert.assertTrue(CNtxt.contains("AUTO"));
+			
+		}
+		
+		public void verify_revertInvoiceNCNPrefix() throws InterruptedException {
+			verify_clickManageTab();
+			editVenue_btn.click();
+			driver.findElement(By.xpath("//a[text()='Billing']")).click();
+			invoiceNumPrefix_txt.clear();
+			invoiceNumPrefix_txt.sendKeys("ICHO");
+			CNNumPrefix_txt.clear();
+			CNNumPrefix_txt.sendKeys("CCHO");
+			driver.findElement(By.xpath("//input[@value='Save']")).click();
+			String title2 = success_msg.getText();
+			SoftAssert softAssert2 = new SoftAssert();
+			softAssert2.assertTrue(title2.contains("Successfully updated venue."));
+			softAssert2.assertAll();
+			Thread.sleep(3000);
+			client_page.clicktab();
+			client_page.search_box.clear();
+			client_page.search_box.sendKeys("auto");
+			client_page.view_link.click();
+			String invoiceTxt = driver.findElement(By.xpath("//a[contains(@title,'Includes bookings')]")).getText();
+			System.out.println("after second update invoice name "+ invoiceTxt);
+			String CNtxt = driver.findElement(By.xpath("//a[contains(text(),'Credit Note ')]")).getText();
+			System.out.println("after second update CNtxt name "+ CNtxt);
+			Assert.assertFalse(invoiceTxt.contains("AUTO"));
+			Assert.assertFalse(CNtxt.contains("AUTO"));
+			
+		}
+		
+		public void verify_editBAUVenueBasicDetails() {
+			String venuetitlebefore = venueNameTitle_txt.getText();
+			System.out.println("Venue name title after update "+ venuetitlebefore);
+			
+			driver.findElement(By.xpath("//a[text()='Basic Information']")).click();
+			venueName_txt.clear();
+			venueName_txt.sendKeys("X - SLS @ King David High School Updated");
+			driver.findElement(By.xpath("//input[@value='Save']")).click();
+			String title = success_msg.getText();
+			SoftAssert softAssert = new SoftAssert();
+			softAssert.assertTrue(title.contains("Successfully updated venue."));
+			softAssert.assertAll();	
+			
+			String venuetitleafter = venueNameTitle_txt.getText();
+			System.out.println("Venue name title after update "+ venuetitleafter);
+			
+			Assert.assertFalse(venuetitleafter.equalsIgnoreCase(venuetitlebefore));
+			
+			String venuetitlebefore2 = venueNameTitle_txt.getText();
+			System.out.println("Venue name title after update "+ venuetitlebefore2);
+			
+			
+			driver.findElement(By.xpath("//a[text()='Basic Information']")).click();
+			venueName_txt.clear();
+			venueName_txt.sendKeys("X - SLS @ King David High School");
+			driver.findElement(By.xpath("//input[@value='Save']")).click();
+			String title2 = success_msg.getText();
+			SoftAssert softAssert2 = new SoftAssert();
+			softAssert2.assertTrue(title2.contains("Successfully updated venue."));
+			softAssert2.assertAll();	
+			
+			String venuetitleafter2 = venueNameTitle_txt.getText();
+			System.out.println("Venue name title after update "+ venuetitleafter2);
+			
+			Assert.assertFalse(venuetitleafter2.equalsIgnoreCase(venuetitlebefore2));
+		}
+		
+		public void verify_updateBAUInvoiceNCNPrefix() throws InterruptedException {
+			driver.findElement(By.xpath("//a[text()='Billing']")).click();
+			invoiceNumPrefix_txt.clear();
+			invoiceNumPrefix_txt.sendKeys("AUTOSLS_KDC");
+			CNNumPrefix_txt.clear();
+			CNNumPrefix_txt.sendKeys("AUTOSLS_CN_KDC");
+			driver.findElement(By.xpath("//input[@value='Save']")).click();
+			String title2 = success_msg.getText();
+			SoftAssert softAssert2 = new SoftAssert();
+			softAssert2.assertTrue(title2.contains("Successfully updated venue."));
+			softAssert2.assertAll();
+			Thread.sleep(3000);
+			client_page.clicktab();
+			client_page.search_box.clear();
+			client_page.search_box.sendKeys("auto");
+			client_page.view_link.click();
+			String invoiceTxt = driver.findElement(By.xpath("//a[contains(@title,'Includes bookings')]")).getText();
+			System.out.println("after first update invoice name "+ invoiceTxt);
+			String CNtxt = driver.findElement(By.xpath("//a[contains(text(),'Credit Note ')]")).getText();
+			System.out.println("after first update CN name "+ CNtxt);
+			Assert.assertTrue(invoiceTxt.contains("AUTO"));
+			Assert.assertTrue(CNtxt.contains("AUTO"));
+			
+		}
+		
+		public void verify_revertBAUInvoiceNCNPrefix() throws InterruptedException {
+			verify_clickManageTab();
+			editVenue_btn.click();
+			driver.findElement(By.xpath("//a[text()='Billing']")).click();
+			invoiceNumPrefix_txt.clear();
+			invoiceNumPrefix_txt.sendKeys("SLS_KDC");
+			CNNumPrefix_txt.clear();
+			CNNumPrefix_txt.sendKeys("SLS_CN_KDC");
+			driver.findElement(By.xpath("//input[@value='Save']")).click();
+			String title2 = success_msg.getText();
+			SoftAssert softAssert2 = new SoftAssert();
+			softAssert2.assertTrue(title2.contains("Successfully updated venue."));
+			softAssert2.assertAll();
+			Thread.sleep(3000);
+			client_page.clicktab();
+			client_page.search_box.clear();
+			client_page.search_box.sendKeys("auto");
+			client_page.view_link.click();
+			String invoiceTxt = driver.findElement(By.xpath("//a[contains(@title,'Includes bookings')]")).getText();
+			System.out.println("after second update invoice name "+ invoiceTxt);
+			String CNtxt = driver.findElement(By.xpath("//a[contains(text(),'Credit Note ')]")).getText();
+			System.out.println("after second update CNtxt name "+ CNtxt);
+			Assert.assertFalse(invoiceTxt.contains("AUTO"));
+			Assert.assertFalse(CNtxt.contains("AUTO"));
+			
+		}
 }
 
 

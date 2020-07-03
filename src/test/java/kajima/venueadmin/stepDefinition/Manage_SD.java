@@ -79,36 +79,23 @@ public class Manage_SD extends TestBase {
 		manage_page.verify_deleteBookingCatagory();
 	}
 	
-	
-//==============Below 1 scenario related to space catagory related scenario is only applicable for NHS - Org admin================================
-//============================Scenario: Manage tab -  Venue management - verify Space Categories – should not have the option to add/edit or delete – Org admin only for NHS==============
-
-	@Then("^User verify the space catagory to ensure that this section is read only section and user is not allowed to add, edit or delete space catagory$")
-	public void user_verify_the_space_catagory_to_ensure_that_this_section_is_read_only_section_and_user_is_not_allowed_to_add_edit_or_delete_space_catagory() throws Throwable {
-
-	}
-
-	@Then("^user login to Org admin and able to add , edit or delete space catagory$")
-	public void user_login_to_Org_admin_and_able_to_add_edit_or_delete_space_catagory()  {
-
-	}
-	
-//======================Scenario: Manage tab -  Venue management - verify Bookable spaces – Add and edit (Details, price, client bookings, custom fields, calendar categories, Tags, Photos, space business hours), and delete.=============
+//======================Scenario: Manage tab -  Venue management - verify Bookable spaces – Add and edit and delete.===============
 
 	@Then("^Adding a new bookable space – assign to new category$")
 	public void adding_a_new_bookable_space_assign_to_new_category() {
-
+		manage_page.verify_addingNewBookableSpace();
 	}
 
-	@Then("^Deleting a bookable space$")
-	public void deleting_a_bookable_space()  {
-
+	@Then("^Edit and Deleting a bookable space$")
+	public void deleting_a_bookable_space() throws InterruptedException  {
+		manage_page.verify_editNewBookableSpace();
+		manage_page.verify_deleteNewBookableSpace();
 	}
 	
 //=============Scenario: Manage tab -  Venue management - verify Holidays - add, edit, delete==============================================
 
 	@Then("^User added the new Holiday  and verify$")
-	public void user_added_the_new_Holiday_and_verify()  {
+	public void user_added_the_new_Holiday_and_verify() throws InterruptedException  {
 		manage_page.verify_addNewHolidays();
 	}
 
@@ -125,7 +112,7 @@ public class Manage_SD extends TestBase {
 //======================Scenario: Manage tab -  Venue management - verify Closures - add, edit, delete========================================
 
 	@Then("^User added the new Closures  and verify$")
-	public void user_added_the_new_Closures_and_verify() {
+	public void user_added_the_new_Closures_and_verify() throws InterruptedException {
 		manage_page.verify_addNewClosures();
 	}
 
@@ -178,40 +165,53 @@ public class Manage_SD extends TestBase {
 //=======================Scenario: Manage tab -  Venue management - Edit website==================================================
 
 	@Then("^User selects Edit website , navigate to all the subtabs and verify$")
-	public void user_selects_Edit_website_navigate_to_all_the_subtabs_and_verify() {
+	public void user_selects_Edit_website_navigate_to_all_the_subtabs_and_verify() throws InterruptedException {
+		manage_page.verify_websiteSubtabs();
+	}
+	
+//=======================Scenario: Manage tab -  Venue management - BAU Edit website==================================================
 
+	@Then("^BAUUser selects Edit website , navigate to all the subtabs and verify$")
+	public void BAUuser_selects_Edit_website_navigate_to_all_the_subtabs_and_verify() throws InterruptedException {
+		manage_page.verify_BAUwebsiteSubtabs();
 	}
 
-	@Then("^User navigate to General subtab and change venue banner image$")
-	public void user_navigate_to_General_subtab_and_change_venue_banner_image()  {
-
-	}
-
-	@Then("^User navigate to Facilities subtab – update text box and add a floor plan\\. Edit and remove$")
-	public void user_navigate_to_Facilities_subtab_update_text_box_and_add_a_floor_plan_Edit_and_remove()  {
-
-	}
 	
 //=============================Scenario: Manage tab -  Venue management - Edit Venue==========================================================
 
 	@Then("^User selects Edit venue , navigate to all the subtabs and verify$")
-	public void user_selects_Edit_venue_navigate_to_all_the_subtabs_and_verify() {
-
+	public void user_selects_Edit_venue_navigate_to_all_the_subtabs_and_verify() throws InterruptedException {
+		manage_page.verify_venueSubtabs();
 	}
 
 	@Then("^User navigate to basic info subtab,updating info and check this saves correctly$")
 	public void user_navigate_to_basic_info_subtab_updating_info_and_check_this_saves_correctly()  {
-
+		manage_page.verify_editVenueBasicDetails();
 	}
 
 	@Then("^User navigate to Billing subtab – check that invoice/credit note prefixes can be updated, check this saves correctly and is applied to invoices – change back to original info$")
-	public void user_navigate_to_Billing_subtab_check_that_invoice_credit_note_prefixes_can_be_updated_check_this_saves_correctly_and_is_applied_to_invoices_change_back_to_original_info() {
+	public void user_navigate_to_Billing_subtab_check_that_invoice_credit_note_prefixes_can_be_updated_check_this_saves_correctly_and_is_applied_to_invoices_change_back_to_original_info() throws InterruptedException {
+		manage_page.verify_updateInvoiceNCNPrefix();
+		manage_page.verify_revertInvoiceNCNPrefix();
+	}
+	
+	
+//=============================Scenario: Manage tab -  Venue management - BAU Edit Venue==========================================================
 
+	@Then("^BAU User selects Edit venue , navigate to all the subtabs and verify$")
+	public void BAU_user_selects_Edit_venue_navigate_to_all_the_subtabs_and_verify() throws InterruptedException {
+		manage_page.verify_venueSubtabs();
 	}
 
-	@Then("^User navigate to Emails subtab and Updating a venue email template$")
-	public void user_navigate_to_Emails_subtab_and_Updating_a_venue_email_template() {
+	@Then("^BAU User navigate to basic info subtab,updating info and check this saves correctly$")
+	public void BAU_user_navigate_to_basic_info_subtab_updating_info_and_check_this_saves_correctly()  {
+		manage_page.verify_editBAUVenueBasicDetails();
+	}
 
+	@Then("^BAU User navigate to Billing subtab – check that invoice/credit note prefixes can be updated, check this saves correctly and is applied to invoices – change back to original info$")
+	public void BAU_user_navigate_to_Billing_subtab_check_that_invoice_credit_note_prefixes_can_be_updated_check_this_saves_correctly_and_is_applied_to_invoices_change_back_to_original_info() throws InterruptedException {
+		manage_page.verify_updateBAUInvoiceNCNPrefix();
+		manage_page.verify_revertBAUInvoiceNCNPrefix();
 	}
 	
 //====================================ONLY APPLICABLE FOR BAU======================================
@@ -233,4 +233,18 @@ public class Manage_SD extends TestBase {
 	}
 	
 //====================================================================================================================================
+
+//==============Below 1 scenario related to space catagory related scenario is only applicable for NHS - Org admin================================
+//============================Scenario: Manage tab -  Venue management - verify Space Categories – should not have the option to add/edit or delete – Org admin only for NHS==============
+
+	@Then("^User verify the space catagory to ensure that this section is read only section and user is not allowed to add, edit or delete space catagory$")
+	public void user_verify_the_space_catagory_to_ensure_that_this_section_is_read_only_section_and_user_is_not_allowed_to_add_edit_or_delete_space_catagory() throws Throwable {
+
+	}
+
+	@Then("^user login to Org admin and able to add , edit or delete space catagory$")
+	public void user_login_to_Org_admin_and_able_to_add_edit_or_delete_space_catagory()  {
+
+	}
+
 }

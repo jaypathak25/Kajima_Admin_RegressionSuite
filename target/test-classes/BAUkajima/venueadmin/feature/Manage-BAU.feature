@@ -1,6 +1,6 @@
 #Author: Jay Pathak
-#Comment: Venue Admin  - Manage tab Regression 
-Feature: Manage tab scenarios 
+#Comment: Venue Admin  - BAU Manage tab Regression 
+Feature: BAUManage tab scenarios 
 
 
 Background:
@@ -26,12 +26,6 @@ Scenario: Manage tab -  Venue management - verify Booking Categories - add, edit
 Then User added the new booking Categories and verify
 Then User Edited the new booking Categories and verify
 Then User Deleted the new booking Categories and verify
-And user quit the browser
-
-@VenueAdmin
-Scenario: Manage tab -  Venue management - verify Bookable spaces – Add and edit (Details, price, client bookings, custom fields, calendar categories, Tags, Photos, space business hours), and delete. 
-Then Adding a new bookable space – assign to new category
-Then Deleting a bookable space
 And user quit the browser
 
 @VenueAdmin
@@ -61,6 +55,12 @@ Then User verifies default calender time , edit the times and update
 And user quit the browser
 
 @VenueAdmin
+Scenario: Manage tab -  Venue management - verify Bookable spaces – Add and edit and delete. 
+Then Adding a new bookable space – assign to new category
+Then Edit and Deleting a bookable space
+And user quit the browser
+
+@VenueAdmin
 Scenario: Manage tab -  Venue management - verify Add a client flag, assign to a client and then delete the flag
 Then User added a new cleint flag, assign to client and verify that this is visible on client account for admin
 Then User deleted the flag and verify that it is not visible to client account for admin anymore
@@ -69,23 +69,23 @@ And user quit the browser
 @VenueAdmin
 Scenario: Manage tab -  Venue management - Edit website 
 Then User selects Edit website , navigate to all the subtabs and verify 
-Then User navigate to General subtab and change venue banner image
-Then User navigate to Facilities subtab – update text box and add a floor plan. Edit and remove
 And user quit the browser
 
 @VenueAdmin
-Scenario: Manage tab -  Venue management - Edit Venue 
-Then User selects Edit venue , navigate to all the subtabs and verify 
-Then User navigate to basic info subtab,updating info and check this saves correctly
-Then User navigate to Billing subtab – check that invoice/credit note prefixes can be updated, check this saves correctly and is applied to invoices – change back to original info
-Then User navigate to Emails subtab and Updating a venue email template
+Scenario: Manage tab -  Venue management - BAU Edit Venue 
+Then BAU User selects Edit venue , navigate to all the subtabs and verify 
+Then BAU User navigate to basic info subtab,updating info and check this saves correctly
+Then BAU User navigate to Billing subtab – check that invoice/credit note prefixes can be updated, check this saves correctly and is applied to invoices – change back to original info
 And user quit the browser
 
+#BAU specific - NEED TO WRITE CODE FOR BELOW SCENARIO 
 @VenueAdmin
 Scenario: BAU Manage tab -  Venue management - verify calender Categories – add, edit (name, description, limit client bookings to slots), delete
 Then User added the new calender Category  and verify
 Then User Edited the calender Categories like name, description, limit client bookings to slots and verify
 Then User Deleted the calender Category and verify
 And user quit the browser
+
+
 
 

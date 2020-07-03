@@ -469,7 +469,7 @@ public class Bookings_Page extends TestBase {
 				save_Btn.click();
 				Thread.sleep(5000);
 				if(driver.findElement(By.xpath("//div[@id='error_messages']")).isDisplayed()) {
-					driver.findElement(By.xpath("//a[text()='Close']")).click();
+					driver.findElement(By.xpath("//a[text()='Close']")).click();;
 				}else {
 				String roomNameafterEdit = driver.findElement(By.xpath("//table[@id='booking_items_list']/tbody/tr["+i+"]/td[2]")).getText();
 				System.out.println("After edit room name is " + roomNameafterEdit);

@@ -13,13 +13,13 @@ import kajima.venueadmin.base.TestBase;
 			
 			glue = {"kajima.venueadmin.stepDefinition"},
 			
-			format = {"pretty","html:kajima_Regression_Report.html"}, //to generate different types of reporting
+			format = {"pretty","html:kajima_Regression_ReportBAU.html"}, //to generate different types of reporting
 			
 			monochrome = true, //display the console output in a proper readable format
 			
 			strict = true, //it will check if any step is not defined in step definition file
 			
-			dryRun = true, //to check the mapping is proper between feature file and step def file, make it true and run from here
+			dryRun = false, //to check the mapping is proper between feature file and step def file, make it true and run from here
 			
 			tags = {"@VenueAdmin"}
 		

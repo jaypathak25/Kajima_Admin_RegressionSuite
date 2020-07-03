@@ -23,7 +23,6 @@ Scenario: Cancel multiple mixed bookings -  select check box for different payme
     Then User Select check box for mutiple different payment status bookings and cancel to verify CN and Refunds if applicable
   	And user quit the browser
 
-
 @VenueAdmin
 Scenario: Search and filter - verify booking results with different search/filter Criteria, summary view and exports
     Then User changes the number of enteries and verify results

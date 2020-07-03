@@ -12,7 +12,9 @@ Background:
     
 ##============================================================================================================================##
 ##==============================================15 scenarios for BAU Venue admin=============================================================================##    
- 
+
+
+
 @VenueAdmin
 Scenario: Verify that user can add a manual payment from the Clients screen
  		Then User adds a Manual payment and verify the result  
@@ -94,3 +96,4 @@ Scenario: Edit a BAU User -  update details
 Scenario: Unlink a client User
     Then User unlink the user and verify the details 
     And user quit the browser
+

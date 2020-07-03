@@ -13,7 +13,7 @@ Background:
 ##=====================================3 reminder scenarios====================================================
     
 
-  	@VenueAdmin
+ @VenueAdmin @Orgadmin
 Scenario: View - Reminder and edit a reminder
     Then User selects the action link and update the date, save and verify the change
   	And user quit the browser
