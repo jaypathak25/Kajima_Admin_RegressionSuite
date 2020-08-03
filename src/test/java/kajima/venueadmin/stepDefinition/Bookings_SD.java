@@ -36,7 +36,7 @@ public class Bookings_SD extends TestBase {
 	}
 
 	@Then("^User clicks the Bookings tab$")
-	public void user_clicks_the_Bookings_tab() {
+	public void user_clicks_the_Bookings_tab() throws InterruptedException {
 		bookings_page.verify_clickBookingsTab();
 	}
 	

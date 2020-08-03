@@ -79,7 +79,7 @@ public class Clients_Page extends TestBase {
 	@FindBy(xpath = "//div[@id='flash_success' and @class ='alert-box success hide-on-print']" )
 	WebElement success_Msg;
 	
-	@FindBy(xpath = "//div[@class='alert-box success hide-on-print']")
+	@FindBy(xpath = "//div[@id='flash_notice' and @class='alert-box success hide-on-print']")
 	WebElement unlink_Msg;
 	
 	

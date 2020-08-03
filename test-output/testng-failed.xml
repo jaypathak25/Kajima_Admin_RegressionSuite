@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [BAUKajima_VenueAdmin_Regression_TestSuite]" parallel="tests">
-  <test thread-count="1" name="BAUkajima_VenueAdmin_Regression_testcases(failed)" parallel="tests">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Kajima_VenueAdmin_Regression_TestSuite]" parallel="tests">
+  <test thread-count="1" name="kajima_VenueAdmin_Regression_testcases(failed)" parallel="tests">
     <classes>
-      <class name="kajima.venueadmin.runner.BAUTestRunner">
+      <class name="kajima.venueadmin.runner.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="0 1 2 3"/>
+          <include name="feature" invocation-numbers="0 1 4 5"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- kajima.venueadmin.runner.BAUTestRunner -->
+      </class> <!-- kajima.venueadmin.runner.TestRunner -->
     </classes>
-  </test> <!-- BAUkajima_VenueAdmin_Regression_testcases(failed) -->
-</suite> <!-- Failed suite [BAUKajima_VenueAdmin_Regression_TestSuite] -->
+  </test> <!-- kajima_VenueAdmin_Regression_testcases(failed) -->
+</suite> <!-- Failed suite [Kajima_VenueAdmin_Regression_TestSuite] -->

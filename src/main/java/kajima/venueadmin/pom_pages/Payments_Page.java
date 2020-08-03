@@ -104,7 +104,7 @@ public class Payments_Page extends TestBase {
 			Thread.sleep(1000);
 		
 			Select slct =  new Select(driver.findElement(By.xpath("//select[@id='rows_per_page']")));
-			slct.selectByIndex(3);
+			slct.selectByIndex(2);
 			
 			int noOfRefundPay2 = noOfRefundnPayments.size();
 			System.out.println("Number of Refund payments after showing all entries on the page are " + noOfRefundPay2);
@@ -124,9 +124,9 @@ public class Payments_Page extends TestBase {
 				WebElement viewLink = driver.findElement(By.xpath(str3));
 				Thread.sleep(1000);
 				viewLink.click();
-				Thread.sleep(1000);
+				Thread.sleep(5000);
 				close_Link.click();
-				Thread.sleep(1000);
+				Thread.sleep(5000);
 			}
 		}
 		
@@ -141,7 +141,7 @@ public class Payments_Page extends TestBase {
 			softAssert.assertAll();
 		
 			Select slct =  new Select(driver.findElement(By.xpath("//select[@id='rows_per_page']")));
-			slct.selectByIndex(3);
+			slct.selectByIndex(2);
 			
 			int noOfRefundPay1 = noOfRefundnPayments.size();
 			System.out.println("Number of Refund payments after showing all entries on the page are " + noOfRefundPay1);
@@ -160,7 +160,7 @@ public class Payments_Page extends TestBase {
 		
 		public void verify_paymentTypeFilter() throws InterruptedException {
 			Select slct =  new Select(driver.findElement(By.xpath("//select[@id='rows_per_page']")));
-			slct.selectByIndex(3);
+			slct.selectByIndex(2);
 			Thread.sleep(1000);
 			
 			int noOfRefundPay1 = noOfRefundnPayments.size();
@@ -220,7 +220,7 @@ public class Payments_Page extends TestBase {
 		
 		public void verify_resultByAllocationOpn() throws InterruptedException {
 			Select slct =  new Select(driver.findElement(By.xpath("//select[@id='rows_per_page']")));
-			slct.selectByIndex(3);
+			slct.selectByIndex(2);
 			Thread.sleep(500);
 			
 			int noOfRefundPay1 = noOfRefundnPayments.size();
@@ -253,7 +253,7 @@ public class Payments_Page extends TestBase {
 		
 		public void verify_resultByReconciliationOpn() throws InterruptedException {
 			Select slct =  new Select(driver.findElement(By.xpath("//select[@id='rows_per_page']")));
-			slct.selectByIndex(3);
+			slct.selectByIndex(2);
 			Thread.sleep(500);
 			
 			int noOfRefundPay1 = noOfRefundnPayments.size();
@@ -282,7 +282,7 @@ public class Payments_Page extends TestBase {
 		
 		public void verify_resultBystatusOpn() throws InterruptedException {
 			Select slct =  new Select(driver.findElement(By.xpath("//select[@id='rows_per_page']")));
-			slct.selectByIndex(3);	
+			slct.selectByIndex(2);	
 			Thread.sleep(500);
 			
 			int noOfRefundPay1 = noOfRefundnPayments.size();
@@ -314,7 +314,7 @@ public class Payments_Page extends TestBase {
 		
 		public void verify_resultByDateRange() throws InterruptedException {
 			Select slct =  new Select(driver.findElement(By.xpath("//select[@id='rows_per_page']")));
-			slct.selectByIndex(3);	
+			slct.selectByIndex(2);	
 			Thread.sleep(500);
 			
 			int noOfRefundPay1 = noOfRefundnPayments.size();

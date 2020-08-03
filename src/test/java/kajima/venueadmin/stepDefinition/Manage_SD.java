@@ -65,7 +65,7 @@ public class Manage_SD extends TestBase {
 //===================Scenario: Manage tab -  Venue management - verify Booking Categories - add, edit, delete============================
 
 	@Then("^User added the new booking Categories and verify$")
-	public void user_added_the_new_booking_Categories_and_verify() {
+	public void user_added_the_new_booking_Categories_and_verify() throws InterruptedException {
 		manage_page.verify_newBookingCatagory();
 	}
 

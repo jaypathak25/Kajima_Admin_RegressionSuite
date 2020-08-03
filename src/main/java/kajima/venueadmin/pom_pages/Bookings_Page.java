@@ -83,7 +83,7 @@ public class Bookings_Page extends TestBase {
 	@FindBy(xpath = "//a[text()='Venues']")
 	WebElement venue_dd;
 	
-	@FindBy(xpath = "//a[text()='BookingsGuru @ Haverstock School']")
+	@FindBy(xpath = "//a[text()='Blaydon Primary Care Centre']")
 	WebElement venue_name;
 	
 	@FindBy(xpath="//table[@id='bookings_table']/tbody/tr/td[11]")
@@ -270,7 +270,8 @@ public class Bookings_Page extends TestBase {
 //==================================================================================================================//	
 //=======================================//Test Methods//===========================================================//
 
-	public void verify_clickBookingsTab() {
+	public void verify_clickBookingsTab() throws InterruptedException {
+		Thread.sleep(3000);
 		bookings_tab.click();
 		String title = bookingTab_title.getText();
 		SoftAssert softAssert = new SoftAssert();
@@ -310,7 +311,7 @@ public class Bookings_Page extends TestBase {
 		
 		//search by room name
 		Select slct1 = new Select(noOfEnteries_dd);
-		slct1.selectByIndex(3);
+		slct1.selectByIndex(2);
 		Thread.sleep(1000);
 		int noOfbookings = bookingRows.size();
 		System.out.println("No of bookings with no filter are " + noOfbookings);
@@ -735,8 +736,8 @@ public class Bookings_Page extends TestBase {
 			raiseCNEmail_chkBox.click();
 			assertTrue(!isElementPresent(refundPay_chkBox));
 			assertTrue(!isElementPresent(refundEmail_chkBox));
-			Thread.sleep(1000);
-			driver.findElement(By.xpath("//a[text()='Go Back']")).click();
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//a[@class='red buttonBourbon close-modal-button' and text()='Go Back']")).click();
 			Thread.sleep(1000);
 		}
 			else {
@@ -920,7 +921,8 @@ public class Bookings_Page extends TestBase {
 
 		bookings_tab.click();
 		Select slct1 = new Select(noOfEnteries_dd);
-		slct1.selectByVisibleText("all entries");
+		slct1.selectByIndex(2);
+	//	slct1.selectByVisibleText("all entries");
 		Thread.sleep(1000);
 		try {
 			billedBooking_chkBox.click();
@@ -1200,7 +1202,7 @@ public class Bookings_Page extends TestBase {
 		slct1.selectByVisibleText("april release (apriltest)");
 		Thread.sleep(1000);
 		Select slct3 =  new Select(selectSpace_dd);
-		slct3.selectByVisibleText("Treatment room OPD 055");
+		slct3.selectByVisibleText("Examination room L1-008");
 
 		startDate.sendKeys(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 		startTime.sendKeys("10:00");

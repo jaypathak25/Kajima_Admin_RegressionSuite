@@ -54,7 +54,7 @@ public class TestBase {
 	driver.manage().timeouts().pageLoadTimeout(TestUtils.Page_Load_Time, TimeUnit.SECONDS); 
 	//Page_Load_Time and Implicit wait times are defined in .properties file
 	driver.manage().timeouts().implicitlyWait(TestUtils.Implicit_Time_Out, TimeUnit.SECONDS);
-	driver.get(prop.getProperty("PP_url"));
+	driver.get(prop.getProperty("BAU_PP_URL"));
 	}
  }
 

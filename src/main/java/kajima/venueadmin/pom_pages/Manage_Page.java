@@ -163,7 +163,7 @@ public class Manage_Page extends TestBase {
 	@FindBy(xpath="//input[@value='Update']")
 	WebElement update_btn;
 	
-	@FindBy(xpath="//div[contains(@id,'flash') and contains(@class,'alert-box')]")
+	@FindBy(xpath="//div[@id='flash_notice' and contains(@class,'alert-box')]")
 	WebElement success_msg;
 	
 	@FindBy(xpath="//a[text()='New Space']")
@@ -172,7 +172,7 @@ public class Manage_Page extends TestBase {
 	@FindBy(xpath="//input[@id='space_name']")
 	WebElement spaceName_txt;
 	
-	@FindBy(xpath="//div[@id='category-list']//div//label[@for='space_category_ids_909']//span")
+	@FindBy(xpath="//div[@id='category-list']//div//label//span")
 	WebElement newSpaceCatagory_chkBox;
 	
 	@FindBy(xpath="//a[contains(@href,'newautospace') and text()='Edit']")
@@ -303,9 +303,10 @@ public class Manage_Page extends TestBase {
 		}
 		
 		
-		public void verify_newBookingCatagory() {
+		public void verify_newBookingCatagory() throws InterruptedException {
 			newBookingCat_btn.click();
 			bookingTypeName_txt.sendKeys("NewAutoCatagory");
+			Thread.sleep(2000);
 			blueSave_btn.click();
 			String title = success_msg.getText();
 			SoftAssert softAssert = new SoftAssert();
@@ -403,10 +404,10 @@ public class Manage_Page extends TestBase {
 			Actions action = new Actions(driver);
 			action.moveToElement(editClosure_link).click().perform();
 		//	editClosure_link.click();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 			closureReason_txt.clear();
 			closureReason_txt.sendKeys("AutomationClosureUpdated");
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			blueSave_btn.click();
 			String updatedDescTxt = driver.findElement(By.xpath("//div[@id='closure-list']//tbody/tr/td[contains(.,'AutomationClosureUpdated')]")).getText();
 			SoftAssert softAssert = new SoftAssert();
@@ -592,14 +593,14 @@ public class Manage_Page extends TestBase {
 		
 		public void verify_BAUwebsiteSubtabs() throws InterruptedException {
 			editWebSite_btn.click();
-			int noOfSubTabs  = websiteNVenueSubTabs.size();
-			System.out.println("Number of website subtabs are " + noOfSubTabs);
-			for(int i=1;i<=noOfSubTabs;i++) {
+			int noOfBAUSubTabs  = websiteNVenueSubTabs.size();
+			System.out.println("Number of website subtabs are " + noOfBAUSubTabs);
+			for(int i=1;i<=noOfBAUSubTabs;i++) {
 				Thread.sleep(1000);
 				driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).click();
 				String subTabName =  driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).getText();
 				System.out.println("Website Sub tab name is : "+ subTabName);
-				Assert.assertTrue(noOfSubTabs==4);
+				Assert.assertTrue(noOfBAUSubTabs==4);
 			}
 		}
 		
@@ -612,7 +613,7 @@ public class Manage_Page extends TestBase {
 				driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).click();
 				String subTabName =  driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).getText();
 				System.out.println("Venue Sub tab name is : "+ subTabName);
-				Assert.assertTrue(noOfVenueSubTabs==6);
+				Assert.assertTrue(noOfVenueSubTabs==7);
 			}
 		}
 		

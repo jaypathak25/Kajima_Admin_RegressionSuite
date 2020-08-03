@@ -47,25 +47,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 11152745900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2130577200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 53527500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 14339160200,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -105,13 +109,15 @@ formatter.match({
   "location": "Bookings_SD.user_disable_the_refund_feature_from_the_master_admin_and_ensure_no_refund_option_displays_when_master_admin_cancels_booking()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 133007401900,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 726757200,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -144,25 +150,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10530834600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2581423500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 47517400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 14234476600,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 22,
@@ -192,7 +202,9 @@ formatter.match({
   "location": "Bookings_SD.User_Select_check_box_for_multiple_different_payment_status_bookings_and_cancel_to_verify_CN_and_Refunds_if_applicable()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10300707200,
+  "error_message": "java.lang.UnsupportedOperationException: You may only deselect options of a multi-select\r\n\tat org.openqa.selenium.support.ui.Select.deselectByIndex(Select.java:267)\r\n\tat kajima.venueadmin.pom_pages.Bookings_Page.verify_cancel_MixedMultiple_Bpookings(Bookings_Page.java:924)\r\n\tat kajima.venueadmin.stepDefinition.Bookings_SD.User_Select_check_box_for_multiple_different_payment_status_bookings_and_cancel_to_verify_CN_and_Refunds_if_applicable(Bookings_SD.java:144)\r\n\tat ✽.Then User Select check box for mutiple different payment status bookings and cancel to verify CN and Refunds if applicable(Bookings.feature:23)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
@@ -231,25 +243,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10362561400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2284356200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 55107000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13834669900,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 27,
@@ -309,13 +325,16 @@ formatter.match({
   "location": "Bookings_SD.user_changes_the_number_of_enteries_and_verify_results()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 78637701200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_enters_room_name_OR_clients_name_in_the_search_bar_and_verify_the_result()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 23269115500,
+  "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 3\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:183)\r\n\tat kajima.venueadmin.pom_pages.Bookings_Page.verify_searchBar(Bookings_Page.java:314)\r\n\tat kajima.venueadmin.stepDefinition.Bookings_SD.user_enters_room_name_OR_clients_name_in_the_search_bar_and_verify_the_result(Bookings_SD.java:52)\r\n\tat ✽.Then User enters room name OR clients name in the search bar and verify the result(Bookings.feature:29)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Bookings_SD.user_verify_booking_results_by_selecting_different_STATUS_options()"
@@ -384,25 +403,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10582962000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2125163700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 52715000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 14104505800,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 40,
@@ -442,7 +465,9 @@ formatter.match({
   "location": "Bookings_SD.user_selects_a_new_Booking_button_and_raise_daily_recurring_booking()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 32074523800,
+  "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Treatment room OPD 055\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)\r\n\tat kajima.venueadmin.pom_pages.Bookings_Page.verify_createNewDailyBooking(Bookings_Page.java:1205)\r\n\tat kajima.venueadmin.stepDefinition.Bookings_SD.user_selects_a_new_Booking_button_and_raise_daily_recurring_booking(Bookings_SD.java:186)\r\n\tat ✽.Then User selects a new Booking button and raise daily recurring booking(Bookings.feature:41)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Bookings_SD.user_selects_a_new_Booking_button_and_raise_weekly_recurring_booking()"
@@ -493,25 +518,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10472590200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2112632100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 45889600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13643670200,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 47,
@@ -551,13 +580,16 @@ formatter.match({
   "location": "Bookings_SD.user_filter_the_booking_by_FULLY_PAID_payment_status_and_edit_the_booking()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 61614579400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_filter_the_booking_by_BILLED_payment_status_and_edit_the_booking()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 59767223200,
+  "error_message": "org.openqa.selenium.ElementNotVisibleException: element not interactable\n  (Session info: chrome\u003d84.0.4147.89)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55331}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 84.0.4147.89, webStorageEnabled: true}\nSession ID: c6ef8f1cf9b9f9842818f0cac5a02384\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat kajima.venueadmin.pom_pages.Bookings_Page.edit_billedBooking(Bookings_Page.java:503)\r\n\tat kajima.venueadmin.stepDefinition.Bookings_SD.user_filter_the_booking_by_BILLED_payment_status_and_edit_the_booking(Bookings_SD.java:89)\r\n\tat ✽.Then User filter the booking by BILLED payment status and edit the booking(Bookings.feature:49)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Bookings_SD.user_filter_the_booking_by_UNBILLED_payment_status_and_edit_the_booking()"
@@ -602,25 +634,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 11047805400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2568623800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 54465500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13622828200,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 54,
@@ -655,19 +691,22 @@ formatter.match({
   "location": "Bookings_SD.user_cancel_the_fully_paid_booking_from_the_calender_tab_and_verify_that_the_refund_is_displayed_as_expected()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 12945214900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_cancel_the_fully_paid_booking_from_the_Clients_tab_and_verify_that_the_refund_is_displayed_as_expected()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 15300,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 690860300,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -700,25 +739,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10522110000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2227171100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 43560500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 14159826500,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 60,
@@ -748,13 +791,15 @@ formatter.match({
   "location": "Bookings_SD.user_cancel_the_single_WP_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 63107616700,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 696163700,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -787,25 +832,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10817444600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2481627400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 48949400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 14090468700,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 65,
@@ -835,13 +884,15 @@ formatter.match({
   "location": "Bookings_SD.user_cancel_the_booking_with_Tentative_status_and_verify_that_no_generate_CN_and_Refund_option_displays()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 53613850400,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 760738600,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -874,25 +925,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10961235800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2613684700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 55882100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13523122600,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 70,
@@ -927,19 +982,22 @@ formatter.match({
   "location": "Bookings_SD.user_cancel_the_unbilled_booking_and_verify_that_the_refund_is_not_displayed()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 67425984800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_cancel_the_billed_booking_and_verify_that_the_refund_is_not_displayed()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 71229738600,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 766229200,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -972,25 +1030,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10299619700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2171623800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 40883100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 14128585000,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 76,
@@ -1030,25 +1092,29 @@ formatter.match({
   "location": "Bookings_SD.user_cancel_the_multiple_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 58589219200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_cancel_the_multiple_billed_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 56427970200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_cancel_the_multiple_Unbilled_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 97666947600,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 746243500,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -1081,25 +1147,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10402881600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2548590800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 47165500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13958083700,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 83,
@@ -1129,7 +1199,9 @@ formatter.match({
   "location": "Bookings_SD.User_Select_check_box_for_multiple_different_payment_status_bookings_and_cancel_to_verify_CN_and_Refunds_if_applicable()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13045697700,
+  "error_message": "java.lang.UnsupportedOperationException: You may only deselect options of a multi-select\r\n\tat org.openqa.selenium.support.ui.Select.deselectByIndex(Select.java:267)\r\n\tat kajima.venueadmin.pom_pages.Bookings_Page.verify_cancel_MixedMultiple_Bpookings(Bookings_Page.java:924)\r\n\tat kajima.venueadmin.stepDefinition.Bookings_SD.User_Select_check_box_for_multiple_different_payment_status_bookings_and_cancel_to_verify_CN_and_Refunds_if_applicable(Bookings_SD.java:144)\r\n\tat ✽.Then User Select check box for mutiple different payment status bookings and cancel to verify CN and Refunds if applicable(Bookings.feature:84)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
@@ -1168,25 +1240,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10770437000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2299354300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 43384500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13726904600,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 88,
@@ -1216,7 +1292,9 @@ formatter.match({
   "location": "Bookings_SD.user_cancel_the_fully_paid_booking_for_non_billable_client_to_verify_that_the_refund_option_is_NOT_displayed()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 9275224200,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d84.0.4147.89)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56381}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 84.0.4147.89, webStorageEnabled: true}\nSession ID: 80de33d0ed8659261290a6996adc2f99\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat kajima.venueadmin.pom_pages.Bookings_Page.cancel_nonBillableClients_booking(Bookings_Page.java:985)\r\n\tat kajima.venueadmin.stepDefinition.Bookings_SD.user_cancel_the_fully_paid_booking_for_non_billable_client_to_verify_that_the_refund_option_is_NOT_displayed(Bookings_SD.java:163)\r\n\tat ✽.Then User cancel the fully paid booking for non billable client to verify that the refund option is NOT displayed(Bookings.feature:89)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
@@ -1255,25 +1333,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10801946400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2444912300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 41955700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13881503600,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 93,
@@ -1303,7 +1385,9 @@ formatter.match({
   "location": "Bookings_SD.user_cancel_the_single_manual_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 9045343500,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d84.0.4147.89)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56431}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 84.0.4147.89, webStorageEnabled: true}\nSession ID: 6dd0607b4a3e222cad6fc675d093fa43\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat kajima.venueadmin.pom_pages.Bookings_Page.verify_manualPayBookingsCancellation(Bookings_Page.java:1155)\r\n\tat kajima.venueadmin.stepDefinition.Bookings_SD.user_cancel_the_single_manual_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab(Bookings_SD.java:108)\r\n\tat ✽.Then User cancel the single manual fully paid booking and verify the refund and check refund in the clients tab(Bookings.feature:94)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
@@ -1360,25 +1444,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10743774300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2271401700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 39544600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4639520400,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -1436,25 +1524,29 @@ formatter.match({
   "location": "Clients_SD.user_selects_New_client_user_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 444086100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_enters_all_the_mandatory_fields_and_selects_Primary_from_user_type_dropdown_and_save()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 800897200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_verify_the_new_user_created_successfully()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1706442000,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 770625000,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -1487,25 +1579,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10525595700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2133820200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 48602000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3738604500,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -1555,25 +1651,29 @@ formatter.match({
   "location": "Clients_SD.user_selects_the_New_client_user_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 105301600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_enters_all_the_mandatory_fields_and_selects_bill_payer_from_user_type_dropdown_and_save()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 683950800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_verify_the_new_user_created()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1562297900,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 783752800,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -1606,25 +1706,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10343538000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2383199900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 41612000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3833458400,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -1674,25 +1778,29 @@ formatter.match({
   "location": "Clients_SD.user_selects_the_New_client_users_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 107585800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_enters_all_the_mandatory_fields_and_selects_Booker_from_user_type_dropdown()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 885943800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.verify_the_new_user_created_successfully()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1548086700,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 730825700,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -1725,25 +1833,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 11853712400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2639883500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 44339600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4099681800,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -1793,25 +1905,29 @@ formatter.match({
   "location": "Clients_SD.user_selects_New_client_users_option_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 84571900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_enters_all_the_mandatory_fields_and_selects_Booker_from_the_dropdown()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 884892600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.verify_new_user_created_successfully()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1600517100,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 698654400,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -1844,25 +1960,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10330746700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2332452200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 43489600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3899656800,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -1912,25 +2032,29 @@ formatter.match({
   "location": "Clients_SD.user_selects_Edit_Users_link_for_the_Bill_payer()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 103032100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_Selects_the_booker_option_from_the_drop_down_select_All_services_radiuo_button_and_save()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 548095700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.verify_the_user_edited_successfully()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 352128900,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 720891200,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -1963,25 +2087,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 11002391000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2483859500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 61565900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4651775300,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -2041,37 +2169,43 @@ formatter.match({
   "location": "Clients_SD.user_selects_Unlink_Users_link_for_the_booker()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 117435900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_Selects_cancel_from_the_pop_up_message()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4593300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.re_selects_unlink_users()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 98132400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.selects_the_OK_button_on_the_pop_up_message()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4413500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_verifies_that_the_user_is_removed_the_list()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1652218700,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 708560100,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -2104,25 +2238,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10350444600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3543469300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 42793300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3715972000,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -2162,13 +2300,15 @@ formatter.match({
   "location": "Clients_SD.click_Edit_client_button_make_service_activeInactive_and_save()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 7242856600,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 689914200,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -2201,25 +2341,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10458177200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2604705700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 38893100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4484962800,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -2259,13 +2403,15 @@ formatter.match({
   "location": "Clients_SD.click_Edit_client_button_on_screen()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 9067672900,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 700866600,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -2298,25 +2444,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10345933500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2371179200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 44196300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 30083098000,
+  "error_message": "org.openqa.selenium.TimeoutException: timeout\n  (Session info: chrome\u003d84.0.4147.89)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56795}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 84.0.4147.89, webStorageEnabled: true}\nSession ID: b0b31b51a264376e4af2e81f0aa6d208\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)\r\n\tat sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.clicktab(Clients_Page.java:460)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:37)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -2395,25 +2546,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 16002028000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2797040700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 45039600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 22957281400,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -2453,13 +2608,15 @@ formatter.match({
   "location": "Clients_SD.verify_the_account_activity_tab_and_view_Invoice_by_clicking_the_description()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 60898075300,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 679120500,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -2492,25 +2649,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10441464400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2948116600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 44431300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 21809401600,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -2550,13 +2711,15 @@ formatter.match({
   "location": "Clients_SD.verify_the_account_activity_tab_and_view_Credit_notes_by_clicking_the_description()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 129931155300,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 653279300,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -2589,25 +2752,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10566348500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2585993400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 50283600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 19429306000,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -2647,13 +2814,15 @@ formatter.match({
   "location": "Clients_SD.verify_the_account_activity_tab_and_view_Refund_by_clicking_the_description()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 29792363800,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 672376800,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -2686,25 +2855,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10527970300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2168382800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 47818500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 23605123800,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -2748,13 +2921,15 @@ formatter.match({
   "location": "Clients_SD.User_go_to_Clients_bookings_section_and_select_the_bookings_to_view_the_details_and_edit()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 11424892800,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 656454600,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -2787,25 +2962,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10367576600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2267586600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 43663400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 19292627000,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -2846,7 +3025,9 @@ formatter.match({
   "location": "Clients_SD.User_select_Archive_client_link_and_archive_the_client_successfully()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 22350054000,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027Archive\u0027]\"}\n  (Session info: chrome\u003d84.0.4147.89)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:57145}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 84.0.4147.89, webStorageEnabled: true}\nSession ID: c4024c3a7211c4cff0c6a50e80dd2398\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027Archive\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor25.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.verify_archiveClient(Clients_Page.java:907)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.User_select_Archive_client_link_and_archive_the_client_successfully(Clients_SD.java:309)\r\n\tat ✽.Then User select Archive client link and archive the client successfully(Clients.feature:115)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Clients_SD.user_navigate_to_show_archieved_clients_screen_and_Restore_the_client_successfully()"
@@ -2891,25 +3072,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10483956800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2246863700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 49974400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 23311086900,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -2950,19 +3135,22 @@ formatter.match({
   "location": "Clients_SD.User_selects_new_document_and_save_successfully()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2351038800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_add_the_reminder_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 683928100,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 785550600,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -2995,7 +3183,9 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 60624849200,
+  "error_message": "org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn\u0027t exist\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 60.09 seconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: ChromeDriver\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:132)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat kajima.venueadmin.base.TestBase.intialisation(TestBase.java:45)\r\n\tat kajima.venueadmin.stepDefinition.CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL(CommonSteps_SD.java:29)\r\n\tat ✽.Given User opens browser and enters the admin URL(Clients.feature:8)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
@@ -3088,25 +3278,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10362037600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2159530600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 56683400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 19895852900,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -3142,13 +3336,15 @@ formatter.match({
   "location": "Clients_SD.User_selects_edit_client_option_update_name_last_name_Notes_etc_and_save_successfully()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2793294200,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 675281900,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -3181,25 +3377,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10525192200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2196520300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 43248000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 21217748900,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -3235,13 +3435,15 @@ formatter.match({
   "location": "Clients_SD.User_adds_a_Manual_payment_and_verify_the_result()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4873417200,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 666626200,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -3274,25 +3476,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10279649000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2129379800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 90130700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 20621227500,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -3328,13 +3534,15 @@ formatter.match({
   "location": "Clients_SD.User_raises_a_Credit_notes_and_verify_the_result()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3608247600,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 698393600,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -3367,25 +3575,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10256421800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2352145400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 42458500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 19454960700,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -3421,13 +3633,15 @@ formatter.match({
   "location": "Clients_SD.User_adds_a_new_refund_and_verify_the_result()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3232927600,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 703244300,
+  "status": "passed"
 });
 formatter.uri("Invoice.feature");
 formatter.feature({
@@ -3478,25 +3692,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10824445400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.enter_required_credential_to_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2183280400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.user_navigate_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 41169200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.user_clicks_the_Invoice_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2445394700,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -3532,13 +3750,15 @@ formatter.match({
   "location": "Invoice_SD.user_clicks_all_the_sub_tabs_one_by_one_and_verify_the_screen_title()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 18994722900,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 669497200,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -3571,25 +3791,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10488630500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.enter_required_credential_to_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2185325400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.user_navigate_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 46448300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.user_clicks_the_Invoice_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 851273900,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 21,
@@ -3619,13 +3843,15 @@ formatter.match({
   "location": "Invoice_SD.user_navigate_to_Invoice_awaiting_payment_subtab_view_the_Invoice_void_it_and_verify_the_result()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13063239500,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 718697500,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -3658,25 +3884,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10392389300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.enter_required_credential_to_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2059135900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.user_navigate_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 46733500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.user_clicks_the_Invoice_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 645065800,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 26,
@@ -3706,13 +3936,15 @@ formatter.match({
   "location": "Invoice_SD.user_navigate_to_draft_invoice_delete_the_invoice_and_verify_the_result()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5057388300,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 679873100,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -3745,25 +3977,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10426843500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.enter_required_credential_to_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2155898100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.user_navigate_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 39599600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.user_clicks_the_Invoice_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 662783400,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 31,
@@ -3793,13 +4029,15 @@ formatter.match({
   "location": "Invoice_SD.user_do_the_invoice_run_view_the_generated_invoice_mark_as_sent_and_verify_the_result()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5013762300,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 669883600,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -3832,25 +4070,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10237764400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.enter_required_credential_to_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2038247100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.user_navigate_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 61804500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.user_clicks_the_Invoice_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 661698100,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 36,
@@ -3880,13 +4122,15 @@ formatter.match({
   "location": "Invoice_SD.user_do_the_invoice_run_and_email_the_selected_invoice_from_the_draft_tab_and_verify_the_result()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5068170200,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 669684800,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -3919,25 +4163,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 12369375900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.enter_required_credential_to_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2312548500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.user_navigate_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 40877200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Invoice_SD.user_clicks_the_Invoice_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 822939200,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 41,
@@ -3967,13 +4215,15 @@ formatter.match({
   "location": "Invoice_SD.user_navigate_to_draft_invoice_click_Email_all_invoices_and_verify_the_result()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5024385200,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 693318500,
+  "status": "passed"
 });
 formatter.uri("Manage.feature");
 formatter.feature({
@@ -4024,25 +4274,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10900580700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.enter_Login_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2164414900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.navigates_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 40343700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_clicks_the_manage_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1220460000,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -4055,73 +4309,66 @@ formatter.scenario({
       "value": "##\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d11 scenarios for Venue admin\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d##"
     }
   ],
-  "line": 17,
-  "name": "Manage tab -  Venue management - verify Booking Checklists – add, edit items (edit, re-order and delete), edit, delete",
+  "line": 16,
+  "name": "Manage tab -  Venue management - verify Holidays - add, edit, delete",
   "description": "",
-  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-booking-checklists-–-add,-edit-items-(edit,-re-order-and-delete),-edit,-delete",
+  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-holidays---add,-edit,-delete",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 16,
+      "line": 15,
       "name": "@VenueAdmin"
     }
   ]
 });
 formatter.step({
+  "line": 17,
+  "name": "User added the new Holiday  and verify",
+  "keyword": "Then "
+});
+formatter.step({
   "line": 18,
-  "name": "User added the new booking checklist and verify",
+  "name": "User Edited the Holiday and verify",
   "keyword": "Then "
 });
 formatter.step({
   "line": 19,
-  "name": "User Edit Items by editing, reordering and deleting",
+  "name": "User Deleted the Holiday and verify",
   "keyword": "Then "
 });
 formatter.step({
   "line": 20,
-  "name": "user edited the new booking checklist added",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 21,
-  "name": "User deleted the new booking checklist added above",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 22,
   "name": "user quit the browser",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Manage_SD.user_added_the_new_booking_checklist_and_verify()"
+  "location": "Manage_SD.user_added_the_new_Holiday_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2842165400,
+  "status": "passed"
 });
 formatter.match({
-  "location": "Manage_SD.user_Edit_Items_by_editing_reordering_and_deleting()"
+  "location": "Manage_SD.user_Edited_the_Holiday_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 6618444500,
+  "status": "passed"
 });
 formatter.match({
-  "location": "Manage_SD.user_edited_the_new_booking_checklist_added()"
+  "location": "Manage_SD.user_Deleted_the_Holiday_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_deleted_the_new_booking_checklist_added_above()"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 6129215900,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 686556700,
+  "status": "passed"
 });
 formatter.background({
   "line": 6,
@@ -4154,53 +4401,62 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10554701000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.enter_Login_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2090315600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.navigates_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 37803300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_clicks_the_manage_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 998806100,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 25,
-  "name": "Manage tab -  Venue management - verify Booking Categories - add, edit, delete",
+  "line": 24,
+  "name": "Manage tab -  Venue management - verify Booking Checklists – add, edit items (edit, re-order and delete), edit, delete",
   "description": "",
-  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-booking-categories---add,-edit,-delete",
+  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-booking-checklists-–-add,-edit-items-(edit,-re-order-and-delete),-edit,-delete",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 24,
+      "line": 23,
       "name": "@VenueAdmin"
     }
   ]
 });
 formatter.step({
+  "line": 25,
+  "name": "User added the new booking checklist and verify",
+  "keyword": "Then "
+});
+formatter.step({
   "line": 26,
-  "name": "User added the new booking Categories and verify",
+  "name": "User Edit Items by editing, reordering and deleting",
   "keyword": "Then "
 });
 formatter.step({
   "line": 27,
-  "name": "User Edited the new booking Categories and verify",
+  "name": "user edited the new booking checklist added",
   "keyword": "Then "
 });
 formatter.step({
   "line": 28,
-  "name": "User Deleted the new booking Categories and verify",
+  "name": "User deleted the new booking checklist added above",
   "keyword": "Then "
 });
 formatter.step({
@@ -4209,28 +4465,39 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "Manage_SD.user_added_the_new_booking_Categories_and_verify()"
+  "location": "Manage_SD.user_added_the_new_booking_checklist_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2155508900,
+  "status": "passed"
 });
 formatter.match({
-  "location": "Manage_SD.user_Edited_the_new_booking_Categories_and_verify()"
+  "location": "Manage_SD.user_Edit_Items_by_editing_reordering_and_deleting()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 11800001100,
+  "status": "passed"
 });
 formatter.match({
-  "location": "Manage_SD.user_Deleted_the_new_booking_Categories_and_verify()"
+  "location": "Manage_SD.user_edited_the_new_booking_checklist_added()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5444113600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Manage_SD.user_deleted_the_new_booking_checklist_added_above()"
+});
+formatter.result({
+  "duration": 4160758400,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 685049100,
+  "status": "passed"
 });
 formatter.background({
   "line": 6,
@@ -4263,31 +4530,35 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10953226500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.enter_Login_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2500907200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.navigates_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 41181600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_clicks_the_manage_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1081369600,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 32,
-  "name": "Manage tab -  Venue management - verify Bookable spaces – Add and edit and delete.",
+  "name": "Manage tab -  Venue management - verify Booking Categories - add, edit, delete",
   "description": "",
-  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-bookable-spaces-–-add-and-edit-and-delete.",
+  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-booking-categories---add,-edit,-delete",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
@@ -4299,36 +4570,51 @@ formatter.scenario({
 });
 formatter.step({
   "line": 33,
-  "name": "Adding a new bookable space – assign to new category",
+  "name": "User added the new booking Categories and verify",
   "keyword": "Then "
 });
 formatter.step({
   "line": 34,
-  "name": "Edit and Deleting a bookable space",
+  "name": "User Edited the new booking Categories and verify",
   "keyword": "Then "
 });
 formatter.step({
   "line": 35,
+  "name": "User Deleted the new booking Categories and verify",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 36,
   "name": "user quit the browser",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Manage_SD.adding_a_new_bookable_space_assign_to_new_category()"
+  "location": "Manage_SD.user_added_the_new_booking_Categories_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2040753700,
+  "status": "passed"
 });
 formatter.match({
-  "location": "Manage_SD.deleting_a_bookable_space()"
+  "location": "Manage_SD.user_Edited_the_new_booking_Categories_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5460700800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Manage_SD.user_Deleted_the_new_booking_Categories_and_verify()"
+});
+formatter.result({
+  "duration": 4177797600,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 669329500,
+  "status": "passed"
 });
 formatter.background({
   "line": 6,
@@ -4361,53 +4647,52 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10324038700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.enter_Login_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2004361800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.navigates_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 41897600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_clicks_the_manage_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1746151400,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 38,
-  "name": "Manage tab -  Venue management - verify Holidays - add, edit, delete",
+  "line": 39,
+  "name": "Manage tab -  Venue management - verify Bookable spaces – Add and edit and delete.",
   "description": "",
-  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-holidays---add,-edit,-delete",
+  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-bookable-spaces-–-add-and-edit-and-delete.",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 37,
+      "line": 38,
       "name": "@VenueAdmin"
     }
   ]
 });
 formatter.step({
-  "line": 39,
-  "name": "User added the new Holiday  and verify",
-  "keyword": "Then "
-});
-formatter.step({
   "line": 40,
-  "name": "User Edited the Holiday and verify",
+  "name": "Adding a new bookable space – assign to new category",
   "keyword": "Then "
 });
 formatter.step({
   "line": 41,
-  "name": "User Deleted the Holiday and verify",
+  "name": "Edit and Deleting a bookable space",
   "keyword": "Then "
 });
 formatter.step({
@@ -4416,28 +4701,25 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "Manage_SD.user_added_the_new_Holiday_and_verify()"
+  "location": "Manage_SD.adding_a_new_bookable_space_assign_to_new_category()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2093715900,
+  "status": "passed"
 });
 formatter.match({
-  "location": "Manage_SD.user_Edited_the_Holiday_and_verify()"
+  "location": "Manage_SD.deleting_a_bookable_space()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_Deleted_the_Holiday_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 7120213400,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 646094300,
+  "status": "passed"
 });
 formatter.background({
   "line": 6,
@@ -4470,28 +4752,32 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10389533100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.enter_Login_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2006855000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.navigates_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 36410300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_clicks_the_manage_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 958687300,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 45,
+  "line": 47,
   "name": "Manage tab -  Venue management - verify Closures - add, edit, delete",
   "description": "",
   "id": "manage-tab-scenarios;manage-tab----venue-management---verify-closures---add,-edit,-delete",
@@ -4499,28 +4785,28 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 44,
+      "line": 46,
       "name": "@VenueAdmin"
     }
   ]
 });
 formatter.step({
-  "line": 46,
+  "line": 48,
   "name": "User added the new Closures  and verify",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 47,
+  "line": 49,
   "name": "User Edited the Closures and verify",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 48,
+  "line": 50,
   "name": "User Deleted the Closures and verify",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 49,
+  "line": 51,
   "name": "user quit the browser",
   "keyword": "And "
 });
@@ -4528,25 +4814,29 @@ formatter.match({
   "location": "Manage_SD.user_added_the_new_Closures_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2823567400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_Edited_the_Closures_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 6545156500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_Deleted_the_Closures_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 7190493300,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 674740400,
+  "status": "passed"
 });
 formatter.background({
   "line": 6,
@@ -4579,28 +4869,32 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10455532900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.enter_Login_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2424233600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.navigates_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 40578600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_clicks_the_manage_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 947393700,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 52,
+  "line": 54,
   "name": "Manage tab -  Venue management - verify Client Booking slots - add, edit, delete",
   "description": "",
   "id": "manage-tab-scenarios;manage-tab----venue-management---verify-client-booking-slots---add,-edit,-delete",
@@ -4608,28 +4902,28 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 51,
+      "line": 53,
       "name": "@VenueAdmin"
     }
   ]
 });
 formatter.step({
-  "line": 53,
+  "line": 55,
   "name": "User added the new booking slot  and verify",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 54,
+  "line": 56,
   "name": "User Edited the booking slot and verify",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 55,
+  "line": 57,
   "name": "User Deleted the booking slot and verify",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 56,
+  "line": 58,
   "name": "user quit the browser",
   "keyword": "And "
 });
@@ -4637,25 +4931,29 @@ formatter.match({
   "location": "Manage_SD.user_added_the_new_booking_slot_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2087905600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_Edited_the_booking_slot_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2111802600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_Deleted_the_booking_slot_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4191410600,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 673042100,
+  "status": "passed"
 });
 formatter.background({
   "line": 6,
@@ -4688,28 +4986,32 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10809490100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.enter_Login_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2521488900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.navigates_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 47273800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_clicks_the_manage_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1184868800,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 59,
+  "line": 61,
   "name": "Manage tab -  Venue management - verify My default calendar - edit and update",
   "description": "",
   "id": "manage-tab-scenarios;manage-tab----venue-management---verify-my-default-calendar---edit-and-update",
@@ -4717,18 +5019,18 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 58,
+      "line": 60,
       "name": "@VenueAdmin"
     }
   ]
 });
 formatter.step({
-  "line": 60,
+  "line": 62,
   "name": "User verifies default calender time , edit the times and update",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 61,
+  "line": 63,
   "name": "user quit the browser",
   "keyword": "And "
 });
@@ -4736,13 +5038,15 @@ formatter.match({
   "location": "Manage_SD.user_verifies_default_calender_time_edit_the_times_and_update()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1540911000,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 655276400,
+  "status": "passed"
 });
 formatter.background({
   "line": 6,
@@ -4775,28 +5079,32 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10609078000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.enter_Login_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2231569800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.navigates_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 42682900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_clicks_the_manage_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1083700800,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 64,
+  "line": 66,
   "name": "Manage tab -  Venue management - verify Add a client flag, assign to a client and then delete the flag",
   "description": "",
   "id": "manage-tab-scenarios;manage-tab----venue-management---verify-add-a-client-flag,-assign-to-a-client-and-then-delete-the-flag",
@@ -4804,23 +5112,23 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 63,
+      "line": 65,
       "name": "@VenueAdmin"
     }
   ]
 });
 formatter.step({
-  "line": 65,
+  "line": 67,
   "name": "User added a new cleint flag, assign to client and verify that this is visible on client account for admin",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 66,
+  "line": 68,
   "name": "User deleted the flag and verify that it is not visible to client account for admin anymore",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 67,
+  "line": 69,
   "name": "user quit the browser",
   "keyword": "And "
 });
@@ -4828,19 +5136,22 @@ formatter.match({
   "location": "Manage_SD.user_added_a_new_cleint_flag_assign_to_client_and_verify_that_this_is_visible_on_client_account_for_admin()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 34215553300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_deleted_the_flag_and_verify_that_it_is_not_visible_to_client_account_for_admin_anymore()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 18499262300,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 683976100,
+  "status": "passed"
 });
 formatter.background({
   "line": 6,
@@ -4873,28 +5184,32 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10340361400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.enter_Login_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2556918800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.navigates_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 42712100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_clicks_the_manage_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 870253200,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 70,
+  "line": 72,
   "name": "Manage tab -  Venue management - Edit website",
   "description": "",
   "id": "manage-tab-scenarios;manage-tab----venue-management---edit-website",
@@ -4902,18 +5217,18 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 69,
+      "line": 71,
       "name": "@VenueAdmin"
     }
   ]
 });
 formatter.step({
-  "line": 71,
+  "line": 73,
   "name": "User selects Edit website , navigate to all the subtabs and verify",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 72,
+  "line": 74,
   "name": "user quit the browser",
   "keyword": "And "
 });
@@ -4921,13 +5236,15 @@ formatter.match({
   "location": "Manage_SD.user_selects_Edit_website_navigate_to_all_the_subtabs_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10747004600,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 694143700,
+  "status": "passed"
 });
 formatter.background({
   "line": 6,
@@ -4960,28 +5277,32 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10153650900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.enter_Login_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2016090700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.navigates_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 43706900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_clicks_the_manage_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1053295100,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 75,
+  "line": 77,
   "name": "Manage tab -  Venue management - Edit Venue",
   "description": "",
   "id": "manage-tab-scenarios;manage-tab----venue-management---edit-venue",
@@ -4989,28 +5310,28 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 74,
+      "line": 76,
       "name": "@VenueAdmin"
     }
   ]
 });
 formatter.step({
-  "line": 76,
+  "line": 78,
   "name": "User selects Edit venue , navigate to all the subtabs and verify",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 77,
+  "line": 79,
   "name": "User navigate to basic info subtab,updating info and check this saves correctly",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 78,
+  "line": 80,
   "name": "User navigate to Billing subtab – check that invoice/credit note prefixes can be updated, check this saves correctly and is applied to invoices – change back to original info",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 79,
+  "line": 81,
   "name": "user quit the browser",
   "keyword": "And "
 });
@@ -5018,25 +5339,29 @@ formatter.match({
   "location": "Manage_SD.user_selects_Edit_venue_navigate_to_all_the_subtabs_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 8073406800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_navigate_to_basic_info_subtab_updating_info_and_check_this_saves_correctly()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4102960600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_navigate_to_Billing_subtab_check_that_invoice_credit_note_prefixes_can_be_updated_check_this_saves_correctly_and_is_applied_to_invoices_change_back_to_original_info()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 48311679200,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 723658200,
+  "status": "passed"
 });
 formatter.background({
   "line": 6,
@@ -5069,34 +5394,38 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10340011200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.enter_Login_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2053584000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.navigates_to_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 42616100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_clicks_the_manage_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1148043000,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
     {
-      "line": 81,
+      "line": 83,
       "value": "#NHS specific - NEED TO WRITE CODE FOR BELOW SCENARIO"
     }
   ],
-  "line": 83,
+  "line": 85,
   "name": "Manage tab -  Venue management - verify Space Categories – should not have the option to add/edit or delete – Org admin only for NHS",
   "description": "",
   "id": "manage-tab-scenarios;manage-tab----venue-management---verify-space-categories-–-should-not-have-the-option-to-add/edit-or-delete-–-org-admin-only-for-nhs",
@@ -5104,23 +5433,23 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 82,
+      "line": 84,
       "name": "@VenueAdmin"
     }
   ]
 });
 formatter.step({
-  "line": 84,
+  "line": 86,
   "name": "User verify the space catagory to ensure that this section is read only section and user is not allowed to add, edit or delete space catagory",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 85,
+  "line": 87,
   "name": "user login to Org admin and able to add , edit or delete space catagory",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 86,
+  "line": 88,
   "name": "user quit the browser",
   "keyword": "And "
 });
@@ -5128,19 +5457,22 @@ formatter.match({
   "location": "Manage_SD.user_verify_the_space_catagory_to_ensure_that_this_section_is_read_only_section_and_user_is_not_allowed_to_add_edit_or_delete_space_catagory()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 17100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Manage_SD.user_login_to_Org_admin_and_able_to_add_edit_or_delete_space_catagory()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 8800,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 660737300,
+  "status": "passed"
 });
 formatter.uri("Payments.feature");
 formatter.feature({
@@ -5191,25 +5523,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10332734700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_entered_required_credential_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1997525400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_navigate_to_homepage_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 51534600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_clicks_the_Payments_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 919272000,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -5245,13 +5581,15 @@ formatter.match({
   "location": "Payments_SD.User_clicks_views_for_different_payment_types_and_status_and_verify_the_result()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 140817621700,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 734791600,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -5284,25 +5622,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10707572000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_entered_required_credential_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2098886800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_navigate_to_homepage_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 47340500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_clicks_the_Payments_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 909037700,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 21,
@@ -5347,31 +5689,36 @@ formatter.match({
   "location": "Payments_SD.user_verify_result_by_selecting_different_allocation_options()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 15624865700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_verify_result_by_selecting_different_reconciliation_options()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 6254497800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_verify_result_by_selecting_different_status_options()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 16000995200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_verify_result_by_selecting_different_date_range()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2728094300,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 658288800,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -5404,25 +5751,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10318251600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_entered_required_credential_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2085091900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_navigate_to_homepage_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 42474400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_clicks_the_Payments_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 912379200,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 29,
@@ -5452,13 +5803,15 @@ formatter.match({
   "location": "Payments_SD.user_select_different_payment_types_from_the_dropdown_to_filter_out_the_payments_and_verify_the_result()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13537144500,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 637609100,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -5491,25 +5844,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10425649900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_entered_required_credential_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2339188400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_navigate_to_homepage_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 44254700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_clicks_the_Payments_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1060415600,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 35,
@@ -5539,13 +5896,15 @@ formatter.match({
   "location": "Payments_SD.user_enter_search_criteria_in_search_bar_and_verify_refund_results()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4759831000,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 646496900,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -5578,25 +5937,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10373484200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_entered_required_credential_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2376679300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_navigate_to_homepage_and_verify()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 37689200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Payments_SD.user_clicks_the_Payments_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1085270600,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 40,
@@ -5626,7 +5989,9 @@ formatter.match({
   "location": "Payments_SD.user_navigate_to_refund_tab_and_view_individual_refunds()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 15883159500,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027Close\u0027]\"}\n  (Session info: chrome\u003d84.0.4147.89)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58159}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 84.0.4147.89, webStorageEnabled: true}\nSession ID: 14d76ae31cfe87177b62ad9b651e275e\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027Close\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor25.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Payments_Page.verify_viewRefundnFilter(Payments_Page.java:128)\r\n\tat kajima.venueadmin.stepDefinition.Payments_SD.user_navigate_to_refund_tab_and_view_individual_refunds(Payments_SD.java:84)\r\n\tat ✽.Then User navigate to refund tab and view individual refunds(Payments.feature:41)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
@@ -5683,7 +6048,9 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 555572900,
+  "error_message": "org.openqa.selenium.WebDriverException: unknown error: failed to write prefs file\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 16 milliseconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: ChromeDriver\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:132)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat kajima.venueadmin.base.TestBase.intialisation(TestBase.java:45)\r\n\tat kajima.venueadmin.stepDefinition.CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL(CommonSteps_SD.java:29)\r\n\tat ✽.Given User opens browser and enters the admin URL(Reminder.feature:8)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Reminder_SD.enter_required_credential_and_Login()"
@@ -5776,7 +6143,9 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 543969700,
+  "error_message": "org.openqa.selenium.WebDriverException: unknown error: failed to write prefs file\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 25 milliseconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: ChromeDriver\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:132)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat kajima.venueadmin.base.TestBase.intialisation(TestBase.java:45)\r\n\tat kajima.venueadmin.stepDefinition.CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL(CommonSteps_SD.java:29)\r\n\tat ✽.Given User opens browser and enters the admin URL(Reminder.feature:8)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Reminder_SD.enter_required_credential_and_Login()"
@@ -5863,7 +6232,9 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 559612300,
+  "error_message": "org.openqa.selenium.WebDriverException: unknown error: failed to write prefs file\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 29 milliseconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: ChromeDriver\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:132)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat kajima.venueadmin.base.TestBase.intialisation(TestBase.java:45)\r\n\tat kajima.venueadmin.stepDefinition.CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL(CommonSteps_SD.java:29)\r\n\tat ✽.Given User opens browser and enters the admin URL(Reminder.feature:8)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Reminder_SD.enter_required_credential_and_Login()"

@@ -166,7 +166,7 @@ public class Invoice_Page extends TestBase{
 			awaitPayInvoices_subTab.click();
 			
 			Select slct =  new Select(driver.findElement(By.xpath("//select[@id='rows_per_page']")));
-			slct.selectByIndex(3);
+			slct.selectByIndex(2);
 			Thread.sleep(1000);
 			int noOfInvoicesAP = listOfInvoicesAP.size();
 			System.out.println("NUMBER OF INVOICES AWAITING PAYMENTS ARE : " + noOfInvoicesAP);
@@ -190,7 +190,7 @@ public class Invoice_Page extends TestBase{
 				voidInvoices_subTab.click();
 				
 				Select slct1 =  new Select(driver.findElement(By.xpath("//select[@id='rows_per_page']")));
-				slct1.selectByIndex(3);
+				slct1.selectByIndex(2);
 				Thread.sleep(1000);
 				
 				List<WebElement> voidedInvoices = driver.findElements(By.xpath("//table[@id='void_statements_table']/tbody/tr"));

@@ -14,6 +14,18 @@ Background:
 
 
 @VenueAdmin
+Scenario: Manage tab -  Venue management - BAU Edit Venue 
+Then BAU User selects Edit venue , navigate to all the subtabs and verify 
+Then BAU User navigate to basic info subtab,updating info and check this saves correctly
+Then BAU User navigate to Billing subtab – check that invoice/credit note prefixes can be updated, check this saves correctly and is applied to invoices – change back to original info
+And user quit the browser
+
+@VenueAdmin
+Scenario: Manage tab -  Venue management - Edit website 
+Then BAUUser selects Edit website , navigate to all the subtabs and verify
+And user quit the browser
+
+@VenueAdmin
 Scenario: Manage tab -  Venue management - verify Booking Checklists – add, edit items (edit, re-order and delete), edit, delete
 Then User added the new booking checklist and verify 
 Then User Edit Items by editing, reordering and deleting 
@@ -66,17 +78,8 @@ Then User added a new cleint flag, assign to client and verify that this is visi
 Then User deleted the flag and verify that it is not visible to client account for admin anymore
 And user quit the browser
 
-@VenueAdmin
-Scenario: Manage tab -  Venue management - Edit website 
-Then User selects Edit website , navigate to all the subtabs and verify 
-And user quit the browser
 
-@VenueAdmin
-Scenario: Manage tab -  Venue management - BAU Edit Venue 
-Then BAU User selects Edit venue , navigate to all the subtabs and verify 
-Then BAU User navigate to basic info subtab,updating info and check this saves correctly
-Then BAU User navigate to Billing subtab – check that invoice/credit note prefixes can be updated, check this saves correctly and is applied to invoices – change back to original info
-And user quit the browser
+
 
 #BAU specific - NEED TO WRITE CODE FOR BELOW SCENARIO 
 @VenueAdmin
