@@ -30,6 +30,9 @@ public class Payments_Page extends TestBase {
 	@FindBy(xpath="//a[text()='View']")
 	WebElement view_Link;
 	
+	@FindBy(xpath="//table[@id='unreconciled_payments_table']/tbody/tr//a[text()='View']")
+	WebElement view_Links;
+	
 	@FindBy(xpath="//a[text()='Close']")
 	WebElement close_Link;
 	
@@ -198,16 +201,18 @@ public class Payments_Page extends TestBase {
 					for(int j=1;j<=(statusOpn.size()-1);) {
 						Thread.sleep(500);
 						slct2.selectByIndex(j);
+						Thread.sleep(500);
 						if(noOfRefundnPayments.size()==0) {
 							j++;
 						}else {
-							view_Link.click();
 							Thread.sleep(500);
+							view_Links.click();
+							Thread.sleep(1000);
 							try {
 								driver.findElement(By.xpath("//a[text()='Refresh status']")).click();
 								System.out.println("Refresh status button available - You are on BAU site");
 							}catch(NoSuchElementException e) {
-								System.out.println("Refresh status button NOT available - You are on NHS site");
+								//System.out.println("Refresh status button NOT available - You are on NHS site");
 							close_Link.click();
 							j++;
 							}

@@ -45,6 +45,7 @@ public class Invoice_Page extends TestBase{
 	@FindBy(xpath = "/html/body/div[3]/div/div/div/div[2]/div[1]/h3")
 	WebElement invoiceSubTab_title;
 	
+	
 	@FindBy(xpath = "//table[@id='billed_statements_table']/tbody/tr")
 	List <WebElement> listOfInvoicesAP;
 	
@@ -160,6 +161,27 @@ public class Invoice_Page extends TestBase{
 			  }
 		}	
 		
+//=================================================================================================================//
+		
+		public void check_BAUinvoiceSubTabs() throws InterruptedException {
+			List<WebElement> subtabs = driver.findElements(By.xpath("//html/body/div[3]/div/div/div/div[3]/div/dl/dd"));
+			int subtabsnum = subtabs.size();
+			System.out.println("NUMBER OF SUBTABS : " + subtabsnum);
+			SoftAssert softAssert = new SoftAssert();
+			softAssert.assertEquals(subtabsnum, 6);
+			softAssert.assertAll();
+			String beforexpath = "/html/body/div[3]/div/div/div/div[3]/div/dl/dd[";
+			String afterxpath = "]/a";
+			for(int i =2;i<=subtabsnum;i++) {
+				String actualxpath= beforexpath+i+afterxpath;
+				WebElement ele = driver.findElement(By.xpath(actualxpath));
+				Thread.sleep(1000);
+				ele.click();
+				Thread.sleep(2000);
+				System.out.println("Title of the screen is " + invoiceSubTab_title.getText());
+			  }
+		}	
+		
 //==================================================================================================================//	
 		
 		public void view_invoiceAPVoid() throws InterruptedException {
@@ -256,11 +278,11 @@ public class Invoice_Page extends TestBase{
 			}else {
 			genInvoice_Btn.click();
 			fromDate_field.clear();
-			fromDate_field.sendKeys("10/06/2020");
+			fromDate_field.sendKeys("10/01/2021");
 			toDate_field.clear();
 			Thread.sleep(1000);
 			
-			toDate_field.sendKeys("10/06/2020");
+			toDate_field.sendKeys("10/01/2021");
 			toDate_field.sendKeys(Keys.TAB);
 			Thread.sleep(1000);
 			generate_Btn.click();
@@ -334,6 +356,33 @@ public class Invoice_Page extends TestBase{
 			//driver.close();
 		}
 		
+//================================================================================================================//
+		public void verify_BAUmailTrap() throws InterruptedException {
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Desktop\\Automation\\Jarfiles\\chromedriver.exe");
+			driver = new ChromeDriver();
+			driver.manage().window().maximize();
+			driver.manage().deleteAllCookies();
+			driver.get("https://mailtrap.io/signin");
+			driver.findElement(By.id("user_email")).sendKeys("admin@bookingsplus.co.uk");
+			driver.findElement(By.id("user_password")).sendKeys("Book1ng5Plu52019!");
+			driver.findElement(By.name("commit")).click();
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//a[@title='Demo inbox']")).click();
+			driver.findElement(By.xpath("//input[@name='quick_filter']")).sendKeys("invoice IBLA");
+			Thread.sleep(1000);
+			driver.findElement(By.xpath("//span[contains(text(),'minute')]"));
+			Thread.sleep(1000);
+			String msgTime= driver.findElement(By.xpath("//ul[@class='messages_list']/li[1]//span[contains(text(),'minute')]")).getText();
+			System.out.println("Invoice sent via email " + msgTime);
+			driver.findElement(By.xpath("//ul[@class='messages_list']/li[1]")).click();
+			String msgTitle = driver.findElement(By.xpath("//ul[@class='messages_list']/li[1]//span[contains(@class,'subject')]")).getText();
+			System.out.println(msgTitle);
+			masterString = msgTitle.substring(8,19);
+			System.out.println("Invoice sent by email is " + masterString);
+			driver.manage().window().setPosition(new Point(-2000, 0));
+			//driver.close();
+		}
+		
 //==================================================================================================================//	
 		
 		public void verify_emailSelectedInvoice() throws InterruptedException{	
@@ -351,38 +400,57 @@ public class Invoice_Page extends TestBase{
 			softAssert.assertAll();
 			
 			Thread.sleep(10000);
-			verify_mailTrap();
+		//	verify_mailTrap();
 			
-			invoices_tab.click();
-			Thread.sleep(1000);
-			awaitPayInvoices_subTab.click();
-			Thread.sleep(3000);
+		//	invoices_tab.click();
+		//	Thread.sleep(1000);
+		//	awaitPayInvoices_subTab.click();
+		//	Thread.sleep(3000);
 			
-			invoiceSearch_field.sendKeys(masterString);
-			Thread.sleep(2000);
+		//	invoiceSearch_field.sendKeys(masterString);
+		//	Thread.sleep(2000);
 			
 			
-			int noOfInvoicesAP = listOfInvoicesAP.size();
+		//	int noOfInvoicesAP = listOfInvoicesAP.size();
 			//	System.out.println("Number of Invoices awaiting payments are " + noOfInvoicesAP);
 						
-				String str1 = "//table[@id='billed_statements_table']/tbody/tr[";
-				String str2 = "]/td[2]";
-				for(int i =1;i<=noOfInvoicesAP;i++) {
-					String str3= str1+i+str2;
-					WebElement InvoicesAPNum = driver.findElement(By.xpath(str3)); 
-					Thread.sleep(1000);
-					String IDs= InvoicesAPNum.getText();
+			//	String str1 = "//table[@id='billed_statements_table']/tbody/tr[";
+			//	String str2 = "]/td[2]";
+			//	for(int i =1;i<=noOfInvoicesAP;i++) {
+				//	String str3= str1+i+str2;
+				//	WebElement InvoicesAPNum = driver.findElement(By.xpath(str3)); 
+				//	Thread.sleep(1000);
+				//	String IDs= InvoicesAPNum.getText();
 					
-					if(masterString.contains(IDs)) {
-						System.out.println(IDs + " is sent successfully by email and displays in the invoice awaiting payments table");
-							break;	
-						}else {
-							System.out.println("Invoice is NOT sent Successfully by email ");
-						}
-				   }
+				//	if(masterString.contains(IDs)) {
+				//		System.out.println(IDs + " is sent successfully by email and displays in the invoice awaiting payments table");
+				//			break;	
+				//		}else {
+					//		System.out.println("Invoice is NOT sent Successfully by email ");
+					//	}
+				//   }
 			 }
 		}
 		
+		
+//==================================================================================================//
+		public void verify_BAUemailSelectedInvoice() throws InterruptedException{	
+			int noOfDraftinvoices1 = listOfDraftInvoices.size();
+			System.out.println("NUMBER OF DRAFT INVOICES ARE : " + noOfDraftinvoices1);
+	
+			if(noOfDraftinvoices1==0) {
+				System.out.println("No Draft Invoices is available to perform this action");		
+			}else {
+			draftInvoiceSrn_chkBox.click();
+			emailSelctdInvoice_Btn.click();
+			String msg = success_Msg.getText();
+			SoftAssert softAssert = new SoftAssert();
+			softAssert.assertTrue(msg.contains("1 Invoices sent."));
+			softAssert.assertAll();
+			
+			 }
+		}
+	
 //==================================================================================================================//	
 		
 		public void verify_emailAllInvoice() throws InterruptedException{	
@@ -420,15 +488,15 @@ public class Invoice_Page extends TestBase{
 			}
 			
 			Thread.sleep(10000);
-			verify_mailTrap();
+		//	verify_mailTrap();
 			
-			invoices_tab.click();
-			Thread.sleep(1000);
-			awaitPayInvoices_subTab.click();
-			Thread.sleep(3000);
+		//	invoices_tab.click();
+		//	Thread.sleep(1000);
+		//	awaitPayInvoices_subTab.click();
+		//	Thread.sleep(3000);
 			
-			invoiceSearch_field.sendKeys(masterString);
-			Thread.sleep(2000);
+		//	invoiceSearch_field.sendKeys(masterString);
+		//	Thread.sleep(2000);
 			 }
 	   }
 }

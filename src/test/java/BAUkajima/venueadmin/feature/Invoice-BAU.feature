@@ -13,8 +13,8 @@ Background:
     ##=========================6 Invoices scenarios=========================
 
 @VenueAdmin
-Scenario: Verify Invoice sub-tabs
-    Then User clicks all the sub-tabs one by one and verify the screen title 
+Scenario: Verify BAU Invoice sub-tabs
+    Then User clicks all the BAU invoice sub-tabs one by one and verify the screen title 
   	And user quit the browser
   			
 @VenueAdmin
@@ -33,8 +33,8 @@ Scenario: verify Generate an invoice and mark as sent
   	And user quit the browser
   	
 @VenueAdmin
-Scenario: verify Generate an invoice and email the select one
-    Then User do the invoice run and email the selected invoice from the draft tab and verify the result
+Scenario: BAU verify Generate an invoice and email the select one
+    Then User do the BAU invoice run and email the selected invoice from the draft tab and verify the result
     And user quit the browser
   	
 @VenueAdmin

@@ -146,7 +146,7 @@ public class Manage_SD extends TestBase {
 //======================Scenario: Manage tab -  Venue management - verify My default calendar - edit and update================================================
 
 	@Then("^User verifies default calender time , edit the times and update$")
-	public void user_verifies_default_calender_time_edit_the_times_and_update() {
+	public void user_verifies_default_calender_time_edit_the_times_and_update() throws InterruptedException {
 		manage_page.verify_updatedefaultCalenderTime();
 	}
 	
@@ -200,7 +200,7 @@ public class Manage_SD extends TestBase {
 
 	@Then("^BAU User selects Edit venue , navigate to all the subtabs and verify$")
 	public void BAU_user_selects_Edit_venue_navigate_to_all_the_subtabs_and_verify() throws InterruptedException {
-		manage_page.verify_venueSubtabs();
+		manage_page.verify_BAUvenueSubtabs();
 	}
 
 	@Then("^BAU User navigate to basic info subtab,updating info and check this saves correctly$")

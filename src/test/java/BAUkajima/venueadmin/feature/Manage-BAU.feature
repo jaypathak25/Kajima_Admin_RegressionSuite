@@ -14,6 +14,13 @@ Background:
 
 
 @VenueAdmin
+Scenario: Manage tab -  Venue management - verify Booking Categories - add, edit, delete
+Then User added the new booking Categories and verify
+Then User Edited the new booking Categories and verify
+Then User Deleted the new booking Categories and verify
+And user quit the browser
+
+@VenueAdmin
 Scenario: Manage tab -  Venue management - BAU Edit Venue 
 Then BAU User selects Edit venue , navigate to all the subtabs and verify 
 Then BAU User navigate to basic info subtab,updating info and check this saves correctly
@@ -33,12 +40,6 @@ Then user edited the new booking checklist added
 Then User deleted the new booking checklist added above
 And user quit the browser
 
-@VenueAdmin
-Scenario: Manage tab -  Venue management - verify Booking Categories - add, edit, delete
-Then User added the new booking Categories and verify
-Then User Edited the new booking Categories and verify
-Then User Deleted the new booking Categories and verify
-And user quit the browser
 
 @VenueAdmin
 Scenario: Manage tab -  Venue management - verify Holidays - add, edit, delete
@@ -79,8 +80,6 @@ Then User deleted the flag and verify that it is not visible to client account f
 And user quit the browser
 
 
-
-
 #BAU specific - NEED TO WRITE CODE FOR BELOW SCENARIO 
 @VenueAdmin
 Scenario: BAU Manage tab -  Venue management - verify calender Categories – add, edit (name, description, limit client bookings to slots), delete
@@ -88,6 +87,7 @@ Then User added the new calender Category  and verify
 Then User Edited the calender Categories like name, description, limit client bookings to slots and verify
 Then User Deleted the calender Category and verify
 And user quit the browser
+
 
 
 

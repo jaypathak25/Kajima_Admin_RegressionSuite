@@ -67,10 +67,13 @@ public class Manage_Page extends TestBase {
 	@FindBy(id="booking_type_name")
 	WebElement bookingTypeName_txt;
 	
-	@FindBy(xpath="//a[contains(@href,'booking_types') and contains(text(),'Edit')]")
-	WebElement editBookingType_link;
+//	@FindBy(xpath="//a[contains(@href,'booking_types') and contains(text(),'Edit')]")
+//	WebElement editBookingType_link;
 	
-	@FindBy(xpath="//a[contains(@href,'booking_types') and text()='Delete']")
+	@FindBy(xpath="//tr//td[contains(text(),'NewAutoCatagory')]//following-sibling::td//a[contains(@href,'booking_types') and contains(text(),'Edit')]")
+	WebElement editbookingCat_Link;
+	
+	@FindBy(xpath="//tr//td[contains(text(),'NewAutoCatagoryUpdated')]//following-sibling::td//a[contains(@href,'booking_types') and contains(text(),'Delete')]")
 	WebElement deleteBookingType_link;
 	
 	@FindBy(xpath="//a[text()='Add Holiday']")
@@ -315,11 +318,11 @@ public class Manage_Page extends TestBase {
 		}
 		
 		public void verify_editBookingCatagory() throws InterruptedException {
-			editBookingType_link.click();
+			editbookingCat_Link.click();
 			Thread.sleep(1000);
 			driver.switchTo().alert().dismiss();
 			Thread.sleep(1000);
-			editBookingType_link.click();
+			editbookingCat_Link.click();
 			Thread.sleep(1000);
 			driver.switchTo().alert().accept();
 			Thread.sleep(1000);
@@ -388,11 +391,12 @@ public class Manage_Page extends TestBase {
 		public void verify_addNewClosures() throws InterruptedException {
 			addClosure_btn.click();
 			closureReason_txt.sendKeys("AutomationClosure");
-			closureStartDate_txt.sendKeys("25/07/2020");
-			closureEndDate_txt.sendKeys("26/07/2020");
+			closureStartDate_txt.sendKeys("25/07/2025");
+			closureEndDate_txt.sendKeys("26/07/2025");
 			closureEndDate_txt.sendKeys(Keys.TAB);
 			Thread.sleep(2000);
 			blueSave_btn.click();
+			Thread.sleep(3000);
 			String descTxt = driver.findElement(By.xpath("//div[@id='closure-list']//tbody/tr/td[contains(.,'AutomationClosure')]")).getText();
 			SoftAssert softAssert = new SoftAssert();
 			softAssert.assertTrue(descTxt.contains("AutomationClosure"));
@@ -427,13 +431,14 @@ public class Manage_Page extends TestBase {
 			Thread.sleep(1000);
 		}
 		
-		public void verify_updatedefaultCalenderTime() {
+		public void verify_updatedefaultCalenderTime() throws InterruptedException {
 			defaultWeekDayTime_txt.clear();
 			defaultWeekDayTime_txt.sendKeys("11:00");
 			defaultWeekEndTime_txt.clear();
 			defaultWeekEndTime_txt.sendKeys("11:00");
 			defaultHoliDayTime_txt.clear();
 			defaultHoliDayTime_txt.sendKeys("11:00");
+			Thread.sleep(3000);
 			update_btn.click();
 			String title = success_msg.getText();
 			SoftAssert softAssert = new SoftAssert();
@@ -600,7 +605,7 @@ public class Manage_Page extends TestBase {
 				driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).click();
 				String subTabName =  driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).getText();
 				System.out.println("Website Sub tab name is : "+ subTabName);
-				Assert.assertTrue(noOfBAUSubTabs==4);
+				Assert.assertTrue(noOfBAUSubTabs==9);
 			}
 		}
 		
@@ -613,14 +618,27 @@ public class Manage_Page extends TestBase {
 				driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).click();
 				String subTabName =  driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).getText();
 				System.out.println("Venue Sub tab name is : "+ subTabName);
-				Assert.assertTrue(noOfVenueSubTabs==7);
+				Assert.assertTrue(noOfVenueSubTabs==4);
+			}
+		}
+		
+		public void verify_BAUvenueSubtabs() throws InterruptedException {
+			editVenue_btn.click();
+			int noOfVenueSubTabs  = websiteNVenueSubTabs.size();
+			System.out.println("Number of Venue subtabs are " + noOfVenueSubTabs);
+			for(int i=1;i<=noOfVenueSubTabs;i++) {
+				Thread.sleep(1000);
+				driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).click();
+				String subTabName =  driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).getText();
+				System.out.println("Venue Sub tab name is : "+ subTabName);
+				Assert.assertTrue(noOfVenueSubTabs==6);
 			}
 		}
 		
 		public void verify_editVenueBasicDetails() {
 			String venuetitlebefore = venueNameTitle_txt.getText();
 			System.out.println("Venue name title after update "+ venuetitlebefore);
-			
+			if(venuetitlebefore.equalsIgnoreCase("Chorley Health Centre")) {
 			driver.findElement(By.xpath("//a[text()='Basic Information']")).click();
 			venueName_txt.clear();
 			venueName_txt.sendKeys("Chorley Health Centre Updated");
@@ -629,6 +647,9 @@ public class Manage_Page extends TestBase {
 			SoftAssert softAssert = new SoftAssert();
 			softAssert.assertTrue(title.contains("Successfully updated venue."));
 			softAssert.assertAll();	
+			}else {
+			System.out.println("You are on the wrong venue");
+			}
 			
 			String venuetitleafter = venueNameTitle_txt.getText();
 			System.out.println("Venue name title after update "+ venuetitleafter);
@@ -670,12 +691,24 @@ public class Manage_Page extends TestBase {
 			client_page.search_box.clear();
 			client_page.search_box.sendKeys("auto");
 			client_page.view_link.click();
+			if(driver.findElement(By.xpath("//a[contains(@title,'Includes bookings')]")).isDisplayed()) {
 			String invoiceTxt = driver.findElement(By.xpath("//a[contains(@title,'Includes bookings')]")).getText();
 			System.out.println("after first update invoice name "+ invoiceTxt);
+			Assert.assertTrue(invoiceTxt.contains("AUTO"));
+			}
+			else
+			{
+				System.out.println("No invoice is present for the client");
+			}
+			if(driver.findElement(By.xpath("//a[contains(text(),'Credit Note ')]")).isDisplayed()) {
 			String CNtxt = driver.findElement(By.xpath("//a[contains(text(),'Credit Note ')]")).getText();
 			System.out.println("after first update CN name "+ CNtxt);
-			Assert.assertTrue(invoiceTxt.contains("AUTO"));
 			Assert.assertTrue(CNtxt.contains("AUTO"));
+			}
+			else
+			{
+				System.out.println("No CN is present for the client");
+			}
 			
 		}
 		
@@ -697,27 +730,43 @@ public class Manage_Page extends TestBase {
 			client_page.search_box.clear();
 			client_page.search_box.sendKeys("auto");
 			client_page.view_link.click();
+			if(driver.findElement(By.xpath("//a[contains(@title,'Includes bookings')]")).isDisplayed()) {
 			String invoiceTxt = driver.findElement(By.xpath("//a[contains(@title,'Includes bookings')]")).getText();
 			System.out.println("after second update invoice name "+ invoiceTxt);
+			Assert.assertFalse(invoiceTxt.contains("AUTO"));
+			}
+			else
+			{
+				System.out.println("No invoice is present for the client");
+			}
+			if(driver.findElement(By.xpath("//a[contains(text(),'Credit Note ')]")).isDisplayed()) {
 			String CNtxt = driver.findElement(By.xpath("//a[contains(text(),'Credit Note ')]")).getText();
 			System.out.println("after second update CNtxt name "+ CNtxt);
-			Assert.assertFalse(invoiceTxt.contains("AUTO"));
 			Assert.assertFalse(CNtxt.contains("AUTO"));
+			}
+			else
+			{
+				System.out.println("No CN is present for the client");
+			}
 			
 		}
 		
 		public void verify_editBAUVenueBasicDetails() {
 			String venuetitlebefore = venueNameTitle_txt.getText();
-			System.out.println("Venue name title after update "+ venuetitlebefore);
-			
+			System.out.println("Venue name title before update "+ venuetitlebefore);
+			if(venuetitlebefore.equalsIgnoreCase("BookingsGuru @ Brentside")) {
 			driver.findElement(By.xpath("//a[text()='Basic Information']")).click();
 			venueName_txt.clear();
-			venueName_txt.sendKeys("X - SLS @ King David High School Updated");
+			venueName_txt.sendKeys("BookingsGuru @ Brentside Updated");
 			driver.findElement(By.xpath("//input[@value='Save']")).click();
 			String title = success_msg.getText();
 			SoftAssert softAssert = new SoftAssert();
 			softAssert.assertTrue(title.contains("Successfully updated venue."));
 			softAssert.assertAll();	
+			}else {
+				System.out.println("You are on the wrong venue");
+			}
+
 			
 			String venuetitleafter = venueNameTitle_txt.getText();
 			System.out.println("Venue name title after update "+ venuetitleafter);
@@ -730,7 +779,7 @@ public class Manage_Page extends TestBase {
 			
 			driver.findElement(By.xpath("//a[text()='Basic Information']")).click();
 			venueName_txt.clear();
-			venueName_txt.sendKeys("X - SLS @ King David High School");
+			venueName_txt.sendKeys("BookingsGuru @ Brentside");
 			driver.findElement(By.xpath("//input[@value='Save']")).click();
 			String title2 = success_msg.getText();
 			SoftAssert softAssert2 = new SoftAssert();
@@ -759,12 +808,24 @@ public class Manage_Page extends TestBase {
 			client_page.search_box.clear();
 			client_page.search_box.sendKeys("auto");
 			client_page.view_link.click();
+			if(driver.findElement(By.xpath("//a[contains(@title,'Includes bookings')]")).isDisplayed())
+			{
 			String invoiceTxt = driver.findElement(By.xpath("//a[contains(@title,'Includes bookings')]")).getText();
 			System.out.println("after first update invoice name "+ invoiceTxt);
+			Assert.assertTrue(invoiceTxt.contains("AUTO"));
+			}else
+			{
+				System.out.println("No invoice is present for the client");
+			}
+			if(driver.findElement(By.xpath("//a[contains(text(),'Credit Note ')]")).isDisplayed()) {
 			String CNtxt = driver.findElement(By.xpath("//a[contains(text(),'Credit Note ')]")).getText();
 			System.out.println("after first update CN name "+ CNtxt);
-			Assert.assertTrue(invoiceTxt.contains("AUTO"));
 			Assert.assertTrue(CNtxt.contains("AUTO"));
+			}
+			else
+			{
+				System.out.println("No CN is present for the client");
+			}
 			
 		}
 		
@@ -786,12 +847,23 @@ public class Manage_Page extends TestBase {
 			client_page.search_box.clear();
 			client_page.search_box.sendKeys("auto");
 			client_page.view_link.click();
+			if(driver.findElement(By.xpath("//a[contains(@title,'Includes bookings')]")).isDisplayed()) {
 			String invoiceTxt = driver.findElement(By.xpath("//a[contains(@title,'Includes bookings')]")).getText();
 			System.out.println("after second update invoice name "+ invoiceTxt);
+			Assert.assertFalse(invoiceTxt.contains("AUTO"));
+			}else
+			{
+				System.out.println("No invoice is present for the client");
+			}
+			if(driver.findElement(By.xpath("//a[contains(text(),'Credit Note ')]")).isDisplayed()) {
 			String CNtxt = driver.findElement(By.xpath("//a[contains(text(),'Credit Note ')]")).getText();
 			System.out.println("after second update CNtxt name "+ CNtxt);
-			Assert.assertFalse(invoiceTxt.contains("AUTO"));
 			Assert.assertFalse(CNtxt.contains("AUTO"));
+			}
+			else
+			{
+				System.out.println("No CN is present for the client");
+			}
 			
 		}
 }

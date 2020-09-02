@@ -12,11 +12,7 @@ Background:
   	
  ##===========================5 payments scenarios==============================
  
-@VenueAdmin
-Scenario: Verify viewing individual payment details  -  GC/WP/manual/cash with different statuses and to ensure no refresh option displays 
-    Then User clicks views for different payment types and status and verify the result 
-  	And user quit the browser
-  	
+
 @VenueAdmin
 Scenario: Verify result on screen by using different filters
     Then User verify result by selecting different allocation options 
@@ -41,6 +37,16 @@ Scenario: Verify refund subtab and view individual refund details
     Then User navigate to refund tab and view individual refunds   
   	And user quit the browser
   	
+
+@VenueAdmin
+Scenario: Verify viewing individual payment details  -  GC/WP/manual/cash with different statuses and to ensure no refresh option displays 
+    Then User clicks views for different payment types and status and verify the result 
+  	And user quit the browser
+
+
+
+  	
+
 
 
   	
