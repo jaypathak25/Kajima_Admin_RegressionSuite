@@ -25,6 +25,12 @@ Scenario: Edit a single occurrence of booking from calender -  Billed and Unbill
     Then User Cancelling a billed single booking from the Calender
   	And user quit the browser 
   	
+## Below scenario is ONLY applicable for NHS  	
+@VenueAdmin
+Scenario: Create provisional bookings , confirm it and ensure that admins are not restricted by service types and CCG rules   
+    Then admin_create_a_new_booking_from_the_calender_and_ensure_that_it_is_not_restricted_by_service_type_and_CCG_rules_and_finally_confirms_it  
+  	And user quit the browser
+  	
 @VenueAdmin
 Scenario: Verify viewing bookable space info
     Then User clicks the bookable space to check the information
@@ -42,8 +48,4 @@ Scenario: verify different calender filter to view the results
     Then User selects view booked room only check box to see only rooms where we have bookings  
   	And user quit the browser
   	
-## Below scenario is ONLY applicable for NHS  	
-@VenueAdmin
-Scenario: Create provisional bookings , confirm it and ensure that admins are not restricted by service types and CCG rules   
-    Then admin_create_a_new_booking_from_the_calender_and_ensure_that_it_is_not_restricted_by_service_type_and_CCG_rules_and_finally_confirms_it  
-  	And user quit the browser
+

@@ -55,25 +55,25 @@ public class Calender_Page extends TestBase {
 	@FindBy(xpath="//div[@data-room-id='466']//div[@data-hour='14']")
 	WebElement BAUvenue4Cal;
 	
-	@FindBy(xpath="//div[@data-room-id='466']//div[@data-hour='14']")
+	@FindBy(xpath="//div[@data-room-id='8265']//div[@data-hour='14']")
 	WebElement NHSvenue5Cal;
 	
-	@FindBy(xpath="//div[@data-room-id='466']//div[@data-hour='14']")
+	@FindBy(xpath="//div[@data-room-id='8409']//div[@data-hour='14']")
 	WebElement NHSvenue6Cal;
 	
-	@FindBy(xpath="//div[@data-room-id='466']//div[@data-hour='14']")
+	@FindBy(xpath="//div[@data-room-id='8406']//div[@data-hour='14']")
 	WebElement NHSvenue7Cal;
 	
-	@FindBy(xpath="//div[@data-room-id='466']//div[@data-hour='16']")
+	@FindBy(xpath="//div[@data-room-id='8284']//div[@data-hour='16']")
 	WebElement NHSvenue5Cal2;
 	
 	@FindBy(xpath="//div[@data-room-id='466']//div[@data-hour='16']")
 	WebElement NHSvenue6Cal2;
 	
-	@FindBy(xpath="//div[@data-room-id='??']//div[@data-hour='14']")
+	@FindBy(xpath="//div[@data-room-id='8267']//div[@data-hour='14']")
 	WebElement clinicalRoom1Cal_NHSonly;
 	
-	@FindBy(xpath="//div[@data-room-id='??']//div[@data-hour='14']")
+	@FindBy(xpath="//div[@data-room-id='17063']//div[@data-hour='14']")
 	WebElement clinicalRoom2Cal_NHSonly;
 	
 	@FindBy(xpath="//a[@id='new_booking_from_selected']")
@@ -195,27 +195,68 @@ public class Calender_Page extends TestBase {
 		{
 			}
 		//bookedRoomChkBox.click();
-		if(BAUvenue1Cal.isDisplayed()) {
+	//	if(BAUvenue1Cal.isDisplayed()) {
+	//		BAUvenue1Cal.click();
+	//		bookingfromCal_Btn.click();
+	//	}else if (BAUvenue2Cal.isDisplayed()) {
+	//		BAUvenue2Cal.click();
+	//		bookingfromCal_Btn.click();
+	//		}else if (BAUvenue3Cal.isDisplayed()) {
+	//			BAUvenue3Cal.click();
+	//			bookingfromCal_Btn.click();
+	//		}else if (BAUvenue4Cal.isDisplayed()) {
+	//			BAUvenue4Cal.click();
+	//			bookingfromCal_Btn.click();
+	//		}else if (NHSvenue5Cal.isDisplayed()) {
+	//			NHSvenue5Cal.click();
+	//			bookingfromCal_Btn.click();
+	//		}else {
+	//			System.out.println("searched venue is not available");
+		//	}
+		
+		try {
+			try {
 			BAUvenue1Cal.click();
 			bookingfromCal_Btn.click();
-		}else if (BAUvenue2Cal.isDisplayed()) {
-			BAUvenue2Cal.click();
-			bookingfromCal_Btn.click();
-			}else if (BAUvenue3Cal.isDisplayed()) {
-				BAUvenue3Cal.click();
+			}catch(Exception e1) {
+				
+			}
+	//	}else if (BAUvenue2Cal2.isDisplayed()) {
+			try {
+				BAUvenue2Cal.click();
 				bookingfromCal_Btn.click();
-			}else if (BAUvenue4Cal.isDisplayed()) {
-				BAUvenue4Cal.click();
-				bookingfromCal_Btn.click();
-			}else if (NHSvenue5Cal.isDisplayed()) {
-				NHSvenue5Cal.click();
-				bookingfromCal_Btn.click();
-			}else {
+			}catch(Exception e1) {
+				
+			}
+	//		}else if (BAUvenue3Cal2.isDisplayed()) {
+				try {
+					BAUvenue3Cal.click();
+					bookingfromCal_Btn.click();
+					}catch(Exception e1) {
+						
+					}
+		//	}else if (NHSvenue5Cal2.isDisplayed()) {
+				try {
+					NHSvenue5Cal.click();
+					bookingfromCal_Btn.click();
+					}catch(Exception e1) {
+						
+					}
+		//	}else if (NHSvenue6Cal2.isDisplayed()) {
+				try {
+					NHSvenue6Cal2.click();
+					bookingfromCal_Btn.click();
+					}catch(Exception e1) {
+						
+					}
+			}catch (Exception e) {
 				System.out.println("searched venue is not available");
 			}
+		
+		
 		try {
 			Select slct1 =  new Select(booking_page.selectClient_dd);
-			slct1.selectByVisibleText("april release (apriltest)");
+			slct1.selectByVisibleText("auto auto (AUTO)");
 		}catch(Exception e) {
 			Select slct1 =  new Select(booking_page.selectClient_dd);
 			slct1.selectByVisibleText("auto Auto (auto)");
@@ -298,7 +339,7 @@ public class Calender_Page extends TestBase {
 			}
 		try {
 			Select slct1 =  new Select(booking_page.selectClient_dd);
-			slct1.selectByVisibleText("april release (apriltest)");
+			slct1.selectByVisibleText("auto auto (AUTO)");
 		}catch(Exception e) {
 			Select slct1 =  new Select(booking_page.selectClient_dd);
 			slct1.selectByVisibleText("auto Auto (auto)");
@@ -337,12 +378,17 @@ public class Calender_Page extends TestBase {
 				client_tab.click();
 				search_box.sendKeys("auto");
 				Thread.sleep(1000);
+			//	toDate_field.sendKeys(Keys.ENTER);
+				Thread.sleep(3000);
 				view_link.click();
+				Thread.sleep(3000);
 				
 				genInvoice_Btn.click();
 				Thread.sleep(1000);
 				fromDate_field.clear();
+				Thread.sleep(2000);
 				fromDate_field.sendKeys(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
+				Thread.sleep(2000);
 				toDate_field.clear();
 				Thread.sleep(1000);
 				
@@ -396,7 +442,11 @@ public class Calender_Page extends TestBase {
 					Thread.sleep(2000);
 					billedBookingOnCalScrn.click();
 					booking_page.redCancel_btn.click();
-				//	driver.findElement(By.xpath("//a[text()='this occurrence']")).click();
+					try {
+					driver.findElement(By.xpath("//a[text()='this occurrence']")).click();
+					}catch(Exception e){
+						
+					}
 					booking_page.canEmail_chkBox.click();
 					booking_page.canReason_txt.sendKeys("Cancel billed booking from calender");
 					booking_page.raiseCN_chkBox.click();

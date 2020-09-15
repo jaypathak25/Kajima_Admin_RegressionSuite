@@ -618,7 +618,7 @@ public class Manage_Page extends TestBase {
 				driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).click();
 				String subTabName =  driver.findElement(By.xpath("//dl[@class='tabs']//dd["+i+"]/a")).getText();
 				System.out.println("Venue Sub tab name is : "+ subTabName);
-				Assert.assertTrue(noOfVenueSubTabs==4);
+				Assert.assertTrue(noOfVenueSubTabs==7);
 			}
 		}
 		

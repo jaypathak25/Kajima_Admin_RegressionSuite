@@ -16,6 +16,8 @@ import kajima.venueadmin.base.TestBase;
 
 public class Dashboard_Page extends TestBase {
 	
+	SoftAssert softAssert = new SoftAssert();
+	
 	@FindBy(xpath="//div[@id='recent_activity']/p/a[text()='booking']")
 	List<WebElement> bookings_link;
 	
@@ -114,7 +116,7 @@ public class Dashboard_Page extends TestBase {
 	public void verify_clickEnquiryLinks() throws InterruptedException {
 		try {
 		int noOfEnquiryLinks = enquiry_link.size();
-		System.out.println("No of bookings links available on screen are " + noOfEnquiryLinks);
+		System.out.println("No of enquiry links available on screen are " + noOfEnquiryLinks);
 		if(noOfEnquiryLinks!=0) {
 			for(int i=1;i<=(noOfEnquiryLinks-(noOfEnquiryLinks-1));i++) {
 				driver.findElement(By.xpath("//div[@id='recent_activity']/p/a[contains(@href,'enquir')]")).click();
@@ -127,7 +129,8 @@ public class Dashboard_Page extends TestBase {
 				Assert.assertTrue(enquiry_title.isDisplayed());
 				String title1=enquiry_title.getText();
 				System.out.println("you are on page with title = " +  title1);
-				Assert.assertTrue(title1.contains("Current Enquiries"));
+				softAssert.assertTrue(title1.contains("Current Enquiries"));
+			//	Assert.assertTrue(title1.contains("Current Enquiries"));
 				}
 			}else
 			{
@@ -161,7 +164,8 @@ public class Dashboard_Page extends TestBase {
 				reminder_Btn.click();
 				Thread.sleep(2000);
 				String reminderTxt=	reminder_Msg.getText();
-				Assert.assertTrue(reminderTxt.contains(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))));
+				softAssert.assertTrue(reminderTxt.contains(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))));
+			//	Assert.assertTrue(reminderTxt.contains(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))));
 			
 			}
 		}else
@@ -185,7 +189,8 @@ public class Dashboard_Page extends TestBase {
 					}	
 				Thread.sleep(4000);
 				String reminderTxt=	reminderDashboard_Msg.getText();
-				Assert.assertTrue(reminderTxt.contains("Reminder sent."));
+				softAssert.assertTrue(reminderTxt.contains("Reminder sent."));
+				//Assert.assertTrue(reminderTxt.contains("Reminder sent."));
 			//	Assert.assertTrue(reminderTxt.contains(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"))));	
 			}
 		}else
@@ -203,7 +208,7 @@ public class Dashboard_Page extends TestBase {
 		
 		
 		String msg = success_Msg.getText();
-		SoftAssert softAssert = new SoftAssert();
+	//	SoftAssert softAssert = new SoftAssert();
 		softAssert.assertTrue(msg.contains("Successfully created Invoice Note"));
 		softAssert.assertAll();
 		

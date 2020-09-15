@@ -714,7 +714,18 @@ public class Clients_Page extends TestBase {
 //==================================================================================================//
 	
 	public void click_removeCardLnk() {
-		remove_btn.click();
+		if(remove_btn.isDisplayed()) {
+			click_Cancel();
+			remove_btn.click();
+			click_Ok();
+			verify_removeCard();
+		}
+		else {
+		System.out.println("No card is registered for this client so card find the remove link");
+		}
+	
+		
+		
 	}
 	
 //==================================================================================================//

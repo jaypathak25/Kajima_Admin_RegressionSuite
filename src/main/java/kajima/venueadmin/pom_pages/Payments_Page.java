@@ -120,13 +120,9 @@ public class Payments_Page extends TestBase {
 			int noOfRefundPay3 = noOfRefundnPayments.size();
 			System.out.println("Number of Refund payments after filtering by dates are " + noOfRefundPay3);
 			
-			String str1= "//table[@id='unreconciled_payments_table']/tbody/tr[";
-			String str2= "]/td[8]";
-			for(int i=1;i<=noOfRefundPay3;i++) {
-				String str3= str1+i+str2;
-				WebElement viewLink = driver.findElement(By.xpath(str3));
-				Thread.sleep(1000);
-				viewLink.click();
+				for(int i=1;i<=noOfRefundPay3;i++) {
+				Thread.sleep(2000);
+				driver.findElement(By.xpath("//table[@id='unreconciled_payments_table']/tbody/tr["+i+"]/td[8]/a")).click();
 				Thread.sleep(5000);
 				close_Link.click();
 				Thread.sleep(5000);

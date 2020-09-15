@@ -38,7 +38,7 @@ public class Users_SD extends TestBase{
 	}
 	
 	
-//=========================Scenario: Navigate to different users subtabs, create new venue admin , log in and verify all the tabs e============================================================
+//=========================Scenario: NHS Navigate to different users subtabs, create new venue admin , log in and verify all the tabs============================================================
 	
 
 	@Then("^User clicks on all the subtabs and verify the the title$")
@@ -48,16 +48,32 @@ public class Users_SD extends TestBase{
 
 	@Then("^User creates a new venue admin , log in and navigate to differenet tabs$")
 	public void user_creates_a_new_venue_admin_log_in_and_navigate_to_differenet_tabs() throws Throwable {
-		users_page.verify_createNewMVA();
-		users_page.verifyLoginNewMVA_BAU();
+		users_page.verify_NHScreateNewMVA();
+		users_page.verifyLoginNewMVA_NHS();
 
 	}
+	
+//=========================Scenario: BAU Navigate to different users subtabs, create new venue admin , log in and verify all the tabs e============================================================
+	
+
+		@Then("^BAU User clicks on all the subtabs and verify the the title$")
+		public void BAU_user_clicks_on_all_the_subtabs_and_verify_the_the_title() throws Throwable {
+			users_page.verify_BAUUserSubTabs();
+		}
+
+		@Then("^BAU User creates a new venue admin , log in and navigate to differenet tabs$")
+		public void BAU_user_creates_a_new_venue_admin_log_in_and_navigate_to_differenet_tabs() throws Throwable {
+			users_page.verify_BAUcreateNewMVA();
+			users_page.verifyLoginNewMVA_BAU();
+
+		}
+
 	
 //====================================Scenario: NHS- verify that unlinked tab is not visible for master admins ==============================
 
 	@Then("^NHS user verifies that Unlinked users tab is not visible for master admins$")
 	public void NHS_user_verifies_that_Unlinked_users_tab_is_not_visible_for_master_admins() throws Throwable {
-		//users_page.verify_NHS_unLinkedUserTab();
+		users_page.verify_NHS_unLinkedUserTab();
 	}
 	
 	
@@ -65,15 +81,22 @@ public class Users_SD extends TestBase{
 
 		@Then("^BAU user verifies that Unlinked users tab is not visible for master admins$")
 		public void BAU_user_verifies_that_Unlinked_users_tab_is_not_visible_for_master_admins() throws Throwable {
-			//users_page.verify_BAU_unLinkedUserTab();
+			users_page.verify_BAU_unLinkedUserTab();
 		}
 	
 //===================Scenario: verify User updates the email address for the client user=================================================
 
 	@Then("^User update the email address for the client user and verify client user can login with the new email$")
 	public void user_update_the_email_address_for_the_client_user_and_verify_client_user_can_login_with_the_new_email() throws Throwable {
-		users_page.verify_updateEmailClientUser();
+		users_page.verify_NHSupdateEmailClientUser();
 	}
+	
+//===================Scenario: BAU verify User updates the email address for the client user=================================================
+
+		@Then("^BAU User update the email address for the client user and verify client user can login with the new email$")
+		public void BAU_user_update_the_email_address_for_the_client_user_and_verify_client_user_can_login_with_the_new_email() throws Throwable {
+			users_page.verify_BAUupdateEmailClientUser();
+		}
 	
 //========================================================================================================================================
 

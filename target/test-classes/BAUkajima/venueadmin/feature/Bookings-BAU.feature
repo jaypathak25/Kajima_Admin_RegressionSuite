@@ -14,6 +14,13 @@ Background:
 ##============================================================================================================================##
 ##==============================================7 scenarios for BAU Venue admin=============================================================================##    
  
+@VenueAdmin 	
+Scenario: Raise a booking via new booking button  - BAU 
+    Then User clicks a new Booking button and raise daily recurring booking
+    Then User clicks a new Booking button and raise weekly recurring booking
+  	And user quit the browser 
+
+
 @VenueAdmin
 Scenario: Search and filter - verify booking results with different search/filter Criteria, summary view and exports
     Then User changes the number of enteries and verify results

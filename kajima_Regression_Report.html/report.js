@@ -47,25 +47,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 12179962900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2601475900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 47705100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 7565786800,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -105,7 +109,9 @@ formatter.match({
   "location": "Bookings_SD.user_disable_the_refund_feature_from_the_master_admin_and_ensure_no_refund_option_displays_when_master_admin_cancels_booking()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 11697958100,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//td[contains(text(),\u0027NHSPS\u0027)]//following-sibling::td/a[text()\u003d\u0027Edit\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52283}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 26edbf9d599e589a5c65a4193d5be6c8\n*** Element info: {Using\u003dxpath, value\u003d//td[contains(text(),\u0027NHSPS\u0027)]//following-sibling::td/a[text()\u003d\u0027Edit\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat kajima.venueadmin.pom_pages.Bookings_Page.verifyRefundFunc(Bookings_Page.java:743)\r\n\tat kajima.venueadmin.stepDefinition.Bookings_SD.user_disable_the_refund_feature_from_the_master_admin_and_ensure_no_refund_option_displays_when_master_admin_cancels_booking(Bookings_SD.java:170)\r\n\tat ✽.Then User disable the refund feature from the master admin and ensure no refund option displays when master admin cancels booking(Bookings.feature:18)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
@@ -144,25 +150,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10411872500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2400438300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 55624700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5070284000,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 22,
@@ -192,7 +202,9 @@ formatter.match({
   "location": "Bookings_SD.User_Select_check_box_for_multiple_different_payment_status_bookings_and_cancel_to_verify_CN_and_Refunds_if_applicable()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 49153624000,
+  "error_message": "java.lang.AssertionError: The following asserts failed:\n\texpected [true] but found [false]\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)\r\n\tat kajima.venueadmin.pom_pages.Bookings_Page.verify_cancel_MixedMultiple_Bpookings(Bookings_Page.java:1022)\r\n\tat kajima.venueadmin.stepDefinition.Bookings_SD.User_Select_check_box_for_multiple_different_payment_status_bookings_and_cancel_to_verify_CN_and_Refunds_if_applicable(Bookings_SD.java:144)\r\n\tat ✽.Then User Select check box for mutiple different payment status bookings and cancel to verify CN and Refunds if applicable(Bookings.feature:23)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
@@ -231,25 +243,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10684361500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2426667300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 44072800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5153839300,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 27,
@@ -309,31 +325,37 @@ formatter.match({
   "location": "Bookings_SD.user_changes_the_number_of_enteries_and_verify_results()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 25333727900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_enters_room_name_OR_clients_name_in_the_search_bar_and_verify_the_result()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 26530164100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_verify_booking_results_by_selecting_different_STATUS_options()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 33948502300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_verify_booking_results_by_selecting_different_PAYMENT_STATUS_options()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 33891190200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_verify_booking_results_by_selecting_different_date_range()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13084722300,
+  "error_message": "java.lang.AssertionError: null\r\n\tat org.testng.Assert.fail(Assert.java:96)\r\n\tat org.testng.Assert.assertNotEquals(Assert.java:1157)\r\n\tat org.testng.Assert.assertNotEquals(Assert.java:1162)\r\n\tat kajima.venueadmin.pom_pages.Bookings_Page.verify_searchBookingByDateRange(Bookings_Page.java:364)\r\n\tat kajima.venueadmin.stepDefinition.Bookings_SD.user_verify_booking_results_by_selecting_different_date_range(Bookings_SD.java:67)\r\n\tat ✽.Then User verify booking results by selecting different date range(Bookings.feature:32)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Bookings_SD.user_verify_the_summary_option_and_view_the_booking()"
@@ -384,25 +406,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10510762500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2445542600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 42450800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5203918000,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 40,
@@ -442,7 +468,9 @@ formatter.match({
   "location": "Bookings_SD.user_selects_a_new_Booking_button_and_raise_daily_recurring_booking()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 18501031200,
+  "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate element with text: april release (apriltest)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)\r\n\tat kajima.venueadmin.pom_pages.Bookings_Page.verify_createNewDailyBooking(Bookings_Page.java:1248)\r\n\tat kajima.venueadmin.stepDefinition.Bookings_SD.user_selects_a_new_Booking_button_and_raise_daily_recurring_booking(Bookings_SD.java:186)\r\n\tat ✽.Then User selects a new Booking button and raise daily recurring booking(Bookings.feature:41)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Bookings_SD.user_selects_a_new_Booking_button_and_raise_weekly_recurring_booking()"
@@ -493,25 +521,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10440628300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2429133700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 51018300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5390353900,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 47,
@@ -551,7 +583,9 @@ formatter.match({
   "location": "Bookings_SD.user_filter_the_booking_by_FULLY_PAID_payment_status_and_edit_the_booking()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13241267500,
+  "error_message": "java.lang.IndexOutOfBoundsException: Index: 1, Size: 1\r\n\tat java.util.ArrayList.rangeCheck(ArrayList.java:657)\r\n\tat java.util.ArrayList.get(ArrayList.java:433)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:39)\r\n\tat com.sun.proxy.$Proxy21.get(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Bookings_Page.edit_fullyPaidBooking(Bookings_Page.java:469)\r\n\tat kajima.venueadmin.stepDefinition.Bookings_SD.user_filter_the_booking_by_FULLY_PAID_payment_status_and_edit_the_booking(Bookings_SD.java:84)\r\n\tat ✽.Then User filter the booking by FULLY PAID payment status and edit the booking(Bookings.feature:48)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Bookings_SD.user_filter_the_booking_by_BILLED_payment_status_and_edit_the_booking()"
@@ -602,25 +636,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10403349400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2455935900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 58253100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5174294900,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 54,
@@ -655,19 +693,22 @@ formatter.match({
   "location": "Bookings_SD.user_cancel_the_fully_paid_booking_from_the_calender_tab_and_verify_that_the_refund_is_displayed_as_expected()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 21838927800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_cancel_the_fully_paid_booking_from_the_Clients_tab_and_verify_that_the_refund_is_displayed_as_expected()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 18700,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 680242200,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -700,25 +741,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10413146200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2305161000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 35930500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5396694200,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 60,
@@ -748,13 +793,15 @@ formatter.match({
   "location": "Bookings_SD.user_cancel_the_single_WP_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 14781815200,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 709282100,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -787,25 +834,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10455063100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2473197700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 43108600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5260510000,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 65,
@@ -835,13 +886,15 @@ formatter.match({
   "location": "Bookings_SD.user_cancel_the_booking_with_Tentative_status_and_verify_that_no_generate_CN_and_Refund_option_displays()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13288749300,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 652295800,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -874,25 +927,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10359482600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2369194200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 45281700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5028257100,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 70,
@@ -927,19 +984,22 @@ formatter.match({
   "location": "Bookings_SD.user_cancel_the_unbilled_booking_and_verify_that_the_refund_is_not_displayed()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 40473100400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_cancel_the_billed_booking_and_verify_that_the_refund_is_not_displayed()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 20990140200,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 676859200,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -972,25 +1032,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10262387100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2573755200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 39286800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5221807000,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 76,
@@ -1030,13 +1094,16 @@ formatter.match({
   "location": "Bookings_SD.user_cancel_the_multiple_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 25843558200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_cancel_the_multiple_billed_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 27741514300,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h5[contains(text(),\u0027Credit Note\u0027)]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52975}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 03076e702928951c2966cd7a87835216\n*** Element info: {Using\u003dxpath, value\u003d//h5[contains(text(),\u0027Credit Note\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat kajima.venueadmin.pom_pages.Bookings_Page.cancel_billed_multiple_Booking(Bookings_Page.java:910)\r\n\tat kajima.venueadmin.stepDefinition.Bookings_SD.user_cancel_the_multiple_billed_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab(Bookings_SD.java:120)\r\n\tat ✽.Then User cancel the multiple billed booking and verify the refund and check refund in the clients tab(Bookings.feature:78)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Bookings_SD.user_cancel_the_multiple_Unbilled_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab()"
@@ -1081,25 +1148,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10520885100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2629319000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 40846700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5181070800,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 83,
@@ -1129,13 +1200,15 @@ formatter.match({
   "location": "Bookings_SD.User_Select_check_box_for_multiple_different_payment_status_bookings_and_cancel_to_verify_CN_and_Refunds_if_applicable()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 52283045500,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 677423300,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -1168,25 +1241,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10524864700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2455625400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 42562400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5242492500,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 88,
@@ -1216,7 +1293,9 @@ formatter.match({
   "location": "Bookings_SD.user_cancel_the_fully_paid_booking_for_non_billable_client_to_verify_that_the_refund_option_is_NOT_displayed()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 11915043000,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53048}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 9bd0e63465470ff57912629e70165024\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat kajima.venueadmin.pom_pages.Bookings_Page.cancel_nonBillableClients_booking(Bookings_Page.java:1031)\r\n\tat kajima.venueadmin.stepDefinition.Bookings_SD.user_cancel_the_fully_paid_booking_for_non_billable_client_to_verify_that_the_refund_option_is_NOT_displayed(Bookings_SD.java:163)\r\n\tat ✽.Then User cancel the fully paid booking for non billable client to verify that the refund option is NOT displayed(Bookings.feature:89)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
@@ -1255,25 +1334,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10660870500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.enter_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2437120500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 48273700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Bookings_SD.user_clicks_the_Bookings_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5140494500,
+  "status": "passed"
 });
 formatter.scenario({
   "line": 93,
@@ -1303,7 +1386,9 @@ formatter.match({
   "location": "Bookings_SD.user_cancel_the_single_manual_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 12015225600,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53081}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 00a30f219d7a6253b7af19ee9f78164e\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat kajima.venueadmin.pom_pages.Bookings_Page.verify_manualPayBookingsCancellation(Bookings_Page.java:1201)\r\n\tat kajima.venueadmin.stepDefinition.Bookings_SD.user_cancel_the_single_manual_fully_paid_booking_and_verify_the_refund_and_check_refund_in_the_clients_tab(Bookings_SD.java:108)\r\n\tat ✽.Then User cancel the single manual fully paid booking and verify the refund and check refund in the clients tab(Bookings.feature:94)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
@@ -1360,25 +1445,29 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10359173500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.Enter_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2587833600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.User_navigate_to_dasboard_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 49689900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.user_clicks_the_Calender_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4037207300,
+  "status": "passed"
 });
 formatter.scenario({
   "comments": [
@@ -1402,12 +1491,12 @@ formatter.scenario({
 });
 formatter.step({
   "line": 18,
-  "name": "User creates a single occurance of booking, billed it and edit billed status of booking from the Calender",
+  "name": "User creates a single occurance of booking, and edit unbilled status of booking from the Calender",
   "keyword": "Then "
 });
 formatter.step({
   "line": 19,
-  "name": "User creates a single occurance of booking, and edit unbilled status of booking from the Calender",
+  "name": "Billed the booking created in the previous step and edit billed status of booking from the Calender",
   "keyword": "Then "
 });
 formatter.step({
@@ -1416,13 +1505,15 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "Calender_SD.user_creates_a_single_occurance_of_booking_billed_it_and_edit_billed_status_of_booking_from_the_Calender()"
+  "location": "Calender_SD.user_creates_a_single_occurance_of_booking_and_edit_unbilled_status_of_booking_from_the_Calender()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 7709526500,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[@data-room-id\u003d\u0027459\u0027]//div[@data-hour\u003d\u002714\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53112}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 4d74449c865808dd1224812ec75dac58\n*** Element info: {Using\u003dxpath, value\u003d//div[@data-room-id\u003d\u0027459\u0027]//div[@data-hour\u003d\u002714\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.isDisplayed(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Calender_Page.createNewBooking_Cal(Calender_Page.java:198)\r\n\tat kajima.venueadmin.stepDefinition.Calender_SD.user_creates_a_single_occurance_of_booking_and_edit_unbilled_status_of_booking_from_the_Calender(Calender_SD.java:48)\r\n\tat ✽.Then User creates a single occurance of booking, and edit unbilled status of booking from the Calender(Calender.feature:18)\r\n",
+  "status": "failed"
 });
 formatter.match({
-  "location": "Calender_SD.user_creates_a_single_occurance_of_booking_and_edit_unbilled_status_of_booking_from_the_Calender()"
+  "location": "Calender_SD.Billed_the_booking_created_in_the_previous_step_and_edit_billed_status_of_booking_from_the_Calender()"
 });
 formatter.result({
   "status": "skipped"
@@ -1464,28 +1555,136 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10741405200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.Enter_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2422486400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.User_navigate_to_dasboard_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 37090900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.user_clicks_the_Calender_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3937810900,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 28,
+  "line": 23,
+  "name": "Cancel a single from calender - Billed \u0026 Unbilled",
+  "description": "",
+  "id": "calender-tab-scenarios;cancel-a-single-from-calender---billed-\u0026-unbilled",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 22,
+      "name": "@VenueAdmin"
+    }
+  ]
+});
+formatter.step({
+  "line": 24,
+  "name": "User Cancelling a unbilled single booking from the Calender",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 25,
+  "name": "User Cancelling a billed single booking from the Calender",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "user quit the browser",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "Calender_SD.user_Cancelling_a_unbilled_single_booking_from_the_Calender()"
+});
+formatter.result({
+  "duration": 38174205500,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//select[@name\u003d\u0027booking[client_id]\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53144}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 5f487b4a1fdbf19c490e0ccdb5d9352c\n*** Element info: {Using\u003dxpath, value\u003d//select[@name\u003d\u0027booking[client_id]\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.getTagName(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.Select.\u003cinit\u003e(Select.java:44)\r\n\tat kajima.venueadmin.pom_pages.Calender_Page.createNewBookingForCancel_Cal(Calender_Page.java:303)\r\n\tat kajima.venueadmin.stepDefinition.Calender_SD.user_Cancelling_a_unbilled_single_booking_from_the_Calender(Calender_SD.java:65)\r\n\tat ✽.Then User Cancelling a unbilled single booking from the Calender(Calender.feature:24)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "Calender_SD.user_Cancelling_a_billed_single_booking_from_the_Calender()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "CommonSteps_SD.user_quit_the_browser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "line": 7,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 8,
+  "name": "User opens browser and enters the admin URL",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 9,
+  "name": "Enter credentials",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 10,
+  "name": "User navigate to dasboard homepage",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "User clicks the Calender tab",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
+});
+formatter.result({
+  "duration": 10362463100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Calender_SD.Enter_credentials()"
+});
+formatter.result({
+  "duration": 2434833800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Calender_SD.User_navigate_to_dasboard_homepage()"
+});
+formatter.result({
+  "duration": 43855700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Calender_SD.user_clicks_the_Calender_tab()"
+});
+formatter.result({
+  "duration": 3905083800,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 29,
   "name": "Verify viewing bookable space info",
   "description": "",
   "id": "calender-tab-scenarios;verify-viewing-bookable-space-info",
@@ -1493,18 +1692,18 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 27,
+      "line": 28,
       "name": "@VenueAdmin"
     }
   ]
 });
 formatter.step({
-  "line": 29,
+  "line": 30,
   "name": "User clicks the bookable space to check the information",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 30,
+  "line": 31,
   "name": "user quit the browser",
   "keyword": "And "
 });
@@ -1512,13 +1711,15 @@ formatter.match({
   "location": "Calender_SD.user_clicks_the_bookable_space_to_check_the_information()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 9449058300,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 724814100,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -1551,28 +1752,32 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10576292400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.Enter_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2716821200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.User_navigate_to_dasboard_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 45016800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.user_clicks_the_Calender_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3973193300,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 33,
+  "line": 34,
   "name": "verify date filter on calender to view the results",
   "description": "",
   "id": "calender-tab-scenarios;verify-date-filter-on-calender-to-view-the-results",
@@ -1580,23 +1785,23 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 32,
+      "line": 33,
       "name": "@VenueAdmin"
     }
   ]
 });
 formatter.step({
-  "line": 34,
+  "line": 35,
   "name": "User selects different dates by clicking previous/forward arrows to view the bookings",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 35,
+  "line": 36,
   "name": "User enter the date manually and verify the result",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 36,
+  "line": 37,
   "name": "user quit the browser",
   "keyword": "And "
 });
@@ -1604,19 +1809,22 @@ formatter.match({
   "location": "Calender_SD.user_selects_different_dates_by_clicking_previous_forward_arrows_to_view_the_bookings()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2549535000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.user_enter_the_date_manually_and_verify_the_result()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4914976700,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 651226600,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -1649,28 +1857,32 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10472403200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.Enter_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2650993700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.User_navigate_to_dasboard_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 55718000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.user_clicks_the_Calender_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3952493400,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 39,
+  "line": 40,
   "name": "verify different calender filter to view the results",
   "description": "",
   "id": "calender-tab-scenarios;verify-different-calender-filter-to-view-the-results",
@@ -1678,23 +1890,23 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 38,
+      "line": 39,
       "name": "@VenueAdmin"
     }
   ]
 });
 formatter.step({
-  "line": 40,
+  "line": 41,
   "name": "User selects different catagories from the drop down to view the bookings for the relevant bookable spaces",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 41,
+  "line": 42,
   "name": "User selects view booked room only check box to see only rooms where we have bookings",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 42,
+  "line": 43,
   "name": "user quit the browser",
   "keyword": "And "
 });
@@ -1702,19 +1914,22 @@ formatter.match({
   "location": "Calender_SD.user_selects_different_catagories_from_the_drop_down_to_view_the_bookings_for_the_relevant_bookable_spaces()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 119583313000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.user_selects_view_booked_room_only_check_box_to_see_only_rooms_where_we_have_bookings()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3865424800,
+  "status": "passed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 677802000,
+  "status": "passed"
 });
 formatter.background({
   "line": 7,
@@ -1747,28 +1962,38 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10586336900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.Enter_credentials()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2677375200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.User_navigate_to_dasboard_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 41915900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Calender_SD.user_clicks_the_Calender_tab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3942642700,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 45,
+  "comments": [
+    {
+      "line": 45,
+      "value": "## Below scenario is ONLY applicable for NHS"
+    }
+  ],
+  "line": 47,
   "name": "Create provisional bookings , confirm it and ensure that admins are not restricted by service types and CCG rules",
   "description": "",
   "id": "calender-tab-scenarios;create-provisional-bookings-,-confirm-it-and-ensure-that-admins-are-not-restricted-by-service-types-and-ccg-rules",
@@ -1776,37 +2001,28 @@ formatter.scenario({
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 44,
+      "line": 46,
       "name": "@VenueAdmin"
     }
   ]
 });
 formatter.step({
-  "line": 46,
-  "name": "Admin create a new booking from the calender and ensure that it is not restricted by service type and CCG rules",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 47,
-  "name": "user confirms the provisional booking from the calender",
-  "keyword": "Then "
-});
-formatter.step({
   "line": 48,
+  "name": "admin_create_a_new_booking_from_the_calender_and_ensure_that_it_is_not_restricted_by_service_type_and_CCG_rules_and_finally_confirms_it",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 49,
   "name": "user quit the browser",
   "keyword": "And "
 });
 formatter.match({
-  "location": "Calender_SD.admin_create_a_new_booking_from_the_calender_and_ensure_that_it_is_not_restricted_by_service_type_and_CCG_rules()"
+  "location": "Calender_SD.admin_create_a_new_booking_from_the_calender_and_ensure_that_it_is_not_restricted_by_service_type_and_ccg_rules_and_finally_confirms_it()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Calender_SD.user_confirms_the_provisional_booking_from_the_calender()"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 22840013200,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//select[@name\u003d\u0027booking[client_id]\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53316}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: fed91f5eef1485f46f58e4af300b828c\n*** Element info: {Using\u003dxpath, value\u003d//select[@name\u003d\u0027booking[client_id]\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.getTagName(Unknown Source)\r\n\tat org.openqa.selenium.support.ui.Select.\u003cinit\u003e(Select.java:44)\r\n\tat kajima.venueadmin.pom_pages.Calender_Page.verify_CreateBookingRestrictions_NHSONLY(Calender_Page.java:605)\r\n\tat kajima.venueadmin.stepDefinition.Calender_SD.admin_create_a_new_booking_from_the_calender_and_ensure_that_it_is_not_restricted_by_service_type_and_ccg_rules_and_finally_confirms_it(Calender_SD.java:113)\r\n\tat ✽.Then admin_create_a_new_booking_from_the_calender_and_ensure_that_it_is_not_restricted_by_service_type_and_CCG_rules_and_finally_confirms_it(Calender.feature:48)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "CommonSteps_SD.user_quit_the_browser()"
@@ -1863,25 +2079,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10462968900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2494318700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 37416000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13477836800,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53344}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 26e01de24d19cc224ac5309ab800cd50\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:479)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -1990,25 +2211,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10555735600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2720888400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 52517500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13823833100,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53389}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 16e581484317cb73b59e06d5b11ca75c\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:479)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -2109,25 +2335,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10727462200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2506394300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 46820600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13672977400,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53420}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 8a6b8c67ee46a99cc619bd3a739749e0\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:479)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -2228,25 +2459,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10478236200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2433418900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 40189100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13022651800,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53448}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 84ced216a17c291af5c8ff8ae0e37ad7\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:479)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -2347,25 +2583,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 11663316100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2396001800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 50411500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13591333700,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53477}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: e324b25a408c24a36a9bafbb6c746b0b\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:479)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -2466,25 +2707,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10427099000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2602354700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 60778400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13144111300,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53503}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 6a302dae2f7addff64a510cf540cf392\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:479)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -2607,25 +2853,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10406678000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2293649100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 44641100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13778724900,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53528}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: cb62ec652389b7f192d70db29f116afb\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:479)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -2704,25 +2955,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10625180200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2401928300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 41612500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13374689000,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53554}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 10615c3b9c3a707554789b96aa4e4ec3\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:479)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -2801,25 +3057,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10453569400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2343988100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 41172500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 6406944200,
+  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53583}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 132645ad1e786bad9d2ad200ea29130f\n*** Element info: {Using\u003dxpath, value\u003d//input[@type\u003d\u0027text\u0027 and @aria-controls\u003d\u0027clients_table\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:477)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -2898,25 +3159,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 12264499300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3141181800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 39021900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 6592600200,
+  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53610}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 61a6c2e20a5e29471418b83da0680caf\n*** Element info: {Using\u003dxpath, value\u003d//input[@type\u003d\u0027text\u0027 and @aria-controls\u003d\u0027clients_table\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:477)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -2995,25 +3261,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10526735400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2358652000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 51147900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13174193600,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53640}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 13aa72d30929e412b5c1234cd62a4bc4\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:479)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -3092,25 +3363,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10342171100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2418034100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 52261900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 12970901600,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53665}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: f4a8fa52e3f2f264a394516cd4c4c4c1\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:479)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -3189,25 +3465,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 12267110700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2683289200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 40030000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 17162696000,
+  "error_message": "java.lang.NullPointerException\r\n\tat sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:479)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -3290,25 +3571,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10520573300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2319295200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 47628500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 13092761200,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53734}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: 5c4f2ddfabfaf56211d38b2ec8e7b2dc\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:479)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -3394,25 +3680,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10246184000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2248821400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 39689600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 11711598300,
+  "error_message": "java.lang.NullPointerException\r\n\tat sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:479)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -3498,25 +3789,30 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10791774300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3165003700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_have_gone_to_the_homepage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 43007200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 12833017800,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[text()\u003d\u0027View\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.83)\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 72.0.3626.69 (3c16f8a135abc..., userDataDir: C:\\Users\\User\\AppData\\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53786}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 85.0.4183.83, webStorageEnabled: true}\nSession ID: ed7c83bcf860ebccf2e691a008f07ea5\n*** Element info: {Using\u003dxpath, value\u003d//a[text()\u003d\u0027View\u0027]}\r\n\tat sun.reflect.GeneratedConstructorAccessor18.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy20.click(Unknown Source)\r\n\tat kajima.venueadmin.pom_pages.Clients_Page.click_view(Clients_Page.java:479)\r\n\tat kajima.venueadmin.stepDefinition.Clients_SD.user_clicks_the_client_tab_and_search_for_a_client(Clients_SD.java:39)\r\n\tat ✽.Then User clicks the client tab and search for a client(Clients.feature:11)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "comments": [
@@ -3591,7 +3887,9 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 60695466500,
+  "error_message": "org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn\u0027t exist\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 60.16 seconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: ChromeDriver\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:132)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat kajima.venueadmin.base.TestBase.intialisation(TestBase.java:45)\r\n\tat kajima.venueadmin.stepDefinition.CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL(CommonSteps_SD.java:29)\r\n\tat ✽.Given User opens browser and enters the admin URL(Clients.feature:8)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
@@ -3684,7 +3982,9 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 60651002700,
+  "error_message": "org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn\u0027t exist\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 60.14 seconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: ChromeDriver\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:132)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat kajima.venueadmin.base.TestBase.intialisation(TestBase.java:45)\r\n\tat kajima.venueadmin.stepDefinition.CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL(CommonSteps_SD.java:29)\r\n\tat ✽.Given User opens browser and enters the admin URL(Clients.feature:8)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
@@ -3777,7 +4077,9 @@ formatter.match({
   "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 60627807400,
+  "error_message": "org.openqa.selenium.WebDriverException: unknown error: DevToolsActivePort file doesn\u0027t exist\n  (Driver info: chromedriver\u003d72.0.3626.69 (3c16f8a135abc0d4da2dff33804db79b849a7c38),platform\u003dWindows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 60.09 seconds\nBuild info: version: \u00273.11.0\u0027, revision: \u0027e59cfb3\u0027, time: \u00272018-03-11T20:26:55.152Z\u0027\nSystem info: host: \u0027DESKTOP-L2S6FMP\u0027, ip: \u0027192.168.0.18\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_202\u0027\nDriver info: driver.version: ChromeDriver\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:132)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:181)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:168)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:123)\r\n\tat kajima.venueadmin.base.TestBase.intialisation(TestBase.java:45)\r\n\tat kajima.venueadmin.stepDefinition.CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL(CommonSteps_SD.java:29)\r\n\tat ✽.Given User opens browser and enters the admin URL(Clients.feature:8)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Clients_SD.enter_required_credentials_and_Login()"
@@ -3797,3101 +4099,7 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
-formatter.scenario({
-  "comments": [
-    {
-      "line": 144,
-      "value": "# Below scenario is ONLY applicable for VenueAdmin"
-    }
-  ],
-  "line": 146,
-  "name": "Verify that user can raise a credit notes from the Clients screen",
-  "description": "",
-  "id": "clients-tab-scenarios;verify-that-user-can-raise-a-credit-notes-from-the-clients-screen",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 145,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 147,
-  "name": "User raises a Credit notes and verify the result",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 148,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Clients_SD.User_raises_a_Credit_notes_and_verify_the_result()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter required credentials and Login",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User have gone to the homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the client tab and search for a client",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Clients_SD.enter_required_credentials_and_Login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Clients_SD.user_have_gone_to_the_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Clients_SD.user_clicks_the_client_tab_and_search_for_a_client()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 150,
-      "value": "# Below scenario is ONLY applicable for VenueAdmin"
-    }
-  ],
-  "line": 152,
-  "name": "Verify that user can add a new refund from the Clients screen",
-  "description": "",
-  "id": "clients-tab-scenarios;verify-that-user-can-add-a-new-refund-from-the-clients-screen",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 151,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 153,
-  "name": "User adds a new refund and verify the result",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 154,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Clients_SD.User_adds_a_new_refund_and_verify_the_result()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.uri("Dashboard.feature");
-formatter.feature({
-  "comments": [
-    {
-      "line": 2,
-      "value": "#Author: Jay Pathak"
-    },
-    {
-      "line": 3,
-      "value": "#Comment: Venue Admin  - Dashboard tab Regression"
-    }
-  ],
-  "line": 4,
-  "name": "Dashboard tab scenarios",
-  "description": "",
-  "id": "dashboard-tab-scenarios",
-  "keyword": "Feature"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter username and pswd",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User lands on the dashboard",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Dashboard_SD.enter_username_and_pswd()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Dashboard_SD.User_lands_on_the_dashboard()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 13,
-      "value": "##\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d3 Dashboard scenarios\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
-    }
-  ],
-  "line": 16,
-  "name": "verify clicking hyperlinks to view bookings \u0026 hirers",
-  "description": "",
-  "id": "dashboard-tab-scenarios;verify-clicking-hyperlinks-to-view-bookings-\u0026-hirers",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 15,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 17,
-  "name": "User clicks the hyperink to view bookings and hirers",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Dashboard_SD.user_clicks_the_hyperink_to_view_bookings_and_hirers()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter username and pswd",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User lands on the dashboard",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Dashboard_SD.enter_username_and_pswd()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Dashboard_SD.User_lands_on_the_dashboard()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 21,
-  "name": "verify Viewing an invoice and sending a reminder",
-  "description": "",
-  "id": "dashboard-tab-scenarios;verify-viewing-an-invoice-and-sending-a-reminder",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 20,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 22,
-  "name": "User clicks the hyperlink to view invoice and sends a reminder",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 23,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Dashboard_SD.user_clicks_the_hyperlink_to_view_invoice_and_sends_a_reminder()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter username and pswd",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User lands on the dashboard",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Dashboard_SD.enter_username_and_pswd()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Dashboard_SD.User_lands_on_the_dashboard()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 26,
-  "name": "verify Adding a note to an invoice",
-  "description": "",
-  "id": "dashboard-tab-scenarios;verify-adding-a-note-to-an-invoice",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 25,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 27,
-  "name": "User clicks the hyperlink to view invoice and add a note",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 28,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Dashboard_SD.user_clicks_the_hyperlink_to_view_invoice_and_add_a_note()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.uri("Invoice.feature");
-formatter.feature({
-  "comments": [
-    {
-      "line": 2,
-      "value": "#Author: Jay Pathak"
-    },
-    {
-      "line": 3,
-      "value": "#Comment: Venue Admin  - Invoice tab Regression"
-    }
-  ],
-  "line": 4,
-  "name": "Invoice tab scenarios",
-  "description": "",
-  "id": "invoice-tab-scenarios",
-  "keyword": "Feature"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter required credential to Login",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User navigate to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the Invoice tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.enter_required_credential_to_Login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.user_navigate_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.user_clicks_the_Invoice_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 13,
-      "value": "##\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d6 Invoices scenarios\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
-    }
-  ],
-  "line": 16,
-  "name": "Verify Invoice sub-tabs",
-  "description": "",
-  "id": "invoice-tab-scenarios;verify-invoice-sub-tabs",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 15,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 17,
-  "name": "User clicks all the sub-tabs one by one and verify the screen title",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Invoice_SD.user_clicks_all_the_sub_tabs_one_by_one_and_verify_the_screen_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter required credential to Login",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User navigate to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the Invoice tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.enter_required_credential_to_Login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.user_navigate_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.user_clicks_the_Invoice_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 21,
-  "name": "verify view invoice with awaiting payment status and void the invoice",
-  "description": "",
-  "id": "invoice-tab-scenarios;verify-view-invoice-with-awaiting-payment-status-and-void-the-invoice",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 20,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 22,
-  "name": "User navigate to Invoice awaiting payment subtab, view the Invoice, void it and verify the result",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 23,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Invoice_SD.user_navigate_to_Invoice_awaiting_payment_subtab_view_the_Invoice_void_it_and_verify_the_result()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter required credential to Login",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User navigate to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the Invoice tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.enter_required_credential_to_Login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.user_navigate_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.user_clicks_the_Invoice_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 26,
-  "name": "verify delete an invoice from the draft invoice tab",
-  "description": "",
-  "id": "invoice-tab-scenarios;verify-delete-an-invoice-from-the-draft-invoice-tab",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 25,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 27,
-  "name": "User navigate to draft invoice, delete the invoice and verify the result",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 28,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Invoice_SD.user_navigate_to_draft_invoice_delete_the_invoice_and_verify_the_result()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter required credential to Login",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User navigate to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the Invoice tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.enter_required_credential_to_Login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.user_navigate_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.user_clicks_the_Invoice_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 31,
-  "name": "verify Generate an invoice and mark as sent",
-  "description": "",
-  "id": "invoice-tab-scenarios;verify-generate-an-invoice-and-mark-as-sent",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 30,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 32,
-  "name": "User do the invoice run, view the generated invoice, mark as sent and verify the result",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 33,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Invoice_SD.user_do_the_invoice_run_view_the_generated_invoice_mark_as_sent_and_verify_the_result()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter required credential to Login",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User navigate to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the Invoice tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.enter_required_credential_to_Login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.user_navigate_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.user_clicks_the_Invoice_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 36,
-  "name": "verify Generate an invoice and email the select one",
-  "description": "",
-  "id": "invoice-tab-scenarios;verify-generate-an-invoice-and-email-the-select-one",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 35,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 37,
-  "name": "User do the invoice run and email the selected invoice from the draft tab and verify the result",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 38,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Invoice_SD.user_do_the_invoice_run_and_email_the_selected_invoice_from_the_draft_tab_and_verify_the_result()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter required credential to Login",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User navigate to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the Invoice tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.enter_required_credential_to_Login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.user_navigate_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Invoice_SD.user_clicks_the_Invoice_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 41,
-  "name": "verify email all the invoices by clicking email all invoices button",
-  "description": "",
-  "id": "invoice-tab-scenarios;verify-email-all-the-invoices-by-clicking-email-all-invoices-button",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 40,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 42,
-  "name": "User navigate to draft invoice, click Email all invoices and verify the result",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 43,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Invoice_SD.user_navigate_to_draft_invoice_click_Email_all_invoices_and_verify_the_result()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.uri("Manage.feature");
-formatter.feature({
-  "comments": [
-    {
-      "line": 1,
-      "value": "#Author: Jay Pathak"
-    },
-    {
-      "line": 2,
-      "value": "#Comment: Venue Admin  - Manage tab Regression"
-    }
-  ],
-  "line": 3,
-  "name": "Manage tab scenarios",
-  "description": "",
-  "id": "manage-tab-scenarios",
-  "keyword": "Feature"
-});
-formatter.background({
-  "line": 6,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "enter login credentials",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "navigates to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "User clicks the manage tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.enter_Login_credentials()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.navigates_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_clicks_the_manage_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 12,
-      "value": "##\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d##"
-    },
-    {
-      "line": 13,
-      "value": "##\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d11 scenarios for Venue admin\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d##"
-    }
-  ],
-  "line": 16,
-  "name": "Manage tab -  Venue management - verify Holidays - add, edit, delete",
-  "description": "",
-  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-holidays---add,-edit,-delete",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 15,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 17,
-  "name": "User added the new Holiday  and verify",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "User Edited the Holiday and verify",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "User Deleted the Holiday and verify",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 20,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Manage_SD.user_added_the_new_Holiday_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_Edited_the_Holiday_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_Deleted_the_Holiday_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 6,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "enter login credentials",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "navigates to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "User clicks the manage tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.enter_Login_credentials()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.navigates_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_clicks_the_manage_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 24,
-  "name": "Manage tab -  Venue management - verify Booking Checklists – add, edit items (edit, re-order and delete), edit, delete",
-  "description": "",
-  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-booking-checklists-–-add,-edit-items-(edit,-re-order-and-delete),-edit,-delete",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 23,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 25,
-  "name": "User added the new booking checklist and verify",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 26,
-  "name": "User Edit Items by editing, reordering and deleting",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 27,
-  "name": "user edited the new booking checklist added",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 28,
-  "name": "User deleted the new booking checklist added above",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 29,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Manage_SD.user_added_the_new_booking_checklist_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_Edit_Items_by_editing_reordering_and_deleting()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_edited_the_new_booking_checklist_added()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_deleted_the_new_booking_checklist_added_above()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 6,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "enter login credentials",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "navigates to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "User clicks the manage tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.enter_Login_credentials()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.navigates_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_clicks_the_manage_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 32,
-  "name": "Manage tab -  Venue management - verify Booking Categories - add, edit, delete",
-  "description": "",
-  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-booking-categories---add,-edit,-delete",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 31,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 33,
-  "name": "User added the new booking Categories and verify",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 34,
-  "name": "User Edited the new booking Categories and verify",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 35,
-  "name": "User Deleted the new booking Categories and verify",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 36,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Manage_SD.user_added_the_new_booking_Categories_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_Edited_the_new_booking_Categories_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_Deleted_the_new_booking_Categories_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 6,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "enter login credentials",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "navigates to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "User clicks the manage tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.enter_Login_credentials()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.navigates_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_clicks_the_manage_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 39,
-  "name": "Manage tab -  Venue management - verify Bookable spaces – Add and edit and delete.",
-  "description": "",
-  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-bookable-spaces-–-add-and-edit-and-delete.",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 38,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 40,
-  "name": "Adding a new bookable space – assign to new category",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 41,
-  "name": "Edit and Deleting a bookable space",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 42,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Manage_SD.adding_a_new_bookable_space_assign_to_new_category()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.deleting_a_bookable_space()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 6,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "enter login credentials",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "navigates to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "User clicks the manage tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.enter_Login_credentials()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.navigates_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_clicks_the_manage_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 47,
-  "name": "Manage tab -  Venue management - verify Closures - add, edit, delete",
-  "description": "",
-  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-closures---add,-edit,-delete",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 46,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 48,
-  "name": "User added the new Closures  and verify",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 49,
-  "name": "User Edited the Closures and verify",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 50,
-  "name": "User Deleted the Closures and verify",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 51,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Manage_SD.user_added_the_new_Closures_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_Edited_the_Closures_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_Deleted_the_Closures_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 6,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "enter login credentials",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "navigates to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "User clicks the manage tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.enter_Login_credentials()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.navigates_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_clicks_the_manage_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 54,
-  "name": "Manage tab -  Venue management - verify Client Booking slots - add, edit, delete",
-  "description": "",
-  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-client-booking-slots---add,-edit,-delete",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 53,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 55,
-  "name": "User added the new booking slot  and verify",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 56,
-  "name": "User Edited the booking slot and verify",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 57,
-  "name": "User Deleted the booking slot and verify",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 58,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Manage_SD.user_added_the_new_booking_slot_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_Edited_the_booking_slot_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_Deleted_the_booking_slot_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 6,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "enter login credentials",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "navigates to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "User clicks the manage tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.enter_Login_credentials()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.navigates_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_clicks_the_manage_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 61,
-  "name": "Manage tab -  Venue management - verify My default calendar - edit and update",
-  "description": "",
-  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-my-default-calendar---edit-and-update",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 60,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 62,
-  "name": "User verifies default calender time , edit the times and update",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 63,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Manage_SD.user_verifies_default_calender_time_edit_the_times_and_update()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 6,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "enter login credentials",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "navigates to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "User clicks the manage tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.enter_Login_credentials()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.navigates_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_clicks_the_manage_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 66,
-  "name": "Manage tab -  Venue management - verify Add a client flag, assign to a client and then delete the flag",
-  "description": "",
-  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-add-a-client-flag,-assign-to-a-client-and-then-delete-the-flag",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 65,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 67,
-  "name": "User added a new cleint flag, assign to client and verify that this is visible on client account for admin",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 68,
-  "name": "User deleted the flag and verify that it is not visible to client account for admin anymore",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 69,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Manage_SD.user_added_a_new_cleint_flag_assign_to_client_and_verify_that_this_is_visible_on_client_account_for_admin()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_deleted_the_flag_and_verify_that_it_is_not_visible_to_client_account_for_admin_anymore()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 6,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "enter login credentials",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "navigates to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "User clicks the manage tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.enter_Login_credentials()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.navigates_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_clicks_the_manage_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 72,
-  "name": "Manage tab -  Venue management - Edit website",
-  "description": "",
-  "id": "manage-tab-scenarios;manage-tab----venue-management---edit-website",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 71,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 73,
-  "name": "User selects Edit website , navigate to all the subtabs and verify",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 74,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Manage_SD.user_selects_Edit_website_navigate_to_all_the_subtabs_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 6,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "enter login credentials",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "navigates to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "User clicks the manage tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.enter_Login_credentials()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.navigates_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_clicks_the_manage_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 77,
-  "name": "Manage tab -  Venue management - Edit Venue",
-  "description": "",
-  "id": "manage-tab-scenarios;manage-tab----venue-management---edit-venue",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 76,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 78,
-  "name": "User selects Edit venue , navigate to all the subtabs and verify",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 79,
-  "name": "User navigate to basic info subtab,updating info and check this saves correctly",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 80,
-  "name": "User navigate to Billing subtab – check that invoice/credit note prefixes can be updated, check this saves correctly and is applied to invoices – change back to original info",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 81,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Manage_SD.user_selects_Edit_venue_navigate_to_all_the_subtabs_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_navigate_to_basic_info_subtab_updating_info_and_check_this_saves_correctly()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_navigate_to_Billing_subtab_check_that_invoice_credit_note_prefixes_can_be_updated_check_this_saves_correctly_and_is_applied_to_invoices_change_back_to_original_info()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 6,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 7,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 8,
-  "name": "enter login credentials",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "navigates to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "User clicks the manage tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.enter_Login_credentials()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.navigates_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_clicks_the_manage_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 83,
-      "value": "#NHS specific - NEED TO WRITE CODE FOR BELOW SCENARIO"
-    }
-  ],
-  "line": 85,
-  "name": "Manage tab -  Venue management - verify Space Categories – should not have the option to add/edit or delete – Org admin only for NHS",
-  "description": "",
-  "id": "manage-tab-scenarios;manage-tab----venue-management---verify-space-categories-–-should-not-have-the-option-to-add/edit-or-delete-–-org-admin-only-for-nhs",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 84,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 86,
-  "name": "User verify the space catagory to ensure that this section is read only section and user is not allowed to add, edit or delete space catagory",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 87,
-  "name": "user login to Org admin and able to add , edit or delete space catagory",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 88,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Manage_SD.user_verify_the_space_catagory_to_ensure_that_this_section_is_read_only_section_and_user_is_not_allowed_to_add_edit_or_delete_space_catagory()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Manage_SD.user_login_to_Org_admin_and_able_to_add_edit_or_delete_space_catagory()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.uri("Payments.feature");
-formatter.feature({
-  "comments": [
-    {
-      "line": 2,
-      "value": "#Author: Jay Pathak"
-    },
-    {
-      "line": 3,
-      "value": "#Comment: Org Admin and Venue Admin  - Clients tab Regression"
-    }
-  ],
-  "line": 4,
-  "name": "Clients tab scenarios",
-  "description": "",
-  "id": "clients-tab-scenarios",
-  "keyword": "Feature"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "user entered required credential and Login",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User have gone to homepage and verify",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the Payments tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_entered_required_credential_and_Login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_navigate_to_homepage_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_clicks_the_Payments_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 13,
-      "value": "##\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d5 payments scenarios\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
-    }
-  ],
-  "line": 16,
-  "name": "Verify viewing individual payment details  -  GC/WP/manual/cash with different statuses and to ensure no refresh option displays",
-  "description": "",
-  "id": "clients-tab-scenarios;verify-viewing-individual-payment-details-----gc/wp/manual/cash-with-different-statuses-and-to-ensure-no-refresh-option-displays",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 15,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 17,
-  "name": "User clicks views for different payment types and status and verify the result",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Payments_SD.User_clicks_views_for_different_payment_types_and_status_and_verify_the_result()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "user entered required credential and Login",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User have gone to homepage and verify",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the Payments tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_entered_required_credential_and_Login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_navigate_to_homepage_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_clicks_the_Payments_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 21,
-  "name": "Verify result on screen by using different filters",
-  "description": "",
-  "id": "clients-tab-scenarios;verify-result-on-screen-by-using-different-filters",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 20,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 22,
-  "name": "User verify result by selecting different allocation options",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 23,
-  "name": "User verify result by selecting different reconciliation options",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 24,
-  "name": "User verify result by selecting different status options",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 25,
-  "name": "User verify result by selecting different date range",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 26,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Payments_SD.user_verify_result_by_selecting_different_allocation_options()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_verify_result_by_selecting_different_reconciliation_options()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_verify_result_by_selecting_different_status_options()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_verify_result_by_selecting_different_date_range()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "user entered required credential and Login",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User have gone to homepage and verify",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the Payments tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_entered_required_credential_and_Login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_navigate_to_homepage_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_clicks_the_Payments_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 29,
-  "name": "Verify different payment types",
-  "description": "",
-  "id": "clients-tab-scenarios;verify-different-payment-types",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 28,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 30,
-  "name": "User select different payment types from the dropdown to filter out the payments and verify the result",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 31,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Payments_SD.user_select_different_payment_types_from_the_dropdown_to_filter_out_the_payments_and_verify_the_result()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "user entered required credential and Login",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User have gone to homepage and verify",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the Payments tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_entered_required_credential_and_Login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_navigate_to_homepage_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_clicks_the_Payments_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 35,
-  "name": "Verify refund search bar",
-  "description": "",
-  "id": "clients-tab-scenarios;verify-refund-search-bar",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 34,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 36,
-  "name": "User enter search criteria in search bar and verify refund results",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 37,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Payments_SD.user_enter_search_criteria_in_search_bar_and_verify_refund_results()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "user entered required credential and Login",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User have gone to homepage and verify",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the Payments tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_entered_required_credential_and_Login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_navigate_to_homepage_and_verify()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Payments_SD.user_clicks_the_Payments_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 40,
-  "name": "Verify refund subtab and view individual refund details",
-  "description": "",
-  "id": "clients-tab-scenarios;verify-refund-subtab-and-view-individual-refund-details",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 39,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 41,
-  "name": "User navigate to refund tab and view individual refunds",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 42,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Payments_SD.user_navigate_to_refund_tab_and_view_individual_refunds()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.uri("Reminder.feature");
-formatter.feature({
-  "comments": [
-    {
-      "line": 2,
-      "value": "#Author: Jay Pathak"
-    },
-    {
-      "line": 3,
-      "value": "#Comment: Venue Admin  - Reminder tab Regression"
-    }
-  ],
-  "line": 4,
-  "name": "Reminder tab scenarios",
-  "description": "",
-  "id": "reminder-tab-scenarios",
-  "keyword": "Feature"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter required credential and Login",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User have gone to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the reminder tab and search for a reminder",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Reminder_SD.enter_required_credential_and_Login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Reminder_SD.user_have_gone_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Reminder_SD.user_clicks_the_reminder_tab_and_search_for_a_reminder()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 13,
-      "value": "##\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d3 reminder scenarios\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
-    }
-  ],
-  "line": 17,
-  "name": "View - Reminder and edit a reminder",
-  "description": "",
-  "id": "reminder-tab-scenarios;view---reminder-and-edit-a-reminder",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 16,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 18,
-  "name": "User selects the action link and update the date, save and verify the change",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Reminder_SD.user_selects_the_action_link_and_update_the_date_save_and_verify_the_change()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter required credential and Login",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User have gone to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the reminder tab and search for a reminder",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Reminder_SD.enter_required_credential_and_Login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Reminder_SD.user_have_gone_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Reminder_SD.user_clicks_the_reminder_tab_and_search_for_a_reminder()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 22,
-  "name": "View - Reminder and action a reminder",
-  "description": "",
-  "id": "reminder-tab-scenarios;view---reminder-and-action-a-reminder",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 21,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 23,
-  "name": "User selects the action link, select check box, enter action statement and save and verify the change",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 24,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Reminder_SD.user_selects_the_action_link_select_check_box_enter_action_statement_and_save_and_verify_the_change()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter required credential and Login",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "User have gone to homepage",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the reminder tab and search for a reminder",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Reminder_SD.enter_required_credential_and_Login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Reminder_SD.user_have_gone_to_homepage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Reminder_SD.user_clicks_the_reminder_tab_and_search_for_a_reminder()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 29,
-  "name": "View- Reminder and cancel it",
-  "description": "",
-  "id": "reminder-tab-scenarios;view--reminder-and-cancel-it",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 28,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 30,
-  "name": "User selects the cancel link and verify the result",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 31,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Reminder_SD.user_selects_the_cancel_link_and_verify_the_result()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.uri("Users.feature");
-formatter.feature({
-  "comments": [
-    {
-      "line": 2,
-      "value": "#Author: Jay Pathak"
-    },
-    {
-      "line": 3,
-      "value": "#Comment: Venue Admin  - Users tab Regression"
-    }
-  ],
-  "line": 4,
-  "name": "Users tab scenarios",
-  "description": "",
-  "id": "users-tab-scenarios",
-  "keyword": "Feature"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter valid credential",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "go to dashboard",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the users tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Users_SD.enter_valid_credential()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Users_SD.go_to_dashboard()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Users_SD.user_clicks_the_users_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "comments": [
-    {
-      "line": 14,
-      "value": "##\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d 2 Users scenarios\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
-    }
-  ],
-  "line": 17,
-  "name": "Navigate to different users subtabs, create new venue admin , log in and verify all the tabs and to ensure that unlinked tab is not visible",
-  "description": "",
-  "id": "users-tab-scenarios;navigate-to-different-users-subtabs,-create-new-venue-admin-,-log-in-and-verify-all-the-tabs-and-to-ensure-that-unlinked-tab-is-not-visible",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 16,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 18,
-  "name": "User clicks on all the subtabs and verify the the title",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "User creates a new venue admin , log in and navigate to differenet tabs",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 20,
-  "name": "user verifies that Unlinked users tab is not visible",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 21,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Users_SD.user_clicks_on_all_the_subtabs_and_verify_the_the_title()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Users_SD.user_creates_a_new_venue_admin_log_in_and_navigate_to_differenet_tabs()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Users_SD.user_verifies_that_Unlinked_users_tab_is_not_visible()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.background({
-  "line": 7,
-  "name": "",
-  "description": "",
-  "type": "background",
-  "keyword": "Background"
-});
-formatter.step({
-  "line": 8,
-  "name": "User opens browser and enters the admin URL",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 9,
-  "name": "enter valid credential",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "go to dashboard",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 11,
-  "name": "User clicks the users tab",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "CommonSteps_SD.User_opens_browser_and_enters_the_admin_URL()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Users_SD.enter_valid_credential()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Users_SD.go_to_dashboard()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Users_SD.user_clicks_the_users_tab()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "line": 24,
-  "name": "verify User updates the email address for the client user",
-  "description": "",
-  "id": "users-tab-scenarios;verify-user-updates-the-email-address-for-the-client-user",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 23,
-      "name": "@VenueAdmin"
-    }
-  ]
-});
-formatter.step({
-  "line": 25,
-  "name": "User update the email address for the client user and verify client user can login with the new email",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 26,
-  "name": "user quit the browser",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "Users_SD.user_update_the_email_address_for_the_client_user_and_verify_client_user_can_login_with_the_new_email()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "CommonSteps_SD.user_quit_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
-});
-});
+formatter.scenario(formatter.uri("Dashboard.feature");
+formatter.feature(formatter.uri("Invoice.feature");
+formatter.feature(formatter.uri("Manage.feature");
+formatter.feature(formatter.uri(

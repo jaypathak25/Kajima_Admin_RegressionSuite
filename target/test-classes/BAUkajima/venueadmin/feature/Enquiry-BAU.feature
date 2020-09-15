@@ -12,6 +12,23 @@ Background:
 ##========================= 8 BAU Enquiry scenarios========================
 
 
+
+
+@VenueAdmin
+Scenario: verify convert enquiry into booking and verify details raised in DEV916
+		Then User navigates to new enquiry details page, add multiple line items with different booking rates, check availability and verify details after saving it.
+		Then User converts the booking and verify all the details again and finally create booking
+  	And user quit the browser
+
+#Bug
+@VenueAdmin
+Scenario: verify submit the enquiry from the Classic website and cross check as the admin in enquiry tab
+    Then User submit enquiry For Classic using Orange Enquire Now button on Home page 
+    Then User submit enquiry For Classic using Orange Enquire Now button on Category page
+    Then User submit enquiry For Classic using Orange Enquire Now button on Room page 
+    Then User submit enquiry For Classic using Blue Enquire/Book now button on Room page
+#  	And user quit the browser
+
 @VenueAdmin
 Scenario: verify convert enquiry into booking
 		Then User navigates to new enquiry details page, selects check availability and click convert into booking
@@ -61,14 +78,7 @@ Scenario: verify submit the enquiry from the website and cross check as the admi
 		Then User submit enquiry For Vancouver or Calgary submit from Contact page and verify in admin portal
   	And user quit the browser
 
-#Bug
-#@VenueAdmin
-#Scenario: verify submit the enquiry from the Classic website and cross check as the admin in enquiry tab
-#    Then User submit enquiry For Classic using Orange Enquire Now button on Home page 
- #   Then User submit enquiry For Classic using Orange Enquire Now button on Category page
-  #  Then User submit enquiry For Classic using Orange Enquire Now button on Room page 
-   # Then User submit enquiry For Classic using Blue Enquire/Book now button on Room page
-#  	And user quit the browser
+
 
 
 

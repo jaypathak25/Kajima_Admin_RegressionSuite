@@ -13,6 +13,8 @@ Background:
 ##============================================================================================================================##
 ##==============================================12 scenarios for Both Org and Venue admin=============================================================================##    
     
+
+
 # Below scenario is applicable for BOTH OrgAdmin and VenueAdmin   
 @OrgAdmin @VenueAdmin
 Scenario: Create New user - Primary User
@@ -181,11 +183,7 @@ Scenario: Adding service to the client - Verify adding same service with differe
 @OrgAdmin
 Scenario: Verify Registered card section - Remove card and verify the list  
     Then User verifies that Registered card section is appearing on clients screen
-  	Then User clicks the Remove link 
-   	And Selects cancel from the pop up message 
-    Then User clicks the Remove link again 
-    And select the OK button on the pop up message 
-    Then user verifies the successful message to ensure that Card has been removed from the list
+  	Then User clicks the Remove link,remove the card and verify
     And user quit the browser
     
  

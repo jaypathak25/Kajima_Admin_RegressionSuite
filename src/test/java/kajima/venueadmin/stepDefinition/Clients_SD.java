@@ -226,29 +226,10 @@ public class Clients_SD extends TestBase {
 		client_page.verify_regiCardSection();
 	}
 
-	@Then("^User clicks the Remove link$")
-	public void user_clicks_the_Remove_link()  {
+	@Then("^User clicks the Remove link,remove the card and verify$")
+	public void user_clicks_the_Remove_link_remove_the_card_and_verify()  {
 		client_page.click_removeCardLnk();
-	}
 
-	@Then("^Selects cancel from the pop up message$")
-	public void selects_cancel_from_the_pop_up_message()  {
-		client_page.click_Cancel();
-	}
-
-	@Then("^User clicks the Remove link again$")
-	public void user_clicks_the_Remove_link_again()  {
-		client_page.click_removeCardLnk();
-	}
-
-	@Then("^select the OK button on the pop up message$")
-	public void select_the_OK_button_on_the_pop_up_message() {
-		client_page.click_Ok();
-	}
-
-	@Then("^user verifies the successful message to ensure that Card has been removed from the list$")
-	public void user_verifies_the_successful_message_to_ensure_that_Card_has_been_removed_from_the_list() {
-		client_page.verify_removeCard();
 	}
 
 //========================Scenario: Edit client and tick/Untick service====================================================

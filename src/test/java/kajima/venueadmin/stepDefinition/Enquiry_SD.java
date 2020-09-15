@@ -140,6 +140,19 @@ public class Enquiry_SD extends TestBase {
 		enquiry_page.verify_convertToBooking();
 	}
 	
+	
+//=======================Scenario: verify convert enquiry into booking and verify details raised in DEV916====================================================================
+
+		@Then("^User navigates to new enquiry details page, add multiple line items with different booking rates, check availability and verify details after saving it.$")
+		public void user_navigates_to_new_enquiry_details_page_add_multiple_line_items_with_different_booking_rates_check_avail_verify_details() throws InterruptedException  {
+			
+		}
+		
+		@Then("^User converts the booking and verify all the details again and finally create booking$")
+		public void User_converts_the_booking_and_verify_all_the_details_again_and_finally_create_booking() throws InterruptedException  {
+			
+		}
+	
 
 //========================Scenario: verify submit the enquiry from the website and cross check as the admin in enquiry tab==================
 
@@ -164,17 +177,18 @@ public class Enquiry_SD extends TestBase {
 	}
 
 	@Then("^User submit enquiry For Classic using Orange Enquire Now button on Category page$")
-	public void user_submit_enquiry_For_Classic_using_Orange_Enquire_Now_button_on_Category_page()  {
-
+	public void user_submit_enquiry_For_Classic_using_Orange_Enquire_Now_button_on_Category_page() throws InterruptedException, AWTException  {
+		enquiry_page.verify_Classic_OrangeCatPage();
 	}
 
 	@Then("^User submit enquiry For Classic using Orange Enquire Now button on Room page$")
-	public void user_submit_enquiry_For_Classic_using_Orange_Enquire_Now_button_on_Room_page()  {
-
+	public void user_submit_enquiry_For_Classic_using_Orange_Enquire_Now_button_on_Room_page() throws InterruptedException, AWTException  {
+		enquiry_page.verify_Classic_OrangeRoomPage();
 	}
 
 	@Then("^User submit enquiry For Classic using Blue Enquire/Book now button on Room page$")
-	public void user_submit_enquiry_For_Classic_using_Blue_Enquire_Book_now_button_on_Room_page() {
+	public void user_submit_enquiry_For_Classic_using_Blue_Enquire_Book_now_button_on_Room_page() throws InterruptedException, AWTException {
+		enquiry_page.verify_Classic_blueRoomPage();
 
 	}
 
