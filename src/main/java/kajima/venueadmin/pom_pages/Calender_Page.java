@@ -121,7 +121,7 @@ public class Calender_Page extends TestBase {
 	@FindBy(xpath="//a[text()='Mark as Sent']")
 	WebElement markAsSent_Btn;
 	
-	@FindBy(xpath="//li[contains(.,'Assembly')]")
+	@FindBy(xpath="//div[@class='custom dropdown open']/ul/li[contains(.,'Bowling Machine')]")
 	WebElement BAUspaceOpn1;
 	
 	@FindBy(xpath="//li[contains(.,'Classroom')]")
@@ -377,7 +377,7 @@ public class Calender_Page extends TestBase {
 				Thread.sleep(3000);
 				client_tab.click();
 				search_box.sendKeys("auto");
-				Thread.sleep(1000);
+				Thread.sleep(6000);
 			//	toDate_field.sendKeys(Keys.ENTER);
 				Thread.sleep(3000);
 				view_link.click();

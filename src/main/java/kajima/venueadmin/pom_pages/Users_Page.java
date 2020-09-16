@@ -69,7 +69,7 @@ public class Users_Page extends TestBase {
 	@FindBy(id="user_password_confirmation")
 	WebElement userPswdConfirmation_Txt;
 	
-	@FindBy(id="//nav[@id='nav-main']//ul[@class='nav-bar left']/li/a")
+	@FindBy(id="//html/body[@id='top']/div[2]//nav[@id='nav-main']//ul/li/a")
 	List<WebElement> mva_subtabs;
 	
 	@FindBy(id="user_email")
@@ -203,31 +203,33 @@ public class Users_Page extends TestBase {
 		
 		public void verifyLoginNewMVA_BAU() throws InterruptedException, AWTException {
 
-			String parent =  driver.getWindowHandle();
-			System.out.println("Parent ID " + parent);
-			Thread.sleep(2000);
-			for(int i=1;i<=1;i++) {
-				Robot rob = new Robot();
-				rob.keyPress(KeyEvent.VK_CONTROL);
-				rob.keyPress(KeyEvent.VK_T);
-				rob.keyRelease(KeyEvent.VK_CONTROL);
-				rob.keyRelease(KeyEvent.VK_T);
-				ArrayList<String> noOfTabs = new ArrayList<String>(driver.getWindowHandles());	
-				driver.switchTo().window((String) noOfTabs.get(i));
-			}
-			driver.get("https://admin.bp-preproduction.schoolbookings.co.uk/users/sign_in");
-			enterEmail_txt.sendKeys("mailaddBAU");
+	//		String parent =  driver.getWindowHandle();
+	//		System.out.println("Parent ID " + parent);
+	//		Thread.sleep(2000);
+	//		for(int i=1;i<=1;i++) {
+	//			Robot rob = new Robot();
+	//			rob.keyPress(KeyEvent.VK_CONTROL);
+	//			rob.keyPress(KeyEvent.VK_T);
+	//			rob.keyRelease(KeyEvent.VK_CONTROL);
+	//			rob.keyRelease(KeyEvent.VK_T);
+	//			ArrayList<String> noOfTabs = new ArrayList<String>(driver.getWindowHandles());	
+	//			driver.switchTo().window((String) noOfTabs.get(i));
+	//		}
+	//		driver.get("https://admin.bp-preproduction.schoolbookings.co.uk/users/sign_in");
+			Thread.sleep(5000);
+			enterEmail_txt.sendKeys(mailaddBAU);
 			enterPswd_txt.sendKeys("login@123");
 			enterLogin_Btn.click();
 			
 			Thread.sleep(4000);
-			driver.navigate().refresh();
+		//	driver.navigate().refresh();
 			Thread.sleep(2000);
 			int noOfMVATabs = mva_subtabs.size();
 			System.out.println("Number of MVA subtabs are: " + noOfMVATabs);
 	//		Assert.assertTrue(noOfMVATabs==9);
 			for(int i=1; i<=noOfMVATabs; i++) {
-				driver.findElement(By.xpath("//ul[@class='nav-bar left']/li["+i+"]/a")).click();
+				driver.findElement(By.xpath("//html/body[@id='top']/div[2]//nav[@id='nav-main']//ul/li["+i+"]/a")).click();
+		//		driver.findElement(By.xpath("//ul[@class='nav-bar left']/li["+i+"]/a")).click();
 				Thread.sleep(2000);
 				String MVASubtabsTxt = driver.findElement(By.xpath("//ul[@class='nav-bar left']/li["+i+"]/a")).getText();
 				System.out.println("You are on " + MVASubtabsTxt + "Subtab");	

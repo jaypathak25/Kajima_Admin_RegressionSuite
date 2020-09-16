@@ -457,6 +457,7 @@ public class Manage_Page extends TestBase {
 			Thread.sleep(4000);
 			client_page.clicktab();
 			client_page.search_box.sendKeys("auto");
+			Thread.sleep(5000);
 			client_page.view_link.click();
 			client_page.editClient_btn.click();
 			 JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -470,7 +471,7 @@ public class Manage_Page extends TestBase {
 			SoftAssert softAssert = new SoftAssert();
 			softAssert.assertTrue(title.contains("Client was successfully updated."));
 			softAssert.assertAll();	
-			Assert.assertTrue(driver.findElement(By.xpath("//img[contains(@src,'flag_red') and @alt='Flag red']")).isDisplayed());
+			Assert.assertTrue(driver.findElement(By.xpath("//img[contains(@src,'flag_red')]")).isDisplayed());
 		}
 		
 		public void verify_deleteClientFlag() throws InterruptedException {

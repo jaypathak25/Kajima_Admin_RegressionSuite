@@ -174,7 +174,7 @@ public class Enquiry_Page extends TestBase {
 	@FindBy(xpath="//select[@id='space0_vat_rate_select']/parent::div/div/a")
 	WebElement VAT_dd;
 	
-	@FindBy(xpath="//select[@id='space0_vat_rate_select']/parent::div/div/ul/li[contains(.,'10% rate')]")
+	@FindBy(xpath="//select[@id='space0_vat_rate_select']/parent::div/div/ul/li[contains(.,'5% Reduced Rate')]")
 	WebElement VAT_Opn;
 	
 	@FindBy(xpath="//select[@id='space0_rate_select']/parent::div/div/a")
@@ -812,8 +812,10 @@ public class Enquiry_Page extends TestBase {
 				Thread.sleep(1000);
 				driver.findElement(By.xpath("//form[@id='new_enquiry']/div/input[@id='booking_agree']")).click();
 				Thread.sleep(1000);
-			
+				
+				try {
 			    driver.findElement(By.xpath("//form[@id='new_enquiry']/div/input[@id='enquiry_marketing_option_ids_' and @value = '1']")).click();
+				}catch(Exception e) {}
 			    Thread.sleep(1000);
 			    driver.findElement(By.xpath("//form[@id='new_enquiry']/div/input[@type='submit']")).click();
 			    Thread.sleep(1000);
@@ -871,8 +873,9 @@ public class Enquiry_Page extends TestBase {
 			Thread.sleep(1000);
 			driver.findElement(By.xpath("//form[@id='new_enquiry']/div/input[@id='booking_agree']")).click();
 			Thread.sleep(1000);
-		
+			try {
 		    driver.findElement(By.xpath("//form[@id='new_enquiry']/div/input[@id='enquiry_marketing_option_ids_' and @value = '1']")).click();
+			}catch(Exception e) {}
 		    Thread.sleep(1000);
 		    driver.findElement(By.xpath("//form[@id='new_enquiry']/div/input[@type='submit']")).click();
 		    Thread.sleep(1000);

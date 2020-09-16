@@ -3,6 +3,8 @@ package kajima.venueadmin.pom_pages;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -763,11 +765,12 @@ public class Clients_Page extends TestBase {
 		if(accAct_section.isDisplayed()) { 
 			int noOfPayLinks = payments_links.size();
 			System.out.println("No Of Payment Links displays in Account activity are " + noOfPayLinks ); 
-			for(int i=0;i<noOfPayLinks;i++) { 
+			for(int i=0;i<noOfPayLinks;) { 
 				String payID = payments_links.get(i).getText();
 				System.out.println(payID);
 				payments_links.get(i).click();
 				Thread.sleep(1000);
+				
 				 try 
 				 { 
 					 addNote_Btn.click(); 
@@ -782,6 +785,7 @@ public class Clients_Page extends TestBase {
 					 closeBtn_PayPopUp.click();
 				 }	
 				Thread.sleep(2000);
+				break;
 			}	
 		}	
 	}
@@ -792,7 +796,7 @@ public class Clients_Page extends TestBase {
 		if(accAct_section.isDisplayed()) { 
 			int noOfInvoiceLinks = invoice_Links.size();
 			System.out.println("No Of Invoice Links displays in Account activity are " + noOfInvoiceLinks ); 
-			for(int i=0;i<noOfInvoiceLinks;i++) { 
+			for(int i=0;i<noOfInvoiceLinks;) { 
 				String InvoiceID = invoice_Links.get(i).getText();
 				System.out.println(InvoiceID);
 				invoice_Links.get(i).click();
@@ -800,15 +804,16 @@ public class Clients_Page extends TestBase {
 				try
 				 {
 					 payLink_inInvoice.click();
-					 Thread.sleep(1000);
+					 Thread.sleep(3000);
 					 closeBtn_PayPopUp.click();
-					 Thread.sleep(1000);
+					 Thread.sleep(3000);
 					 viewClientLink_inInvoice.click();
 				 } 
 				 catch (Exception e) {
 					 viewClientLink_inInvoice.click();
 				 }
 				Thread.sleep(1000);
+				break;
 			}	
 		}	
 	}
@@ -819,7 +824,7 @@ public class Clients_Page extends TestBase {
 		if(accAct_section.isDisplayed()) { 
 			int noOfCNLinks = creditNote_Links.size();
 			System.out.println("No Of CN Links displays in Account activity are " + noOfCNLinks); 
-			for(int i=0;i<noOfCNLinks;i++) { 
+			for(int i=0;i<noOfCNLinks;) { 
 				String CNID = creditNote_Links.get(i).getText();
 				System.out.println(CNID);
 				creditNote_Links.get(i).click();
@@ -836,6 +841,7 @@ public class Clients_Page extends TestBase {
 					 viewClientLink_inInvoice.click();
 				 }
 				Thread.sleep(1000);
+				break;
 			}	
 		}	
 	}
@@ -846,13 +852,14 @@ public class Clients_Page extends TestBase {
 		if(accAct_section.isDisplayed()) { 
 			int noOfRefundLinks = refund_Links.size();
 			System.out.println("No Of refund Links displays in Account activity are " + noOfRefundLinks); 
-			for(int i=0;i<noOfRefundLinks;i++) { 
+			for(int i=0;i<noOfRefundLinks;) { 
 				String refundID = refund_Links.get(i).getText();
 				System.out.println(refundID);
 				Thread.sleep(1000);
 				refund_Links.get(i).click();
 				Thread.sleep(1000);
 				closeBtn_PayPopUp.click();
+				break;
 				 }
 			Thread.sleep(1000);
 		}	
@@ -911,25 +918,41 @@ public class Clients_Page extends TestBase {
 	
 //==================================================================================================//
 	
-	public void verify_archiveClient() {
+	public void verify_archiveClient() throws InterruptedException {
 		driver.navigate().back();
+		Thread.sleep(2000);
 		search_box.clear();
 		search_box.sendKeys("ARCHTEST");
+	//	search_box.sendKeys(Keys.ENTER);
+		Thread.sleep(10000);
 		archive_Link.click();
+		try{
+			String str = driver.findElement(By.id("flash_alert")).getText();
+			System.out.println(str);
+		}catch(Exception e){
 		driver.switchTo().alert().dismiss();
+		Thread.sleep(3000);
+		
 		archive_Link.click();
 		driver.switchTo().alert().accept();
 		String success_msg = unlink_Msg.getText();	
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertTrue(success_msg.contains("Client was successfully archived"));
 		softAssert.assertAll();
+		}
 
 	}
 
 //==================================================================================================//
 	
-	public void verify_restoreClient() {
+	public void verify_restoreClient() throws InterruptedException {
 		showArcClient_Link.click();
+		Thread.sleep(5000);
+		search_box.clear();
+		search_box.sendKeys("ARCHTEST");
+	//	search_box.sendKeys(Keys.ENTER);
+		Thread.sleep(10000);
+		
 		restore_Link.click();
 		driver.switchTo().alert().dismiss();
 		restore_Link.click();
@@ -1084,8 +1107,9 @@ public class Clients_Page extends TestBase {
  //==================================================================================================//
    
    public void verify_addReminderToClient() throws InterruptedException {
+	   try {
 	   createRemin_Link.click();
-	   addReminDate_field.sendKeys("13/05/2020");
+	   addReminDate_field.sendKeys(LocalDate.now().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 	   addReminNote_field.sendKeys("Automation Notes");
 	   save_Btn.click();
 	   String remindTxt = driver.findElement(By.xpath("//*[@class='alert-box hide-on-print']//p")).getText();
@@ -1097,6 +1121,26 @@ public class Clients_Page extends TestBase {
 	   reminAction_chkBox.click();
 	   reminAction_field.sendKeys("Automation Actioned");
 	   save_Btn.click();
+	   }catch(Exception e) {
+		   driver.findElement(By.xpath("//a[@class='red buttonBourbon' and text()='Cancel']")).click();
+		   Thread.sleep(3000);
+		   driver.switchTo().alert().accept();
+		   Thread.sleep(3000);
+		   createRemin_Link.click();
+		   addReminDate_field.sendKeys("13/05/2020");
+		   addReminNote_field.sendKeys("Automation Notes");
+		   save_Btn.click();
+		   String remindTxt = driver.findElement(By.xpath("//*[@class='alert-box hide-on-print']//p")).getText();
+		   SoftAssert softAssert = new SoftAssert();
+		   softAssert.assertTrue(remindTxt.contains("You have a reminder set for this client for"));
+		   softAssert.assertAll();
+		   Thread.sleep(2000);
+		   remindAction_Btn.click();
+		   reminAction_chkBox.click();
+		   reminAction_field.sendKeys("Automation Actioned");
+		   save_Btn.click();
+		   
+	   }
 	  
    }
    

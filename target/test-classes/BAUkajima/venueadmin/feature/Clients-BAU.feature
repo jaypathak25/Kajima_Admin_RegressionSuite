@@ -12,8 +12,6 @@ Background:
 ##============================================================================================================================##
 ##==============================================15 scenarios for BAU Venue admin=============================================================================##    
 
-
-
 @VenueAdmin
 Scenario: Verify that user can add a manual payment from the Clients screen
  		Then User adds a Manual payment and verify the result  
@@ -38,7 +36,7 @@ Scenario: Verify that user can upload the document and can add a reminder to doc
  		Then user add the reminder and verify
     And user quit the browser
 
-
+#
 @VenueAdmin
 Scenario: Verify that user can add a reminder to a client account
  		Then User selects Create a reminder option and successfully added a reminder to a client screen 
@@ -95,3 +93,7 @@ Scenario: Edit a BAU User -  update details
 Scenario: Unlink a client User
     Then User unlink the user and verify the details 
     And user quit the browser
+
+
+
+

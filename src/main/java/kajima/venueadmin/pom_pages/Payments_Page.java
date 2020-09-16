@@ -105,6 +105,15 @@ public class Payments_Page extends TestBase {
 			int noOfRefundPay1 = noOfRefundnPayments.size();
 			System.out.println("Number of Refund payments before applying any filter are " + noOfRefundPay1);
 			Thread.sleep(1000);
+			
+			for(int i=1;i<=noOfRefundPay1;) {
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//table[@id='unreconciled_payments_table']/tbody/tr["+i+"]/td[8]/a")).click();
+			Thread.sleep(5000);
+			close_Link.click();
+			Thread.sleep(5000);
+			break;
+		}
 		
 			Select slct =  new Select(driver.findElement(By.xpath("//select[@id='rows_per_page']")));
 			slct.selectByIndex(2);
@@ -120,13 +129,7 @@ public class Payments_Page extends TestBase {
 			int noOfRefundPay3 = noOfRefundnPayments.size();
 			System.out.println("Number of Refund payments after filtering by dates are " + noOfRefundPay3);
 			
-				for(int i=1;i<=noOfRefundPay3;i++) {
-				Thread.sleep(2000);
-				driver.findElement(By.xpath("//table[@id='unreconciled_payments_table']/tbody/tr["+i+"]/td[8]/a")).click();
-				Thread.sleep(5000);
-				close_Link.click();
-				Thread.sleep(5000);
-			}
+
 		}
 		
 //==================================================================================================================//	

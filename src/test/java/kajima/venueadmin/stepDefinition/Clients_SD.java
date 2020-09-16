@@ -286,12 +286,12 @@ public class Clients_SD extends TestBase {
 //================================Scenario: Verify that user can Archive and then Restore the client===================
 	
 	@Then("^User select Archive client link and archive the client successfully$")
-	public void User_select_Archive_client_link_and_archive_the_client_successfully() {
+	public void User_select_Archive_client_link_and_archive_the_client_successfully() throws InterruptedException {
 		client_page.verify_archiveClient();	
 	}
 	
 	@Then("^user navigate to show archieved clients screen and Restore the client successfully$")
-	public void user_navigate_to_show_archieved_clients_screen_and_Restore_the_client_successfully() {
+	public void user_navigate_to_show_archieved_clients_screen_and_Restore_the_client_successfully() throws InterruptedException {
 		client_page.verify_restoreClient();
 	}
 	

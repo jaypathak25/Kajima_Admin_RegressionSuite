@@ -13,29 +13,22 @@ Background:
     
     ##=========================5 BAU Calender scenarios=========================
 
-
-  
-@VenueAdmin  	
-Scenario: Cancel a single from calender - Billed & Unbilled 
-  	Then User Cancelling a unbilled single booking from the Calender
-    Then User Cancelling a billed single booking from the Calender
-  	And user quit the browser 
-  	
-  	
 @VenueAdmin
 Scenario: Edit a single occurrence of booking from calender -  Billed and Unbilled 
     Then User creates a single occurance of booking, and edit unbilled status of booking from the Calender
     Then Billed the booking created in the previous step and edit billed status of booking from the Calender
   	And user quit the browser   
-  			
+  
+@VenueAdmin  	
+Scenario: Cancel a single from calender - Billed & Unbilled 
+  	Then User Cancelling a unbilled single booking from the Calender
+    Then User Cancelling a billed single booking from the Calender
+  	And user quit the browser 	
 
 @VenueAdmin
 Scenario: Verify viewing bookable space info
     Then User clicks the bookable space to check the information
   	And user quit the browser
-  	
-  	
-  	
   	    
 @VenueAdmin
 Scenario: verify date filter on calender to view the results 
