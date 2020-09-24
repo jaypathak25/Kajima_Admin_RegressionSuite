@@ -4,18 +4,21 @@ import cucumber.api.java.en.Then;
 import kajima.venueadmin.base.TestBase;
 import kajima.venueadmin.pom_pages.Invoice_Page;
 import kajima.venueadmin.pom_pages.Login_Page;
+import kajima.venueadmin.pom_pages.Manage_Page_OrgAdmin;
 
 public class Manage_Page_OrgAdmin_SD extends TestBase {
 	
-	Invoice_Page invoice_page;
 	Login_Page login_page;
+	Manage_Page_OrgAdmin manage_page_orgadmin;
+	
+	
 	
 
 	//***************************Before steps*****************************************************************************============
 		
 		public Manage_Page_OrgAdmin_SD() {
-			invoice_page = new Invoice_Page();
 			login_page = new Login_Page();	
+			manage_page_orgadmin =  new Manage_Page_OrgAdmin();
 		}
 	
 	
@@ -27,43 +30,42 @@ public class Manage_Page_OrgAdmin_SD extends TestBase {
 
 	@Then("^User clicks the manage tab for Org admin$")
 	public void user_clicks_the_manage_tab_for_Org_admin() {
+		manage_page_orgadmin.verify_clickOrgManageTab();
 
 	}
 	
 //========================================Scenario: Manage tab-verify all the subtabs and navigate================================
 
 	@Then("^User verify all the subtabs and click all the tabs to ensure it allows to access the screen successfully$")
-	public void user_verify_all_the_subtabs_and_click_all_the_tabs_to_ensure_it_allows_to_access_the_screen_successfully()  {
-
+	public void user_verify_all_the_subtabs_and_click_all_the_tabs_to_ensure_it_allows_to_access_the_screen_successfully() throws InterruptedException  {
+		manage_page_orgadmin.verify_clickManageSubTabs();
 	}
 	
 
 //================================Scenario: Manage tab-Booking rules tab - Update booking rules and revert back to to the original rule==============================
 
-	@Then("^User navigate to Booking rules tab and amend all available rules$")
-	public void user_navigate_to_Booking_rules_tab_and_amend_all_available_rules()  {
-
-	}
-
-	@Then("^User revert back all the original rules$")
-	public void user_revert_back_all_the_original_rules() {
+	@Then("^User navigate to Booking rules tab and amend all available rules, verify and revert back to original rules$")
+	public void user_navigate_to_Booking_rules_tab_and_amend_all_available_rules() throws InterruptedException  {
+		manage_page_orgadmin.verify_updateBookingRules();
 
 	}
 	
 //======================Scenario: Manage tab-Venue management-verify space Categories - add, edit, delete=====================================
 
 	@Then("^User add the new space Categories and verify$")
-	public void user_add_the_new_space_Categories_and_verify() {
+	public void user_add_the_new_space_Categories_and_verify() throws InterruptedException {
+		manage_page_orgadmin.verify_addNewSpaceCat();
 
 	}
 
 	@Then("^User Edit the new space Categories and verify$")
-	public void user_Edit_the_new_space_Categories_and_verify() {
-
+	public void user_Edit_the_new_space_Categories_and_verify() throws InterruptedException {
+		manage_page_orgadmin.verify_editNewSpaceCat();
 	}
 
 	@Then("^User Delete the new space Categories and verify$")
-	public void user_Delete_the_new_space_Categories_and_verify() {
+	public void user_Delete_the_new_space_Categories_and_verify() throws InterruptedException {
+		manage_page_orgadmin.verify_deleteNewSpaceCat();
 
 	}
 	
@@ -112,17 +114,20 @@ public class Manage_Page_OrgAdmin_SD extends TestBase {
 //=====================Scenario: Manage tab - CCG region - verify add, edit, delete========================================================================
 
 	@Then("^User added the new CCG region and verify this shows on reg form$")
-	public void user_added_the_new_CCG_region_and_verify_this_shows_on_reg_form() {
+	public void user_added_the_new_CCG_region_and_verify_this_shows_on_reg_form() throws InterruptedException {
+		manage_page_orgadmin.verify_addNewCCGRegion();
 
 	}
 
 	@Then("^User Edited the CCG region and verify$")
-	public void user_Edited_the_CCG_region_and_verify() {
+	public void user_Edited_the_CCG_region_and_verify() throws InterruptedException {
+		manage_page_orgadmin.verify_editNewCCGRegion();
 
 	}
 
 	@Then("^User Deleted the CCG region and verify$")
-	public void user_Deleted_the_CCG_region_and_verify() {
+	public void user_Deleted_the_CCG_region_and_verify() throws InterruptedException {
+		manage_page_orgadmin.verify_deleteNewCCGRegion();
 
 	}
 	
@@ -134,12 +139,14 @@ public class Manage_Page_OrgAdmin_SD extends TestBase {
 	}
 
 	@Then("^User added new services and choose if this is clinocal or non- clinical services$")
-	public void user_added_new_services_and_choose_if_this_is_clinocal_or_non_clinical_services() {
+	public void user_added_new_services_and_choose_if_this_is_clinocal_or_non_clinical_services() throws InterruptedException {
+		manage_page_orgadmin.verify_addNewService();
 
 	}
 
 	@Then("^User editing services name and description$")
-	public void user_editing_services_name_and_description() {
+	public void user_editing_services_name_and_description() throws InterruptedException {
+		manage_page_orgadmin.verify_editNewService();
 
 	}
 	

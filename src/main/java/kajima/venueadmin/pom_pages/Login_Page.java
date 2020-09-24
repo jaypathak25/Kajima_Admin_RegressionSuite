@@ -32,8 +32,8 @@ public class Login_Page extends TestBase {
 	//Created methods for all the actions performed on "Home" page
 	
 	public void loginAsMasterAdmin() {
-		login_user_name.sendKeys(prop.getProperty("BAU_username"));
-		login_user_password.sendKeys(prop.getProperty("BAU_password"));
+		login_user_name.sendKeys(prop.getProperty("org_username"));
+		login_user_password.sendKeys(prop.getProperty("org_password"));
 		login_btn.click();	
 	}
 

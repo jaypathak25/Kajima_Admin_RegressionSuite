@@ -177,11 +177,20 @@ public class Enquiry_Page extends TestBase {
 	@FindBy(xpath="//select[@id='space0_vat_rate_select']/parent::div/div/ul/li[contains(.,'5% Reduced Rate')]")
 	WebElement VAT_Opn;
 	
+	@FindBy(xpath="//select[@id='space0_vat_rate_select']/parent::div/div/ul/li[contains(.,'20% Standard Rate')]")
+	WebElement VAT_Opn2;
+	
 	@FindBy(xpath="//select[@id='space0_rate_select']/parent::div/div/a")
 	WebElement bookingRate_dd;
 	
 	@FindBy(xpath="//select[@id='space0_rate_select']/parent::div/div/ul/li[contains(.,'Concession')]")
 	WebElement bookingRate_Opn;
+	
+	@FindBy(xpath="//select[@id='space0_rate_select']/parent::div/div/ul/li[contains(.,'Fixed cost')]")
+	WebElement bookingRate_fixedOpn;
+	
+	@FindBy(xpath="//select[@id='space0_rate_select']/parent::div/div/ul/li[contains(.,'Standard')]")
+	WebElement bookingRate_standardOpn;
 	
 	@FindBy(xpath="//select[@id='recurrence_option']/parent::div/div/a")
 	WebElement recurring_dd;
@@ -256,10 +265,10 @@ public class Enquiry_Page extends TestBase {
 	WebElement edit_Link;
 	
 	@FindBy(xpath="//tbody/tr[contains(@class,'green')]/td/input[@type='checkbox']")
-	WebElement green;
+	List<WebElement> green;
 	
 	@FindBy(xpath="//tbody/tr[contains(@class,'red')]/td/input[@type='checkbox']")
-	WebElement red;
+	List<WebElement> red;
 	
 	@FindBy(id="enquiry_organisation_name")
 	WebElement enqOrganisation_Txt;
@@ -390,6 +399,99 @@ public class Enquiry_Page extends TestBase {
 	//			}		
 			}	
 		}
+		
+		public void verify_createNewEnquiryforDev916() throws InterruptedException {
+			newEnquiry_Btn.click();
+			Select slct =  new Select(selectClient_dd);
+			try {
+			slct.selectByVisibleText("auto Auto (auto)");
+			}catch(Exception e){
+				slct.selectByIndex(1);
+			}
+
+			
+			name1= faker.name().firstName();
+			surname1 =  faker.name().lastName();
+			newEnquirFirstName_Txt.clear();
+			newEnquirFirstName_Txt.sendKeys(name1);
+			newEnquirLastName_Txt.clear();
+			newEnquirLastName_Txt.sendKeys(surname1);
+			enqOrganisation_Txt.sendKeys(name1 + " Org");
+			
+			Select slct1 =  new Select(space_dd);
+			try {
+				slct1.selectByVisibleText("AWP A (6-7 aside/one third)");
+			}catch(Exception e) {
+				slct1.selectByIndex(3);
+			}
+			
+			bookingRate_dd.click();
+			Thread.sleep(2000);
+			bookingRate_fixedOpn.click();
+			
+			VAT_dd.click();
+			Thread.sleep(2000);
+			VAT_Opn.click();
+			
+			driver.findElement(By.id("btnAddEnquirySpace")).click();
+			Select slct2 =  new Select(space_dd);
+			try {
+				slct2.selectByIndex(6);
+			}catch(Exception e) {
+				slct2.selectByIndex(7);
+			}
+			
+			bookingRate_dd.click();
+			Thread.sleep(2000);
+			bookingRate_standardOpn.click();
+			
+			VAT_dd.click();
+			Thread.sleep(2000);
+			VAT_Opn2.click();
+			
+
+			
+			enquiryStartTime_Txt.clear();
+			enquiryStartTime_Txt.sendKeys("15:00");
+	//		enquiryStartTime_Txt.sendKeys(LocalTime.now().format(DateTimeFormatter.ofPattern("HH:MM")));
+			
+			enquiryEndTime_Txt.clear();
+			enquiryEndTime_Txt.sendKeys("16:00");
+			
+			checkAvail_btn.click();
+			enquiryNote_Txt.clear();
+			enquiryNote_Txt.sendKeys("NewAutomatedEnquiry");
+			
+			if(red.size()==0) {
+				System.out.println("This space is available at the selected Date/Time");
+				save_btn.click();
+				
+     			String msg = success_Msg.getText();
+				Assert.assertTrue(msg.contains("Enquiry was successfully created."));
+				driver.findElement(By.id("enquiry_details_toogle_button")).click();
+				
+				List<WebElement> listOfBookingsRate = driver.findElements(By.xpath("//label[contains(.,'Booking rate:')]//parent::div//div/a[@class='current']"));
+				int noOfrows  = listOfBookingsRate.size();
+				System.out.println("Number of options " + noOfrows );
+				
+				for (int i=0;i<noOfrows;i++) {
+					
+					String ddopn = driver.findElement(By.xpath("//select[@class='space-rate-select' and @data-id='"+i+"']//following-sibling::div/a[@class='current']")).getText();
+					System.out.println("First option "+ ddopn);
+				}
+				
+			//	enquiry_Tab.click();
+			//	enquirySearch_txtBox.sendKeys(name1);
+			//	int noOfenquiries = enquiryRows.size();
+			//	if(noOfenquiries!=0) {
+			//		Assert.assertTrue(true);
+				}		
+		else {
+				System.out.println("One of the space is NOT available at the selected Date/Time");	
+		}
+			
+
+}
 	
 		public void verify_EditNewEnquiry() throws InterruptedException {
 			System.out.println("The value of name : " + name1);
@@ -706,7 +808,7 @@ public class Enquiry_Page extends TestBase {
 			checkAvail_btn.click();
 			
 			try {
-			if(green.isDisplayed()) {
+			if(green.size()!=0) {
 				System.out.println("This space is available at the selected Date/Time");
 				
 				enquiryNotes.click();
