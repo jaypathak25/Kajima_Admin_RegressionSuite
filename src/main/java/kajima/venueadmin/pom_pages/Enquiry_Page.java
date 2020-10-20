@@ -16,6 +16,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -86,7 +87,16 @@ public class Enquiry_Page extends TestBase {
 	WebElement newEnquiryEmail_Txt;
 	
 	@FindBy(xpath="//select[@id='space0_id']")
-	WebElement space_dd;
+	WebElement space_dd1;
+	
+	@FindBy(xpath="//select[@id='space1_id']")
+	WebElement space_dd2;
+	
+	@FindBy(xpath="//select[@id='space2_id']")
+	WebElement space_dd3;
+	
+	@FindBy(xpath="//select[@id='space3_id']")
+	WebElement space_dd4;
 	
 	@FindBy(id="availability_check_enquiry")
 	WebElement checkAvail_btn;
@@ -172,25 +182,55 @@ public class Enquiry_Page extends TestBase {
 	WebElement space1_dd;
 	
 	@FindBy(xpath="//select[@id='space0_vat_rate_select']/parent::div/div/a")
-	WebElement VAT_dd;
+	WebElement VAT_dd1;
+	
+	@FindBy(xpath="//select[@id='space1_vat_rate_select']/parent::div/div/a")
+	WebElement VAT_dd2;
+	
+	@FindBy(xpath="//select[@id='space2_vat_rate_select']/parent::div/div/a")
+	WebElement VAT_dd3;
+	
+	@FindBy(xpath="//select[@id='space3_vat_rate_select']/parent::div/div/a")
+	WebElement VAT_dd4;
 	
 	@FindBy(xpath="//select[@id='space0_vat_rate_select']/parent::div/div/ul/li[contains(.,'5% Reduced Rate')]")
 	WebElement VAT_Opn;
 	
-	@FindBy(xpath="//select[@id='space0_vat_rate_select']/parent::div/div/ul/li[contains(.,'20% Standard Rate')]")
+	@FindBy(xpath="//select[@id='space1_vat_rate_select']/parent::div/div/ul/li[contains(.,'20% Standard Rate')]")
 	WebElement VAT_Opn2;
 	
+	@FindBy(xpath="//select[@id='space2_vat_rate_select']/parent::div/div/ul/li[contains(.,'5% Reduced Rate')]")
+	WebElement VAT_Opn3;
+	
+	@FindBy(xpath="//select[@id='space3_vat_rate_select']/parent::div/div/ul/li[contains(.,'20% Standard Rate')]")
+	WebElement VAT_Opn4;
+	
 	@FindBy(xpath="//select[@id='space0_rate_select']/parent::div/div/a")
-	WebElement bookingRate_dd;
+	WebElement bookingRate_dd1;
+	
+	@FindBy(xpath="//select[@id='space1_rate_select']/parent::div/div/a")
+	WebElement bookingRate_dd2;
+	
+	@FindBy(xpath="//select[@id='space2_rate_select']/parent::div/div/a")
+	WebElement bookingRate_dd3;
+	
+	@FindBy(xpath="//select[@id='space3_rate_select']/parent::div/div/a")
+	WebElement bookingRate_dd4;
 	
 	@FindBy(xpath="//select[@id='space0_rate_select']/parent::div/div/ul/li[contains(.,'Concession')]")
 	WebElement bookingRate_Opn;
 	
-	@FindBy(xpath="//select[@id='space0_rate_select']/parent::div/div/ul/li[contains(.,'Fixed cost')]")
-	WebElement bookingRate_fixedOpn;
-	
 	@FindBy(xpath="//select[@id='space0_rate_select']/parent::div/div/ul/li[contains(.,'Standard')]")
-	WebElement bookingRate_standardOpn;
+	WebElement bookingRate_standardOpn1;
+	
+	@FindBy(xpath="//select[@id='space1_rate_select']/parent::div/div/ul/li[contains(.,'Standard')]")
+	WebElement bookingRate_standardOpn2;
+	
+	@FindBy(xpath="//select[@id='space2_rate_select']/parent::div/div/ul/li[contains(.,'Fixed cost')]")
+	WebElement bookingRate_fixedOpn3;
+	
+	@FindBy(xpath="//select[@id='space3_rate_select']/parent::div/div/ul/li[contains(.,'Standard')]")
+	WebElement bookingRate_standardOpn4;
 	
 	@FindBy(xpath="//select[@id='recurrence_option']/parent::div/div/a")
 	WebElement recurring_dd;
@@ -347,7 +387,7 @@ public class Enquiry_Page extends TestBase {
 			}catch(Exception e){
 				slct.selectByIndex(1);
 			}
-			Select slct1 =  new Select(space_dd);
+			Select slct1 =  new Select(space_dd1);
 			try {
 				slct1.selectByIndex(3);
 			}catch(Exception e) {
@@ -400,7 +440,7 @@ public class Enquiry_Page extends TestBase {
 			}	
 		}
 		
-		public void verify_createNewEnquiryforDev916() throws InterruptedException {
+		public void verify_createNewEnquiryforDev916() throws Exception {
 			newEnquiry_Btn.click();
 			Select slct =  new Select(selectClient_dd);
 			try {
@@ -418,38 +458,75 @@ public class Enquiry_Page extends TestBase {
 			newEnquirLastName_Txt.sendKeys(surname1);
 			enqOrganisation_Txt.sendKeys(name1 + " Org");
 			
-			Select slct1 =  new Select(space_dd);
+			Select slct1 =  new Select(space_dd1);
 			try {
 				slct1.selectByVisibleText("AWP A (6-7 aside/one third)");
 			}catch(Exception e) {
-				slct1.selectByIndex(3);
+				slct1.selectByIndex(4);
 			}
 			
-			bookingRate_dd.click();
+			bookingRate_dd1.click();
 			Thread.sleep(2000);
-			bookingRate_fixedOpn.click();
+			bookingRate_standardOpn1.click();
+
 			
-			VAT_dd.click();
+			VAT_dd1.click();
 			Thread.sleep(2000);
 			VAT_Opn.click();
 			
 			driver.findElement(By.id("btnAddEnquirySpace")).click();
-			Select slct2 =  new Select(space_dd);
+			Select slct2 =  new Select(space_dd2);
 			try {
-				slct2.selectByIndex(6);
+				slct2.selectByIndex(5);
 			}catch(Exception e) {
-				slct2.selectByIndex(7);
+				slct2.selectByIndex(6);
 			}
 			
-			bookingRate_dd.click();
+			Thread.sleep(5000);
+			bookingRate_dd2.click();
+			Thread.sleep(5000);
+			bookingRate_standardOpn2.click();
 			Thread.sleep(2000);
-			bookingRate_standardOpn.click();
-			
-			VAT_dd.click();
+			VAT_dd2.click();
 			Thread.sleep(2000);
 			VAT_Opn2.click();
 			
-
+			driver.findElement(By.id("btnAddEnquirySpace")).click();
+			Select slct3 =  new Select(space_dd3);
+			try {
+				slct3.selectByIndex(5);
+			}catch(Exception e) {
+				slct3.selectByIndex(4);
+			}
+			
+			Thread.sleep(5000);
+			bookingRate_dd3.click();
+			Thread.sleep(5000);
+			Actions actions = new Actions(driver);
+			actions.moveToElement(bookingRate_fixedOpn3);
+			actions.perform();
+			bookingRate_fixedOpn3.click();
+			Thread.sleep(2000);
+			VAT_dd3.click();
+			Thread.sleep(2000);
+			VAT_Opn3.click();
+			
+			driver.findElement(By.id("btnAddEnquirySpace")).click();
+			Select slct4 =  new Select(space_dd4);
+			try {
+				slct4.selectByIndex(3);
+			}catch(Exception e) {
+				slct4.selectByIndex(4);
+			}
+			
+			Thread.sleep(5000);
+			bookingRate_dd4.click();
+			Thread.sleep(5000);
+			bookingRate_standardOpn4.click();
+			Thread.sleep(2000);
+			VAT_dd4.click();
+			Thread.sleep(2000);
+			VAT_Opn4.click();
 			
 			enquiryStartTime_Txt.clear();
 			enquiryStartTime_Txt.sendKeys("15:00");
@@ -472,12 +549,20 @@ public class Enquiry_Page extends TestBase {
 				
 				List<WebElement> listOfBookingsRate = driver.findElements(By.xpath("//label[contains(.,'Booking rate:')]//parent::div//div/a[@class='current']"));
 				int noOfrows  = listOfBookingsRate.size();
-				System.out.println("Number of options " + noOfrows );
+				System.out.println("Number of Booking rate options " + noOfrows );
 				
 				for (int i=0;i<noOfrows;i++) {
 					
 					String ddopn = driver.findElement(By.xpath("//select[@class='space-rate-select' and @data-id='"+i+"']//following-sibling::div/a[@class='current']")).getText();
-					System.out.println("First option "+ ddopn);
+					System.out.println("option selected in booking rate drop down " + i + " is " + ddopn);
+					if(ddopn.contains("Fixed cost")) {
+						System.out.println("This test is Passed");
+						Assert.assertTrue(true);
+						break;
+					}else {
+						System.out.println("option selected in booking rate drop down " + i + " is not matching with Fixed rate ");
+					}
+					
 				}
 				
 			//	enquiry_Tab.click();
@@ -509,11 +594,11 @@ public class Enquiry_Page extends TestBase {
 			Select slctSpace = new Select(space1_dd);
 			slctSpace.selectByIndex(3);
 			
-			VAT_dd.click();
+			VAT_dd1.click();
 			Thread.sleep(2000);
 			VAT_Opn.click();
 			
-			bookingRate_dd.click();
+			bookingRate_dd1.click();
 			Thread.sleep(2000);
 			bookingRate_Opn.click();
 			
@@ -787,7 +872,7 @@ public class Enquiry_Page extends TestBase {
 			}catch(Exception e){
 				slct.selectByIndex(1);
 			}
-			Select slct1 =  new Select(space_dd);
+			Select slct1 =  new Select(space_dd1);
 			try {
 				slct1.selectByIndex(7);
 			}catch(Exception e) {

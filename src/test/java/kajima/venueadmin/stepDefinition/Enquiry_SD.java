@@ -144,7 +144,7 @@ public class Enquiry_SD extends TestBase {
 //=======================Scenario: verify convert enquiry into booking and verify details raised in DEV916====================================================================
 
 		@Then("^User navigates to new enquiry details page, add multiple line items with different booking rates, check availability and verify details after saving it.$")
-		public void user_navigates_to_new_enquiry_details_page_add_multiple_line_items_with_different_booking_rates_check_avail_verify_details() throws InterruptedException  {
+		public void user_navigates_to_new_enquiry_details_page_add_multiple_line_items_with_different_booking_rates_check_avail_verify_details() throws Exception  {
 			enquiry_page.verify_createNewEnquiryforDev916();
 		}
 		
