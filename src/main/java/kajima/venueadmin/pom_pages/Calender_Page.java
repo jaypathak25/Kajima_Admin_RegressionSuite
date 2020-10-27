@@ -656,13 +656,13 @@ public class Calender_Page extends TestBase {
 					slct1.selectByVisibleText("auto Auto (auto)");
 				}
 				
-				try {
-					Select serviceslct1 =  new Select(selectService_dd);
-					serviceslct1.selectByVisibleText("");
-				}catch(Exception e) {
-					Select serviceslct2 =  new Select(selectService_dd);
-					serviceslct2.selectByVisibleText("");
-				}
+			//	try {
+			//		Select serviceslct1 =  new Select(selectService_dd);
+			//		serviceslct1.selectByVisibleText("");
+			//	}catch(Exception e) {
+			//		Select serviceslct2 =  new Select(selectService_dd);
+			//		serviceslct2.selectByVisibleText("");
+			//	}
 				
 				
 		  //      LocalDate date1= new LocalDate();

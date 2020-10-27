@@ -86,3 +86,4 @@ Scenario: Manage tab -  Venue management - verify Space Categories – should no
 Then User verify the space catagory to ensure that this section is read only section and user is not allowed to add, edit or delete space catagory
 Then user login to Org admin and able to add , edit or delete space catagory
 And user quit the browser
+

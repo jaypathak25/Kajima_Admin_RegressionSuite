@@ -11,7 +11,11 @@ Background:
   	Then User clicks the Payments tab
   	
  ##===========================5 payments scenarios==============================
- 
+
+@VenueAdmin
+Scenario: Verify viewing individual payment details  -  GC/WP/manual/cash with different statuses and to ensure no refresh option displays 
+    Then User clicks views for different payment types and status and verify the result 
+  	And user quit the browser 
 
 @VenueAdmin
 Scenario: Verify result on screen by using different filters

@@ -47,7 +47,7 @@ public class Enquiry_Page extends TestBase {
 	@FindBy(xpath="//div[@id='content']//div/h3[contains(text(),'Enquir')]")
 	WebElement enquiryTab_Title;
 	
-	@FindBy(xpath="//div[@id='content']//label/input[@type='text']")
+	@FindBy(xpath="//div[@id='content']//label/input[@type='search']")
 	WebElement enquirySearch_txtBox;
 	
 	@FindBy(xpath="//select[@name='enquiries_table_length']")

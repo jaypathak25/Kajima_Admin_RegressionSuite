@@ -508,10 +508,11 @@ public class Bookings_Page extends TestBase {
 		endDate_Field.sendKeys("01/12/2021");
 		go_Btn.click();
 		Thread.sleep(1000);
-		Thread.sleep(1000);
+		
 		System.out.println();
 		if(bookingRows.size()!=0) {
-			for(int i=1;i<=edit_Link.size();i++) {
+			for(int i=0;i<=edit_Link.size();i++) {
+				Thread.sleep(3000);
 				String roomNameBeforeEdit = driver.findElement(By.xpath("//table[@id='bookings_table']/tbody/tr["+i+"]/td[6]")).getText();
 				System.out.println("Before Edit Room name was " + roomNameBeforeEdit);
 				Thread.sleep(2000);

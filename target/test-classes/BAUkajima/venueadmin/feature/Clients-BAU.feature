@@ -11,6 +11,16 @@ Background:
     
 ##============================================================================================================================##
 ##==============================================15 scenarios for BAU Venue admin=============================================================================##    
+@VenueAdmin
+Scenario: Create New BAU user - client User
+    Then User selects New client user button, enter mandatory fields, create user and verify
+    And user quit the browser
+
+@VenueAdmin
+Scenario: Edit a BAU User -  update details 
+    Then User selects 'Edit Users' link , update the details and verify the edited user
+    And user quit the browser
+
 
 @VenueAdmin
 Scenario: Verify that user can add a manual payment from the Clients screen

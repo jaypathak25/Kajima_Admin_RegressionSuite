@@ -13,6 +13,13 @@ Background:
 ##==============================================11 scenarios for Venue admin=============================================================================##    
 
 @VenueAdmin
+Scenario: Manage tab -  Venue management - verify Client Booking slots - add, edit, delete
+Then User added the new booking slot  and verify
+Then User Edited the booking slot and verify
+Then User Deleted the booking slot and verify
+And user quit the browser
+
+@VenueAdmin
 Scenario: Manage tab -  Venue management - verify Add a client flag, assign to a client and then delete the flag
 Then User added a new cleint flag, assign to client and verify that this is visible on client account for admin
 Then User deleted the flag and verify that it is not visible to client account for admin anymore

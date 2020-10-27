@@ -131,10 +131,12 @@ public class Users_Page extends TestBase {
 		
 		public void verify_BAUupdateEmailClientUser() throws InterruptedException {
 			driver.findElement(By.xpath("//*[@class='tabs']/dd[6]/a[contains(@href,'#')]")).click();
-			search_txt.clear();
-			search_txt.sendKeys("auto");
+			driver.findElement(By.xpath("//input[contains(@aria-controls,'customer_logins_table') and @type='search']")).clear();
+			driver.findElement(By.xpath("//input[contains(@aria-controls,'customer_logins_table') and @type='search']")).sendKeys("auto");
+		//	search_txt.clear();
+		//	search_txt.sendKeys("auto");
 			Thread.sleep(4000);
-			editUser.click();
+			editUser.click();	
 			userEmail_txt.clear();
 			userEmail_txt.sendKeys("auto@example.com");
 			updateUsers_Btn.click();
@@ -286,7 +288,7 @@ public class Users_Page extends TestBase {
 			String parent =  driver.getWindowHandle();
 			System.out.println("Parent ID " + parent);
 			Thread.sleep(2000);
-			for(int i=1;i<=1;i++) {
+			for(int i=1;i<=2;i++) {
 				Robot rob = new Robot();
 				rob.keyPress(KeyEvent.VK_CONTROL);
 				rob.keyPress(KeyEvent.VK_T);
@@ -313,7 +315,7 @@ public class Users_Page extends TestBase {
 			String parent =  driver.getWindowHandle();
 			System.out.println("Parent ID " + parent);
 			Thread.sleep(2000);
-			for(int i=1;i<=1;i++) {
+			for(int i=1;i<=2;i++) {
 				Robot rob = new Robot();
 				rob.keyPress(KeyEvent.VK_CONTROL);
 				rob.keyPress(KeyEvent.VK_T);
